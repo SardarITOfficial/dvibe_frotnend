@@ -1,18 +1,15 @@
-
 import { describe, it, expect } from "vitest";
 import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
-import Header from "./Header";
+import Header from "@/components/layout/Header";
 import { HEADER_CONFIG, NAV_LINKS } from "@/mocks/nav";
 
 describe("Header", () => {
-  it("should render the brand name", () => {
+  it("should render the brand logo", () => {
     render(<Header />);
 
-    expect(
-      screen.getByText(HEADER_CONFIG.brand.name)
-    ).toBeInTheDocument();
+    expect(screen.getByAltText(HEADER_CONFIG.brand.name)).toBeInTheDocument();
   });
 
   it("should render all navigation links", () => {
@@ -35,6 +32,14 @@ describe("Header", () => {
     ).toBeGreaterThan(0);
   });
 
+  it("should render the language button", () => {
+    render(<Header />);
+
+    expect(
+      screen.getByRole("button", { name: HEADER_CONFIG.language.label })
+    ).toHaveTextContent(HEADER_CONFIG.language.code);
+  });
+
   it("should open the mobile navigation menu", async () => {
     const user = userEvent.setup();
 
@@ -46,9 +51,7 @@ describe("Header", () => {
       })
     );
 
-expect(
-  document.getElementById("mobile-navigation")
-).toBeInTheDocument();
+    expect(document.getElementById("mobile-navigation")).toBeInTheDocument();
   });
 
   it("should close the mobile navigation menu", async () => {

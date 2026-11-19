@@ -1,7 +1,10 @@
-
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --section_background: #f4fbfe --foreground: #007090;
+  --accent: #007090;
+  --accent-soft: #e9f6ff;
+  --ink: #1c1c1c;
+  --navy: #0b1f3a;
   --muted: #6b7280;
   --border: #e5e5e5;
   --card: #f9fafb;
@@ -12,5 +15,5 @@
   --font-body-family: var(--font-manrope, sans-serif);
   --font-heading-family: var(--font-space-grotesk, sans-serif);
   --font-code-family: var(--font-plex-mono, monospace);
---font-size-footer-watermark: clamp(5rem, 18vw, 13rem);
+  --font-size-footer-watermark: clamp(5rem, 18vw, 13rem);
 }

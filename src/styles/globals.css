@@ -8,6 +8,10 @@
   --color-border: var(--border);
   --color-card: var(--card);
   --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-ink: var(--ink);
+  --color-navy: var(--navy);
   --color-success: var(--success);
   --color-danger: var(--danger);
   --color-warning: var(--warning);

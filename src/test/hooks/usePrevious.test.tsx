@@ -25,12 +25,23 @@ describe("usePrevious", () => {
     expect(result.current).toBe("second");
   });
 
-  it("should keep the previous value when the current value does not change", () => {
+  it("should return undefined when the value never changes", () => {
     const { result, rerender } = renderHook(({ value }) => usePrevious(value), {
       initialProps: { value: "first" },
     });
 
     rerender({ value: "first" });
+
+    expect(result.current).toBeUndefined();
+  });
+
+  it("should keep the previous value when the current value stays the same", () => {
+    const { result, rerender } = renderHook(({ value }) => usePrevious(value), {
+      initialProps: { value: "first" },
+    });
+
+    rerender({ value: "second" });
+    rerender({ value: "second" });
 
     expect(result.current).toBe("first");
   });

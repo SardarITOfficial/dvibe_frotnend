@@ -1,13 +1,16 @@
-
 export const HEADER_CONFIG = {
   brand: {
-    name: "My App",
-    logo: "M",
+    name: "DVIBE",
+    logo: "/logo.svg",
     href: "/",
   },
   cta: {
-    label: "Get Started",
-    href: "/contact",
+    label: "Login",
+    href: "/login",
+  },
+  language: {
+    code: "EN",
+    label: "Select language",
   },
   menu: {
     openLabel: "Open navigation menu",
@@ -17,15 +20,20 @@ export const HEADER_CONFIG = {
 
 export const NAV_LINKS = [
   {
-    name: "Home",
-    path: "/",
+    name: "Explore",
+    path: "/explore",
   },
   {
-    name: "About",
-    path: "/about",
+    name: "Vibe",
+    path: "/vibe",
   },
   {
-    name: "Contact",
-    path: "/contact",
+    name: "Foods",
+    path: "/foods",
+  },
+  {
+    name: "Services",
+    path: "/services",
+    hasDropdown: true,
   },
 ];

@@ -1,94 +1,108 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FiMenu, FiX } from "react-icons/fi";
+import { FiChevronDown, FiGlobe, FiMenu, FiUser, FiX } from "react-icons/fi";
 
+import { Button } from "@/components/ui/Button";
 import { HEADER_CONFIG, NAV_LINKS } from "@/mocks/nav";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const { brand, cta, menu } = HEADER_CONFIG;
+  const { brand, cta, language, menu } = HEADER_CONFIG;
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
-      <div className="container mx-auto px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between lg:h-20">
-          <Link href={brand.href} className="flex items-center gap-2">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary font-bold text-background">
-              {brand.logo}
-            </div>
-
-            <span className="text-xl font-bold tracking-tight">
-              {brand.name}
-            </span>
+    <header className="fixed inset-x-0 top-4 z-50 px-4 lg:top-7.5">
+      <div className="mx-auto container">
+        <div className="flex h-16 items-center justify-between rounded-full bg-background py-2 pl-5 pr-3 lg:h-21 lg:py-3 lg:pl-6">
+          <Link href={brand.href} className="flex shrink-0 items-center">
+            <Image
+              src={brand.logo}
+              alt={brand.name}
+              width={188}
+              height={60}
+              priority
+              className="h-11 w-auto lg:h-15"
+            />
           </Link>
 
-          <nav className="hidden items-center gap-8 lg:flex">
+          <nav className="hidden items-center gap-11.5 lg:flex">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.path}
                 href={link.path}
-                className="text-sm font-medium text-muted transition-colors hover:text-foreground"
+                className="flex items-center gap-1 text-base font-semibold text-ink transition-opacity hover:opacity-70"
               >
                 {link.name}
+                {link.hasDropdown && <FiChevronDown size={16} />}
               </Link>
             ))}
           </nav>
 
           <div className="hidden items-center gap-4 lg:flex">
-            <Link
-              href={cta.href}
-              className="rounded-xl bg-primary px-6 py-3 text-sm font-bold text-background transition-opacity hover:opacity-80"
+            <Button
+              type="button"
+              variant="soft"
+              aria-label={language.label}
             >
+              <FiGlobe size={20} />
+              {language.code}
+              <FiChevronDown size={20} />
+            </Button>
+ 
+            <Button href={cta.href} variant="accent">
               {cta.label}
-            </Link>
+              <FiUser size={24} />
+            </Button>
           </div>
 
-          <button
+          <Button
             type="button"
-            className="p-2 text-foreground lg:hidden"
+            className="p-2 text-ink lg:hidden"
             onClick={() => setIsOpen((previous) => !previous)}
             aria-label={isOpen ? menu.closeLabel : menu.openLabel}
             aria-expanded={isOpen}
             aria-controls="mobile-navigation"
           >
-            {isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-          </button>
+            {isOpen ? <FiX size={20} /> : <FiMenu size={20} />}
+          </Button>
         </div>
-      </div>
 
-      {isOpen && (
-        <motion.div
-          id="mobile-navigation"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="border-t border-border bg-background p-6 lg:hidden"
-        >
-          <nav className="flex flex-col gap-4">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.path}
-                href={link.path}
-                className="text-base font-medium text-muted transition-colors hover:text-foreground"
+        {isOpen && (
+          <motion.div
+            id="mobile-navigation"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-2 rounded-3xl bg-background p-6 lg:hidden"
+          >
+            <nav className="flex flex-col gap-4">
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.path}
+                  href={link.path}
+                  className="text-base font-semibold text-ink transition-opacity hover:opacity-70"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              ))}
+
+              <Button
+                href={cta.href}
+                variant="accent"
+                className="mt-4"
                 onClick={() => setIsOpen(false)}
               >
-                {link.name}
-              </Link>
-            ))}
-
-            <Link
-              href={cta.href}
-              className="mt-4 rounded-xl bg-primary px-5 py-3 text-center text-sm font-bold text-background transition-opacity hover:opacity-80"
-              onClick={() => setIsOpen(false)}
-            >
-              {cta.label}
-            </Link>
-          </nav>
-        </motion.div>
-      )}
+                {cta.label}
+                <FiUser size={24} />
+              </Button>
+            </nav>
+          </motion.div>
+        )}
+      </div>
     </header>
   );
 }

@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
 
-import Footer from "./Footer";
+import Footer from "@/components/layout/Footer";
 import { FOOTER_CONFIG, FOOTER_COLUMNS } from "@/mocks/footer";
 
 describe("Footer", () => {

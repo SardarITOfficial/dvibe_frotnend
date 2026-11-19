@@ -15,8 +15,8 @@ export default function Header() {
   const { brand, cta, language, menu } = HEADER_CONFIG;
 
   return (
-    <header className="fixed inset-x-0 top-4 z-50 px-4 lg:top-7.5">
-      <div className="mx-auto container">
+    <header className="fixed inset-x-0 top-4 z-50 lg:top-7.5">
+      <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between rounded-full bg-background py-2 pl-5 pr-3 lg:h-21 lg:py-3 lg:pl-6">
           <Link href={brand.href} className="flex shrink-0 items-center">
             <Image

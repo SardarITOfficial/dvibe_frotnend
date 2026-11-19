@@ -2,7 +2,7 @@ import { describe, it, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
-import { Input } from "./Input";
+import { Input } from "../../../components/ui/Input";
 
 describe("Input", () => {
   it("should render the input", () => {
@@ -59,5 +59,23 @@ describe("Input", () => {
       "type",
       "password",
     );
+  });
+    it("should render a plain input when no icon is provided", () => {
+    const { container } = render(<Input />);
+
+    expect(container.firstChild).toBe(screen.getByRole("textbox"));
+  });
+
+  it("should render the icon next to the input", () => {
+    render(<Input icon={<svg data-testid="icon" />} />);
+
+    expect(screen.getByTestId("icon")).toBeInTheDocument();
+    expect(screen.getByRole("textbox")).toBeInTheDocument();
+  });
+
+  it("should apply the bare variant classes", () => {
+    render(<Input variant="bare" />);
+
+    expect(screen.getByRole("textbox")).toHaveClass("bg-transparent");
   });
 });

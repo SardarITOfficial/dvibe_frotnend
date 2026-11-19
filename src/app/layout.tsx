@@ -3,6 +3,8 @@ import {
   Space_Grotesk,
   Manrope,
   IBM_Plex_Mono,
+  DM_Serif_Display,
+  Outfit,
 } from "next/font/google";
 
 import "@/styles/globals.css";
@@ -28,6 +30,19 @@ const plexMono = IBM_Plex_Mono({
   variable: "--font-plex-mono",
 });
 
+const dmSerifDisplay = DM_Serif_Display({
+  subsets: ["latin"],
+  style: ["italic"],
+  weight: "400",
+  variable: "--font-dm-serif",
+});
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-outfit",
+});
+
 export const metadata: Metadata = {
   title: {
     default: "My App",
@@ -44,7 +59,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${manrope.variable} ${plexMono.variable}`}
+      className={`${spaceGrotesk.variable} ${manrope.variable} ${plexMono.variable} ${dmSerifDisplay.variable} ${outfit.variable}`}
     >
       <body className="font-body antialiased">
         <StateProvider>

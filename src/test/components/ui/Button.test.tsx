@@ -2,23 +2,19 @@ import { describe, it, expect, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
-import { Button } from "./Button";
+import { Button } from "../../../components/ui/Button";
 
 describe("Button", () => {
   it("should render the button", () => {
     render(<Button>Click me</Button>);
 
-    expect(
-      screen.getByRole("button")
-    ).toBeInTheDocument();
+    expect(screen.getByRole("button")).toBeInTheDocument();
   });
 
   it("should render children correctly", () => {
     render(<Button>Submit</Button>);
 
-    expect(
-      screen.getByRole("button", { name: "Submit" })
-    ).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Submit" })).toBeInTheDocument();
   });
 
   it("should call onClick when clicked", async () => {
@@ -39,7 +35,7 @@ describe("Button", () => {
     render(
       <Button disabled onClick={handleClick}>
         Disabled
-      </Button>
+      </Button>,
     );
 
     await user.click(screen.getByRole("button"));
@@ -51,12 +47,13 @@ describe("Button", () => {
     render(
       <Button type="submit" aria-label="Submit form">
         Submit
-      </Button>
+      </Button>,
     );
 
-    expect(
-      screen.getByRole("button", { name: "Submit form" })
-    ).toHaveAttribute("type", "submit");
+    expect(screen.getByRole("button", { name: "Submit form" })).toHaveAttribute(
+      "type",
+      "submit",
+    );
   });
 
   it("should render a link when href is provided", () => {
@@ -64,7 +61,7 @@ describe("Button", () => {
 
     expect(screen.getByRole("link", { name: "Login" })).toHaveAttribute(
       "href",
-      "/login"
+      "/login",
     );
     expect(screen.queryByRole("button")).not.toBeInTheDocument();
   });
@@ -74,7 +71,7 @@ describe("Button", () => {
 
     expect(screen.getByRole("button", { name: "Login" })).toHaveClass(
       "bg-accent",
-      "rounded-full"
+      "rounded-full",
     );
   });
 
@@ -82,20 +79,49 @@ describe("Button", () => {
     render(
       <Button href="/login" variant="soft">
         Login
-      </Button>
+      </Button>,
     );
 
     expect(screen.getByRole("link", { name: "Login" })).toHaveClass(
       "bg-accent-soft",
-      "rounded-full"
+      "rounded-full",
     );
   });
 
   it("should not add any classes when no variant is given", () => {
     render(<Button className="p-2">Plain</Button>);
 
-    expect(screen.getByRole("button", { name: "Plain" }).className).toBe(
-      "p-2"
+    expect(screen.getByRole("button", { name: "Plain" }).className).toBe("p-2");
+  });
+
+  it("should apply the glass variant", () => {
+    render(<Button variant="glass">Chip</Button>);
+
+    expect(screen.getByRole("button", { name: "Chip" })).toHaveClass(
+      "bg-background/5",
+      "backdrop-blur-md",
+    );
+  });
+
+  it("should apply the requested size", () => {
+    render(
+      <Button variant="accent" size="md">
+        Search
+      </Button>,
+    );
+
+    expect(screen.getByRole("button", { name: "Search" })).toHaveClass(
+      "h-11",
+      "text-base",
+    );
+  });
+
+  it("should use the large size by default", () => {
+    render(<Button variant="accent">Login</Button>);
+
+    expect(screen.getByRole("button", { name: "Login" })).toHaveClass(
+      "h-14",
+      "text-lg",
     );
   });
 });

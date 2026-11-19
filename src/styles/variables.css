@@ -2,9 +2,13 @@
   --background: #ffffff;
   --section_background: #f4fbfe --foreground: #007090;
   --accent: #007090;
+  --accent-deep: #005770;
   --accent-soft: #e9f6ff;
+  --secondary: #f4b860;
   --ink: #1c1c1c;
   --navy: #0b1f3a;
+  --subtle: #8c8c8c;
+  --stroke: #c2c2c2;
   --muted: #6b7280;
   --border: #e5e5e5;
   --card: #f9fafb;
@@ -14,6 +18,8 @@
   --warning: #f59e0b;
   --font-body-family: var(--font-manrope, sans-serif);
   --font-heading-family: var(--font-space-grotesk, sans-serif);
+  --font-display-family: var(--font-dm-serif, serif);
+  --font-outfit-family: var(--font-outfit, sans-serif);
   --font-code-family: var(--font-plex-mono, monospace);
   --font-size-footer-watermark: clamp(5rem, 18vw, 13rem);
 }

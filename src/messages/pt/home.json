@@ -54,5 +54,51 @@
       "wind": "Vento",
       "sea": "Mar"
     }
+  },
+  "Flavours": {
+    "eyebrow": "Sabores de Cabo Verde",
+    "title": "O Melhor da Culinária Cabo-verdiana",
+    "cta": "Explorar Todos os Sabores",
+    "items": {
+      "cachupa": "Cachupa",
+      "friedMoray": "Moreia Frita",
+      "octopus": "Polvo",
+      "fish": "Peixe",
+      "shrimp": "Camarão",
+      "chicken": "Frango"
+    }
+  },
+  "Restaurants": {
+    "eyebrow": "Restaurantes em Destaque",
+    "title": "Encontre o Seu Próximo Lugar Favorito.",
+    "cta": "Explorar Todos os Restaurantes",
+    "openingHours": "Horário de Funcionamento",
+    "days": "Seg-Dom",
+    "viewMenu": "Ver Menu",
+    "viewMenuLabel": "Ver Menu – {name}",
+    "items": {
+      "pizzar": "Pizzas artesanais",
+      "monte-cara": "Pratos locais",
+      "casa-tchicau": "Cabo-verdiano · Tradicional"
+    }
+  },
+  "Vibe": {
+  "eyebrow": "Sinta o Ambiente",
+  "title": "Sinta o Ritmo do Mindelo",
+  "cta": "Explorar Todos os Ambientes",
+  "items": {
+    "live-music": {
+      "title": "Música ao Vivo",
+      "description": "Descubra os sons locais"
+    },
+    "events": {
+      "title": "Eventos",
+      "description": "O que acontece hoje"
+    },
+    "nightlife": {
+      "title": "Vida Noturna",
+      "description": "Viva a noite"
+    }
   }
+}
 }

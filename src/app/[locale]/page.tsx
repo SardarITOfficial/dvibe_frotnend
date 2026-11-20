@@ -4,7 +4,9 @@ import { setRequestLocale } from "next-intl/server";
 import CategoriesSection from "@/components/sections/CategoriesSection";
 import HeroSection from "@/components/sections/HeroSection";
 import { buildMetadata } from "@/lib/i18n/metadata";
-
+import FlavoursSection from "@/components/sections/FlavoursSection";
+import RestaurantsSection from "@/components/sections/RestaurantsSection";
+import VibeSection from "@/components/sections/VibeSection";
 type HomeProps = Readonly<{ params: Promise<{ locale: string }> }>;
 
 export async function generateMetadata({
@@ -20,9 +22,12 @@ export default async function Home({ params }: HomeProps) {
   setRequestLocale(locale);
 
   return (
-    <main className="min-h-screen">
-      <HeroSection />
-      <CategoriesSection />
-    </main>
+<main className="min-h-screen">
+  <HeroSection />
+  <CategoriesSection />
+  <FlavoursSection />
+  <RestaurantsSection />
+  <VibeSection />
+</main>
   );
 }

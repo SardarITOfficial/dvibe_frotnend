@@ -54,5 +54,52 @@
       "wind": "Wind",
       "sea": "Sea"
     }
+  },
+  "Flavours": {
+  "eyebrow": "Flavours of Cape Verde",
+  "title": "The Best of Cape Verdean Cuisine",
+  "cta": "Explore All Flavours",
+  "items": {
+    "cachupa": "Cachupa",
+    "friedMoray": "Fried Moray",
+    "octopus": "Octopus",
+    "fish": "Fish",
+    "shrimp": "Shrimp",
+    "chicken": "Chicken"
   }
+}
+,
+"Restaurants": {
+  "eyebrow": "Featured Restaurants",
+  "title": "Find Your Next Favourite Place.",
+  "cta": "Explore All Restaurants",
+  "openingHours": "Opening Hours",
+  "days": "Mon-Sun",
+  "viewMenu": "View Menu",
+  "viewMenuLabel": "View Menu – {name}",
+  "items": {
+    "pizzar": "Artisanal pizzas",
+    "monte-cara": "Local dishes",
+    "casa-tchicau": "Cape Verdean · Traditional"
+  }
+},
+"Vibe": {
+  "eyebrow": "Feel the Vibe",
+  "title": "Feel the Rhythm of Mindelo",
+  "cta": "Explore All Vibes",
+  "items": {
+    "live-music": {
+      "title": "Live Music",
+      "description": "Discover local sounds"
+    },
+    "events": {
+      "title": "Events",
+      "description": "What's happening today"
+    },
+    "nightlife": {
+      "title": "Nightlife",
+      "description": "Experience the night"
+    }
+  }
+}
 }

@@ -1,9 +1,16 @@
+import { useTranslations } from "next-intl";
+
 import CategorySlider from "@/components/sections/CategorySlider";
 import TodayInMindelo from "@/components/sections/TodayInMindelo";
 import { CATEGORIES_CONFIG } from "@/mocks/categories";
 
 export default function CategoriesSection() {
-  const { eyebrow, title, slider, categories } = CATEGORIES_CONFIG;
+  const t = useTranslations("Categories");
+
+  const categories = CATEGORIES_CONFIG.categories.map((category) => ({
+    ...category,
+    label: t(`items.${category.id}`),
+  }));
 
   return (
     <section
@@ -12,10 +19,10 @@ export default function CategoriesSection() {
     >
       <div className="container mx-auto flex flex-col gap-8 px-4 lg:gap-12">
         <CategorySlider
-          eyebrow={eyebrow}
-          title={title}
-          prevLabel={slider.prevLabel}
-          nextLabel={slider.nextLabel}
+          eyebrow={t("eyebrow")}
+          title={t("title")}
+          prevLabel={t("slider.prevLabel")}
+          nextLabel={t("slider.nextLabel")}
           categories={categories}
         />
         <TodayInMindelo />

@@ -29,5 +29,30 @@
       "taxi": "Taxi",
       "car-rental": "Car Rental"
     }
+  },
+  "Categories": {
+    "eyebrow": "Explore by Categories",
+    "title": "Discover Mindelo Your Way",
+    "slider": {
+      "prevLabel": "Previous categories",
+      "nextLabel": "Next categories"
+    },
+    "items": {
+      "food": "Food",
+      "vibe": "Vibe",
+      "sunset": "Sunset",
+      "tours": "Tours",
+      "taxi": "Taxi"
+    }
+  },
+  "Weather": {
+    "title": "Today in Mindelo",
+    "description": "A little glimpse of what's happening around the island today.",
+    "metrics": {
+      "temperature": "Partly cloudy",
+      "sunset": "Sunset",
+      "wind": "Wind",
+      "sea": "Sea"
+    }
   }
 }

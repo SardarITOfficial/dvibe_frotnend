@@ -1,12 +1,15 @@
 import { Fragment } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import { WEATHER_CONFIG } from "@/mocks/weather";
 import type { WeatherIcon } from "@/mocks/weather";
 
 function MetricIcon({ icon }: { icon: WeatherIcon }) {
   if (icon.type === "image") {
-    return <Image src={icon.src} alt="" width={40} height={40} />;
+    return (
+      <Image src={icon.src} alt="" width={icon.width} height={icon.height} />
+    );
   }
 
   const Icon = icon.component;
@@ -15,7 +18,9 @@ function MetricIcon({ icon }: { icon: WeatherIcon }) {
 }
 
 export default function TodayInMindelo() {
-  const { title, description, image, metrics } = WEATHER_CONFIG;
+  const t = useTranslations("Weather");
+
+  const { image, metrics } = WEATHER_CONFIG;
 
   return (
     <div className="relative overflow-hidden rounded-xl bg-cream xl:flex xl:h-38.5 xl:items-center">
@@ -42,10 +47,10 @@ export default function TodayInMindelo() {
 
         <div className="relative flex max-w-74.25 flex-col gap-1">
           <h3 className="font-display text-3xl font-normal italic leading-[1.35] text-background xl:text-[40px]">
-            {title}
+            {t("title")}
           </h3>
           <p className="text-base leading-[1.6] text-background">
-            {description}
+            {t("description")}
           </p>
         </div>
       </div>
@@ -66,7 +71,7 @@ export default function TodayInMindelo() {
                   {metric.value}
                 </span>
                 <span className="text-base leading-5 text-subtle">
-                  {metric.label}
+                  {t(`metrics.${metric.id}`)}
                 </span>
               </div>
             </li>

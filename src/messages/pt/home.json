@@ -29,5 +29,30 @@
       "taxi": "Táxi",
       "car-rental": "Aluguer de Carros"
     }
+  },
+  "Categories": {
+    "eyebrow": "Explore por categorias",
+    "title": "Descubra Mindelo à sua maneira",
+    "slider": {
+      "prevLabel": "Categorias anteriores",
+      "nextLabel": "Categorias seguintes"
+    },
+    "items": {
+      "food": "Comida",
+      "vibe": "Vibe",
+      "sunset": "Pôr do sol",
+      "tours": "Passeios",
+      "taxi": "Táxi"
+    }
+  },
+  "Weather": {
+    "title": "Hoje em Mindelo",
+    "description": "Um pequeno vislumbre do que se passa hoje na ilha.",
+    "metrics": {
+      "temperature": "Parcialmente nublado",
+      "sunset": "Pôr do sol",
+      "wind": "Vento",
+      "sea": "Mar"
+    }
   }
 }

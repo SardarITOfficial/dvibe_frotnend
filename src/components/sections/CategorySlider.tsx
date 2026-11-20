@@ -2,18 +2,20 @@
 
 import { useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 
 import { Button } from "@/components/ui/Button";
+import { Link } from "@/lib/i18n/navigation";
 import type { CategoryItem } from "@/mocks/categories";
+
+type CategorySliderItem = CategoryItem & { label: string };
 
 type CategorySliderProps = {
   eyebrow: string;
   title: string;
   prevLabel: string;
   nextLabel: string;
-  categories: CategoryItem[];
+  categories: CategorySliderItem[];
 };
 
 const CARD_GAP = 20;
@@ -43,7 +45,7 @@ export default function CategorySlider({
 
   return (
     <div className="flex flex-col gap-8 lg:gap-12">
-      <div className="flex items-end justify-between gap-6">
+      <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-end sm:justify-between">
         <div className="flex flex-col gap-3 sm:gap-4">
           <p className="text-sm font-medium uppercase leading-4 tracking-[2.4px] text-accent sm:text-base">
             {eyebrow}

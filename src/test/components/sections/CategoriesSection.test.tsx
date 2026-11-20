@@ -1,12 +1,15 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
 import CategoriesSection from "@/components/sections/CategoriesSection";
 import { CATEGORIES_CONFIG } from "@/mocks/categories";
 import { WEATHER_CONFIG } from "@/mocks/weather";
+import { messages, renderWithIntl } from "@/test/utils/renderWithIntl";
 
-const { eyebrow, title, slider, categories } = CATEGORIES_CONFIG;
+const { categories } = CATEGORIES_CONFIG;
+const t = messages.Categories;
+const w = messages.Weather;
 
 describe("CategoriesSection", () => {
   const scrollBy = vi.fn();
@@ -17,51 +20,58 @@ describe("CategoriesSection", () => {
   });
 
   it("should render the eyebrow and heading", () => {
-    render(<CategoriesSection />);
+    renderWithIntl(<CategoriesSection />);
 
-    expect(screen.getByText(eyebrow)).toBeInTheDocument();
+    expect(screen.getByText(t.eyebrow)).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { level: 2, name: title })
+      screen.getByRole("heading", { level: 2, name: t.title }),
     ).toBeInTheDocument();
   });
 
   it("should render every category link", () => {
-    render(<CategoriesSection />);
+    renderWithIntl(<CategoriesSection />);
 
-    categories.forEach(({ label, href }) => {
-      expect(screen.getByRole("link", { name: label })).toHaveAttribute(
-        "href",
-        href
-      );
+    categories.forEach(({ id, href }) => {
+      const name = t.items[id as keyof typeof t.items];
+
+      expect(screen.getByRole("link", { name })).toHaveAttribute("href", href);
     });
   });
 
   it("should scroll the slider forward and backward", async () => {
     const user = userEvent.setup();
 
-    render(<CategoriesSection />);
+    renderWithIntl(<CategoriesSection />);
 
-    await user.click(screen.getByRole("button", { name: slider.nextLabel }));
+    await user.click(
+      screen.getByRole("button", { name: t.slider.nextLabel }),
+    );
     expect(scrollBy).toHaveBeenLastCalledWith(
-      expect.objectContaining({ left: 20, behavior: "smooth" })
+      expect.objectContaining({ left: 20, behavior: "smooth" }),
     );
 
-    await user.click(screen.getByRole("button", { name: slider.prevLabel }));
+    await user.click(
+      screen.getByRole("button", { name: t.slider.prevLabel }),
+    );
     expect(scrollBy).toHaveBeenLastCalledWith(
-      expect.objectContaining({ left: -20, behavior: "smooth" })
+      expect.objectContaining({ left: -20, behavior: "smooth" }),
     );
   });
 
   it("should render the weather strip with every metric", () => {
-    render(<CategoriesSection />);
+    renderWithIntl(<CategoriesSection />);
 
     expect(
-      screen.getByRole("heading", { level: 3, name: WEATHER_CONFIG.title })
+      screen.getByRole("heading", { level: 3, name: w.title }),
     ).toBeInTheDocument();
 
-    WEATHER_CONFIG.metrics.forEach(({ value, label }) => {
-      expect(screen.getAllByText(value).length).toBeGreaterThan(0);
-      expect(screen.getAllByText(label).length).toBeGreaterThan(0);
+    const weatherList = within(screen.getAllByRole("list").at(-1)!);
+
+    WEATHER_CONFIG.metrics.forEach(({ id, value }) => {
+      expect(weatherList.getByText(value)).toBeInTheDocument();
+      expect(
+        weatherList.getByText(w.metrics[id as keyof typeof w.metrics]),
+      ).toBeInTheDocument();
     });
   });
 });

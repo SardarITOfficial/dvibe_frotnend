@@ -1,8 +1,8 @@
 import Link from "next/link";
 import type { ComponentProps } from "react";
 
-type ButtonVariant = "accent" | "soft" | "glass";
-type ButtonSize = "sm" | "md" | "lg";
+type ButtonVariant = "accent" | "soft" | "glass" | "outline";
+type ButtonSize = "sm" | "md" | "lg" | "icon-wide";
 
 type ButtonAsButtonProps = ComponentProps<"button"> & {
   href?: undefined;
@@ -18,7 +18,7 @@ type ButtonProps = (ButtonAsButtonProps | ButtonAsLinkProps) & {
 };
 
 const BASE_CLASSES =
-  "inline-flex items-center justify-center rounded-full transition-opacity hover:opacity-80";
+  "inline-flex items-center justify-center rounded-full transition-opacity hover:opacity-80 cursor-pointer";
 
 const VARIANT_CLASSES: Record<
   ButtonVariant,
@@ -26,22 +26,27 @@ const VARIANT_CLASSES: Record<
 > = {
   accent: {
     look: "bg-accent text-background",
-    lgSpacing: "px-6 text-lg font-semibold",
+    lgSpacing: "px-6 py-3 text-md font-semibold",
   },
   soft: {
     look: "bg-accent-soft text-ink",
-    lgSpacing: "p-4 text-base font-medium",
+    lgSpacing: "px-6 py-3 text-base font-medium",
   },
   glass: {
     look: "border-[0.5px] border-stroke bg-background/5 text-background backdrop-blur-md",
-    lgSpacing: "px-6 text-base font-medium",
+    lgSpacing: "px-6 py-3 text-base font-medium",
+  },
+  outline: {
+    look: "border-2 border-accent bg-background/54 text-accent",
+    lgSpacing: "px-6 py-3 text-base font-medium",
   },
 };
 
 const SIZE_CLASSES: Record<ButtonSize, string> = {
-  sm: "h-8.25 gap-3 px-3 text-xs font-normal leading-3.75",
-  md: "h-11 gap-2 px-4 text-base font-medium leading-5",
-  lg: "h-14 gap-3",
+  sm: " gap-3 px-4 py-2 text-xs font-normal leading-3.75",
+  md: " gap-2 px-6 py-3 text-base font-medium leading-5",
+  lg: " gap-3",
+  "icon-wide": "h-11.25 w-20.5",
 };
 
 export function Button({

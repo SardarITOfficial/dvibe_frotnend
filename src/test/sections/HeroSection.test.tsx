@@ -1,68 +1,69 @@
 import { describe, it, expect } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { screen } from "@testing-library/react";
 
 import HeroSection from "@/components/sections/HeroSection";
 import { HERO_CONFIG } from "@/mocks/hero";
+import { messages, renderWithIntl } from "@/test/utils/renderWithIntl";
 
-const { image, badge, heading, search, categories } = HERO_CONFIG;
+const { search, categories } = HERO_CONFIG;
+const t = messages.Hero;
 
 describe("HeroSection", () => {
   it("should render the main heading", () => {
-    render(<HeroSection />);
+    renderWithIntl(<HeroSection />);
 
     expect(
-      screen.getByRole("heading", { level: 1, name: heading })
+      screen.getByRole("heading", { level: 1, name: t.heading }),
     ).toBeInTheDocument();
   });
 
   it("should render the welcome badge", () => {
-    render(<HeroSection />);
+    renderWithIntl(<HeroSection />);
 
-    expect(screen.getByText(badge)).toBeInTheDocument();
+    expect(screen.getByText(t.badge)).toBeInTheDocument();
   });
 
   it("should render the background image", () => {
-    render(<HeroSection />);
+    renderWithIntl(<HeroSection />);
 
-    expect(screen.getByAltText(image.alt)).toBeInTheDocument();
+    expect(screen.getByAltText(t.imageAlt)).toBeInTheDocument();
   });
 
   it("should render the location select", () => {
-    render(<HeroSection />);
+    renderWithIntl(<HeroSection />);
 
     expect(
-      screen.getByRole("combobox", { name: search.locationLabel })
-    ).toBeInTheDocument();
+      screen.getByRole("combobox", { name: t.search.locationLabel }),
+    ).toHaveTextContent(t.search.locationPlaceholder);
   });
 
   it("should render the search input and submit button", () => {
-    render(<HeroSection />);
+    renderWithIntl(<HeroSection />);
 
     expect(
-      screen.getByRole("searchbox", { name: search.inputLabel })
+      screen.getByRole("searchbox", { name: t.search.inputLabel }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("button", { name: search.submitLabel })
+      screen.getByRole("button", { name: t.search.submitLabel }),
     ).toHaveAttribute("type", "submit");
   });
 
   it("should submit the search form to the configured action", () => {
-    render(<HeroSection />);
+    renderWithIntl(<HeroSection />);
 
     expect(screen.getByRole("search")).toHaveAttribute(
       "action",
-      search.action
+      search.action,
     );
   });
 
   it("should render every category link", () => {
-    render(<HeroSection />);
+    renderWithIntl(<HeroSection />);
 
-    categories.forEach(({ label, href }) => {
-      expect(screen.getByRole("link", { name: label })).toHaveAttribute(
-        "href",
-        href
-      );
+    categories.forEach(({ id, href }) => {
+      const name = t.categories[id as keyof typeof t.categories];
+
+      expect(screen.getByRole("link", { name })).toHaveAttribute("href", href);
     });
   });
 });

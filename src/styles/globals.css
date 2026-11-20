@@ -14,6 +14,10 @@
   --color-secondary: var(--secondary);
   --color-subtle: var(--subtle);
   --color-stroke: var(--stroke);
+  --color-section-bg: var(--section-bg);
+  --color-cream: var(--cream);
+  --color-charcoal: var(--charcoal);
+  --color-sun: var(--sun);
   --color-ink: var(--ink);
   --color-navy: var(--navy);
   --color-success: var(--success);

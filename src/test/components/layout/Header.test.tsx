@@ -1,55 +1,53 @@
 import { describe, it, expect } from "vitest";
-import { render, screen, within } from "@testing-library/react";
+import { screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-
+import { useRouter } from "@/lib/i18n/navigation";
 import Header from "@/components/layout/Header";
 import { HEADER_CONFIG, NAV_LINKS } from "@/mocks/nav";
+import { messages, renderWithIntl } from "@/test/utils/renderWithIntl";
+
+const t = messages.Header;
 
 describe("Header", () => {
   it("should render the brand logo", () => {
-    render(<Header />);
+    renderWithIntl(<Header />);
 
     expect(screen.getByAltText(HEADER_CONFIG.brand.name)).toBeInTheDocument();
   });
 
-  it("should render all navigation links", () => {
-    render(<Header />);
+  it("should render all navigation items", () => {
+    renderWithIntl(<Header />);
 
     NAV_LINKS.forEach((link) => {
-      expect(
-        screen.getAllByRole("link", { name: link.name }).length
-      ).toBeGreaterThan(0);
+      const name = t.nav[link.key as keyof typeof t.nav];
+      const role = link.children ? "button" : "link";
+
+      expect(screen.getByRole(role, { name })).toBeInTheDocument();
     });
   });
 
   it("should render the CTA link", () => {
-    render(<Header />);
+    renderWithIntl(<Header />);
 
     expect(
-      screen.getAllByRole("link", {
-        name: HEADER_CONFIG.cta.label,
-      }).length
+      screen.getAllByRole("link", { name: t.cta }).length,
     ).toBeGreaterThan(0);
   });
 
-  it("should render the language button", () => {
-    render(<Header />);
+  it("should render the language button with the current locale", () => {
+    renderWithIntl(<Header />);
 
     expect(
-      screen.getByRole("button", { name: HEADER_CONFIG.language.label })
-    ).toHaveTextContent(HEADER_CONFIG.language.code);
+      screen.getByRole("button", { name: t.languageLabel }),
+    ).toHaveTextContent("EN");
   });
 
   it("should open the mobile navigation menu", async () => {
     const user = userEvent.setup();
 
-    render(<Header />);
+    renderWithIntl(<Header />);
 
-    await user.click(
-      screen.getByRole("button", {
-        name: HEADER_CONFIG.menu.openLabel,
-      })
-    );
+    await user.click(screen.getByRole("button", { name: t.openMenu }));
 
     expect(document.getElementById("mobile-navigation")).toBeInTheDocument();
   });
@@ -57,50 +55,48 @@ describe("Header", () => {
   it("should close the mobile navigation menu", async () => {
     const user = userEvent.setup();
 
-    render(<Header />);
+    renderWithIntl(<Header />);
 
-    await user.click(
-      screen.getByRole("button", {
-        name: HEADER_CONFIG.menu.openLabel,
-      })
-    );
-
-    await user.click(
-      screen.getByRole("button", {
-        name: HEADER_CONFIG.menu.closeLabel,
-      })
-    );
+    await user.click(screen.getByRole("button", { name: t.openMenu }));
+    await user.click(screen.getByRole("button", { name: t.closeMenu }));
 
     expect(
-      screen.queryByRole("button", {
-        name: HEADER_CONFIG.menu.closeLabel,
-      })
+      screen.queryByRole("button", { name: t.closeMenu }),
     ).not.toBeInTheDocument();
   });
 
   it("should close the mobile menu after clicking a navigation link", async () => {
     const user = userEvent.setup();
 
-    render(<Header />);
+    renderWithIntl(<Header />);
 
-    await user.click(
-      screen.getByRole("button", {
-        name: HEADER_CONFIG.menu.openLabel,
-      })
-    );
+    await user.click(screen.getByRole("button", { name: t.openMenu }));
 
     const mobileMenu = document.getElementById("mobile-navigation");
 
     await user.click(
-      within(mobileMenu!).getByRole("link", {
-        name: NAV_LINKS[1].name,
-      })
+      within(mobileMenu!).getByRole("link", { name: t.nav.vibe }),
     );
 
     expect(
-      screen.getByRole("button", {
-        name: HEADER_CONFIG.menu.openLabel,
-      })
+      screen.getByRole("button", { name: t.openMenu }),
     ).toBeInTheDocument();
+  });
+    it("should switch language from the mobile menu and close it", async () => {
+    const user = userEvent.setup();
+    const { replace } = useRouter();
+
+    renderWithIntl(<Header />);
+
+    await user.click(screen.getByRole("button", { name: t.openMenu }));
+
+    const mobileMenu = document.getElementById("mobile-navigation");
+
+    await user.click(
+      within(mobileMenu!).getByRole("button", { name: "Português" }),
+    );
+
+    expect(replace).toHaveBeenCalledWith("/", { locale: "pt" });
+    expect(document.getElementById("mobile-navigation")).not.toBeInTheDocument();
   });
 });

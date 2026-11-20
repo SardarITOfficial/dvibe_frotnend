@@ -1,0 +1,20 @@
+{
+  "Header": {
+    "nav": {
+      "explore": "Explorar",
+      "vibe": "Vibe",
+      "foods": "Comidas",
+      "services": "Serviços"
+    },
+    "servicesMenu": {
+      "webDesign": "Design Web",
+      "photography": "Fotografia",
+      "transport": "Transporte",
+      "events": "Eventos"
+    },
+    "cta": "Entrar",
+    "languageLabel": "Selecionar idioma",
+    "openMenu": "Abrir menu de navegação",
+    "closeMenu": "Fechar menu de navegação"
+  }
+}

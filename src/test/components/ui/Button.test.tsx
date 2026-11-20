@@ -111,8 +111,9 @@ describe("Button", () => {
     );
 
     expect(screen.getByRole("button", { name: "Search" })).toHaveClass(
-      "h-11",
+      "gap-2",
       "text-base",
+      "font-medium",
     );
   });
 
@@ -120,8 +121,31 @@ describe("Button", () => {
     render(<Button variant="accent">Login</Button>);
 
     expect(screen.getByRole("button", { name: "Login" })).toHaveClass(
-      "h-14",
-      "text-lg",
+      "gap-3",
+      "px-6",
+      "py-3",
+    );
+  });
+
+  it("should apply the outline variant", () => {
+    render(<Button variant="outline">Back</Button>);
+
+    expect(screen.getByRole("button", { name: "Back" })).toHaveClass(
+      "border-2",
+      "border-accent",
+    );
+  });
+
+  it("should apply the icon-wide size", () => {
+    render(
+      <Button variant="accent" size="icon-wide" aria-label="Next">
+        →
+      </Button>,
+    );
+
+    expect(screen.getByRole("button", { name: "Next" })).toHaveClass(
+      "h-11.25",
+      "w-20.5",
     );
   });
 });

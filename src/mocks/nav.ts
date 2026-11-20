@@ -5,35 +5,22 @@ export const HEADER_CONFIG = {
     href: "/",
   },
   cta: {
-    label: "Login",
     href: "/login",
-  },
-  language: {
-    code: "EN",
-    label: "Select language",
-  },
-  menu: {
-    openLabel: "Open navigation menu",
-    closeLabel: "Close navigation menu",
   },
 };
 
 export const NAV_LINKS = [
+  { key: "explore", path: "/explore" },
+  { key: "vibe", path: "/vibe" },
+  { key: "foods", path: "/foods" },
   {
-    name: "Explore",
-    path: "/explore",
-  },
-  {
-    name: "Vibe",
-    path: "/vibe",
-  },
-  {
-    name: "Foods",
-    path: "/foods",
-  },
-  {
-    name: "Services",
+    key: "services",
     path: "/services",
-    hasDropdown: true,
+    children: [
+      { key: "webDesign", path: "/services/web-design" },
+      { key: "photography", path: "/services/photography" },
+      { key: "transport", path: "/services/transport" },
+      { key: "events", path: "/services/events" },
+    ],
   },
 ];

@@ -1,0 +1,32 @@
+{
+  "Hero": {
+    "imageAlt": "Beach and bay of Mindelo in São Vicente, Cape Verde",
+    "badge": "Welcome to Mindelo · São Vicente",
+    "heading": "Your Gateway to the Mindelo Experience.",
+    "description": {
+      "highlight": "Eat, explore & feel the vibe.",
+      "text": "Discover authentic local flavours, vibrant music, colourful streets and breathtaking ocean views. Immerse yourself in Mindelo's rich culture, lively atmosphere and unforgettable experiences."
+    },
+    "search": {
+      "locationLabel": "Choose your location",
+      "locationPlaceholder": "Choose your location",
+      "inputLabel": "Search restaurants, dishes or events",
+      "inputPlaceholder": "Search restaurants, dishes or events...",
+      "submitLabel": "Search"
+    },
+    "locations": {
+      "mindelo": "Mindelo",
+      "laginha": "Laginha",
+      "calhau": "Calhau",
+      "baia-das-gatas": "Baía das Gatas",
+      "salamansa": "Salamansa"
+    },
+    "categories": {
+      "restaurants": "Restaurants",
+      "events": "Events",
+      "sunset-spots": "Sunset Spots",
+      "taxi": "Taxi",
+      "car-rental": "Car Rental"
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { screen } from "@testing-library/react";
+import { fireEvent, screen } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 
 import HeroSection from "@/components/sections/HeroSection";
 import { HERO_CONFIG } from "@/mocks/hero";
@@ -51,10 +52,7 @@ describe("HeroSection", () => {
   it("should submit the search form to the configured action", () => {
     renderWithIntl(<HeroSection />);
 
-    expect(screen.getByRole("search")).toHaveAttribute(
-      "action",
-      search.action,
-    );
+    expect(screen.getByRole("search")).toHaveAttribute("action", search.action);
   });
 
   it("should render every category link", () => {
@@ -65,5 +63,42 @@ describe("HeroSection", () => {
 
       expect(screen.getByRole("link", { name })).toHaveAttribute("href", href);
     });
+  });
+
+  it("should block the submit and show an error when the form is empty", () => {
+    renderWithIntl(<HeroSection />);
+
+    const wasNotPrevented = fireEvent.submit(screen.getByRole("search"));
+
+    expect(wasNotPrevented).toBe(false);
+    expect(screen.getByRole("alert")).toHaveTextContent(t.search.error);
+  });
+
+  it("should allow the submit when a search term is entered", async () => {
+    const user = userEvent.setup();
+
+    renderWithIntl(<HeroSection />);
+
+    await user.type(
+      screen.getByRole("searchbox", { name: t.search.inputLabel }),
+      "pizza",
+    );
+
+    expect(fireEvent.submit(screen.getByRole("search"))).toBe(true);
+    expect(screen.queryByRole("alert")).not.toBeInTheDocument();
+  });
+
+  it("should clear the error when the user starts typing", async () => {
+    const user = userEvent.setup();
+
+    renderWithIntl(<HeroSection />);
+
+    fireEvent.submit(screen.getByRole("search"));
+    await user.type(
+      screen.getByRole("searchbox", { name: t.search.inputLabel }),
+      "a",
+    );
+
+    expect(screen.queryByRole("alert")).not.toBeInTheDocument();
   });
 });

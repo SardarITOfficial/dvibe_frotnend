@@ -12,7 +12,8 @@
       "locationPlaceholder": "Escolha a sua localização",
       "inputLabel": "Pesquisar restaurantes, pratos ou eventos",
       "inputPlaceholder": "Pesquisar restaurantes, pratos ou eventos...",
-      "submitLabel": "Pesquisar"
+      "submitLabel": "Pesquisar",
+      "error": "Escolha uma localização ou introduza um termo de pesquisa."
     },
     "locations": {
       "mindelo": "Mindelo",

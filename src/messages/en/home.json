@@ -12,7 +12,8 @@
       "locationPlaceholder": "Choose your location",
       "inputLabel": "Search restaurants, dishes or events",
       "inputPlaceholder": "Search restaurants, dishes or events...",
-      "submitLabel": "Search"
+      "submitLabel": "Search",
+      "error": "Choose a location or enter a search term."
     },
     "locations": {
       "mindelo": "Mindelo",

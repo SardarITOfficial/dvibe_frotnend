@@ -1,21 +1,14 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { FiMapPin, FiSearch } from "react-icons/fi";
 
+import HeroSearchForm from "@/components/sections/HeroSearchForm";
 import { Button } from "@/components/ui/Button";
-import { Input } from "@/components/ui/Input";
-import { Select } from "@/components/ui/Select";
 import { HERO_CONFIG } from "@/mocks/hero";
 
 export default function HeroSection() {
   const t = useTranslations("Hero");
 
-  const { image, search, categories } = HERO_CONFIG;
-
-  const locations = search.locations.map((id) => ({
-    value: id,
-    label: t(`locations.${id}`),
-  }));
+  const { image, categories } = HERO_CONFIG;
 
   return (
     <section
@@ -60,43 +53,7 @@ export default function HeroSection() {
           </div>
 
           <div className="flex flex-col gap-5">
-            <form
-              action={search.action}
-              method="get"
-              role="search"
-              className="flex w-full flex-col gap-2 rounded-3xl bg-background p-2 sm:flex-row sm:items-center sm:gap-6 sm:rounded-full sm:py-1"
-            >
-              <div className="flex min-w-0 flex-col sm:flex-1 sm:flex-row sm:items-center">
-                <Select
-                  name={search.locationName}
-                  aria-label={t("search.locationLabel")}
-                  placeholder={t("search.locationPlaceholder")}
-                  options={locations}
-                  variant="bare"
-                  icon={<FiMapPin size={16} strokeWidth={1.5} />}
-                  wrapperClassName="h-12.5 w-full shrink-0 border-b-[0.2px] border-subtle pl-4 sm:w-[219.2px] sm:border-b-0 sm:border-r-[0.2px]"
-                />
-
-                <Input
-                  name={search.inputName}
-                  type="search"
-                  aria-label={t("search.inputLabel")}
-                  placeholder={t("search.inputPlaceholder")}
-                  variant="bare"
-                  icon={<FiSearch size={16} strokeWidth={1.5} />}
-                  wrapperClassName="h-12.5 min-w-0 px-4 sm:flex-1"
-                />
-              </div>
-
-              <Button
-                type="submit"
-                variant="accent"
-                size="md"
-                className="w-full sm:w-auto"
-              >
-                {t("search.submitLabel")}
-              </Button>
-            </form>
+            <HeroSearchForm />
 
             <ul className="flex flex-wrap gap-3 sm:gap-4">
               {categories.map(({ id, href, icon: Icon }) => (

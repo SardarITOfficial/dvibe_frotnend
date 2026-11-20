@@ -6,7 +6,7 @@ import {
   DM_Serif_Display,
   Outfit,
 } from "next/font/google";
-
+import { SITE_NAME, SITE_URL } from "@/constants/seo";
 import "@/styles/globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -48,11 +48,11 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "My App",
-    template: "%s | My App",
+    default: SITE_NAME,
+    template: `%s | ${SITE_NAME}`,
   },
-  description: "A modern web application built with Next.js.",
 };
 
 export function generateStaticParams() {

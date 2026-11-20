@@ -16,5 +16,10 @@
     "languageLabel": "Select language",
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu"
+  },
+  "Metadata": {
+    "title": "DVIBE | Eat, Explore & Feel the Vibe in Cape Verde",
+    "description": "Discover restaurants, events, nightlife, sunset spots, taxis and car rentals in Mindelo, São Vicente and across Cape Verde.",
+    "ogImageAlt": "DVIBE – Mindelo, São Vicente, Cape Verde"
   }
 }

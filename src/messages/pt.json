@@ -16,5 +16,21 @@
     "languageLabel": "Selecionar idioma",
     "openMenu": "Abrir menu de navegação",
     "closeMenu": "Fechar menu de navegação"
+  },
+  "Transport": {
+    "eyebrow": "Transporte e Mobilidade",
+    "title": "Deslocar-se no Mindelo Sem Complicações",
+    "items": {
+      "taxi": {
+        "title": "Táxi e Transferes",
+        "description": "Contacte motoristas locais e combine a sua viagem diretamente.",
+        "cta": "Encontrar um Táxi"
+      },
+      "car-rental": {
+        "title": "Aluguer de Carros",
+        "description": "Descubra opções de aluguer de carros e explore São Vicente ao seu ritmo.",
+        "cta": "Ver Carros"
+      }
+    }
   }
 }

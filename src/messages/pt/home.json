@@ -83,22 +83,41 @@
     }
   },
   "Vibe": {
-  "eyebrow": "Sinta o Ambiente",
-  "title": "Sinta o Ritmo do Mindelo",
-  "cta": "Explorar Todos os Ambientes",
-  "items": {
-    "live-music": {
-      "title": "Música ao Vivo",
-      "description": "Descubra os sons locais"
-    },
-    "events": {
-      "title": "Eventos",
-      "description": "O que acontece hoje"
-    },
-    "nightlife": {
-      "title": "Vida Noturna",
-      "description": "Viva a noite"
+    "eyebrow": "Sinta o Ambiente",
+    "title": "Sinta o Ritmo do Mindelo",
+    "cta": "Explorar Todos os Ambientes",
+    "items": {
+      "live-music": {
+        "title": "Música ao Vivo",
+        "description": "Descubra os sons locais"
+      },
+      "events": {
+        "title": "Eventos",
+        "description": "O que acontece hoje"
+      },
+      "nightlife": {
+        "title": "Vida Noturna",
+        "description": "Viva a noite"
+      }
+    }
+  },
+  "Island": {
+    "eyebrow": "Além da Cidade",
+    "title": "Descubra a Beleza de São Vicente",
+    "cta": "Explorar Tudo",
+    "items": {
+      "beaches": {
+        "title": "Praias",
+        "description": "Descubra os sons locais"
+      },
+      "sunset-spots": {
+        "title": "Locais para Pôr do Sol",
+        "description": "Descubra vistas deslumbrantes"
+      },
+      "tours": {
+        "title": "Passeios e Caminhadas",
+        "description": "Explore a ilha"
+      }
     }
   }
-}
 }

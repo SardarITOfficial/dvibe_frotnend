@@ -56,49 +56,83 @@
     }
   },
   "Flavours": {
-  "eyebrow": "Flavours of Cape Verde",
-  "title": "The Best of Cape Verdean Cuisine",
-  "cta": "Explore All Flavours",
+    "eyebrow": "Flavours of Cape Verde",
+    "title": "The Best of Cape Verdean Cuisine",
+    "cta": "Explore All Flavours",
+    "items": {
+      "cachupa": "Cachupa",
+      "friedMoray": "Fried Moray",
+      "octopus": "Octopus",
+      "fish": "Fish",
+      "shrimp": "Shrimp",
+      "chicken": "Chicken"
+    }
+  },
+  "Restaurants": {
+    "eyebrow": "Featured Restaurants",
+    "title": "Find Your Next Favourite Place.",
+    "cta": "Explore All Restaurants",
+    "openingHours": "Opening Hours",
+    "days": "Mon-Sun",
+    "viewMenu": "View Menu",
+    "viewMenuLabel": "View Menu – {name}",
+    "items": {
+      "pizzar": "Artisanal pizzas",
+      "monte-cara": "Local dishes",
+      "casa-tchicau": "Cape Verdean · Traditional"
+    }
+  },
+  "Vibe": {
+    "eyebrow": "Feel the Vibe",
+    "title": "Feel the Rhythm of Mindelo",
+    "cta": "Explore All Vibes",
+    "items": {
+      "live-music": {
+        "title": "Live Music",
+        "description": "Discover local sounds"
+      },
+      "events": {
+        "title": "Events",
+        "description": "What's happening today"
+      },
+      "nightlife": {
+        "title": "Nightlife",
+        "description": "Experience the night"
+      }
+    }
+  },
+  "Island": {
+    "eyebrow": "Beyond the City",
+    "title": "Discover the Beauty of São Vicente",
+    "cta": "Explore All",
+    "items": {
+      "beaches": {
+        "title": "Beaches",
+        "description": "Discover local sounds"
+      },
+      "sunset-spots": {
+        "title": "Sunset Spots",
+        "description": "Discover beautiful views"
+      },
+      "tours": {
+        "title": "Tours & Walks",
+        "description": "Explore the island"
+      }
+    }
+  },
+  "Transport": {
+  "eyebrow": "Transport & Mobility",
+  "title": "Getting Around Mindelo Made Easy",
   "items": {
-    "cachupa": "Cachupa",
-    "friedMoray": "Fried Moray",
-    "octopus": "Octopus",
-    "fish": "Fish",
-    "shrimp": "Shrimp",
-    "chicken": "Chicken"
-  }
-}
-,
-"Restaurants": {
-  "eyebrow": "Featured Restaurants",
-  "title": "Find Your Next Favourite Place.",
-  "cta": "Explore All Restaurants",
-  "openingHours": "Opening Hours",
-  "days": "Mon-Sun",
-  "viewMenu": "View Menu",
-  "viewMenuLabel": "View Menu – {name}",
-  "items": {
-    "pizzar": "Artisanal pizzas",
-    "monte-cara": "Local dishes",
-    "casa-tchicau": "Cape Verdean · Traditional"
-  }
-},
-"Vibe": {
-  "eyebrow": "Feel the Vibe",
-  "title": "Feel the Rhythm of Mindelo",
-  "cta": "Explore All Vibes",
-  "items": {
-    "live-music": {
-      "title": "Live Music",
-      "description": "Discover local sounds"
+    "taxi": {
+      "title": "Taxi & Transfers",
+      "description": "Connect with local drivers and arrange your ride directly.",
+      "cta": "Find a Taxi"
     },
-    "events": {
-      "title": "Events",
-      "description": "What's happening today"
-    },
-    "nightlife": {
-      "title": "Nightlife",
-      "description": "Experience the night"
+    "car-rental": {
+      "title": "Car Rental",
+      "description": "Discover car rental options and explore São Vicente at your own pace.",
+      "cta": "Explore Cars"
     }
   }
 }

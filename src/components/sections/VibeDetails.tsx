@@ -1,5 +1,6 @@
+import Image from "next/image";
 import { useFormatter, useTranslations } from "next-intl";
-import { FiArrowLeft, FiCalendar, FiClock, FiMapPin } from "react-icons/fi";
+import { FiArrowLeft, FiCalendar, FiMapPin } from "react-icons/fi";
 
 import { Link } from "@/lib/i18n/navigation";
 import type { VibeEvent } from "@/mocks/vibeEvents";
@@ -9,7 +10,7 @@ type VibeDetailsProps = {
 };
 
 export default function VibeDetails({
-  event: { category, title, description, date, location, time, image },
+  event: { category, title, description, date, location, image },
 }: VibeDetailsProps) {
   const t = useTranslations("Vibe");
   const format = useFormatter();

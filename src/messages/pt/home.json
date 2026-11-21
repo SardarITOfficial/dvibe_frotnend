@@ -144,6 +144,22 @@
       }
     }
   },
+  "Transport": {
+    "eyebrow": "Transportes e Mobilidade",
+    "title": "Deslocar-se no Mindelo Nunca Foi Tão Fácil",
+    "items": {
+      "taxi": {
+        "title": "Táxi e Transferes",
+        "description": "Contacte motoristas locais e combine a sua viagem diretamente.",
+        "cta": "Encontrar um Táxi"
+      },
+      "car-rental": {
+        "title": "Aluguer de Carros",
+        "description": "Descubra opções de aluguer de carros e explore São Vicente ao seu ritmo.",
+        "cta": "Explorar Carros"
+      }
+    }
+  },
   "Ferry": {
     "eyebrow": "A Experiência de Ferry",
     "title": "A Sua Viagem de Ferry com a DVIBE",

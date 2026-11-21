@@ -6,40 +6,83 @@ import { VIBE_EVENTS } from "@/mocks/vibeEvents";
 import { messages, renderWithIntl } from "@/test/utils/renderWithIntl";
 
 const t = messages.Vibe;
+const TODAY = "2026-11-21";
+
+const getEventHeading = (title: string) =>
+  screen.queryByRole("heading", { level: 3, name: title });
 
 describe("VibeEventsSection", () => {
-  it("should render every event when no category is selected", () => {
-    renderWithIntl(<VibeEventsSection filter="all" />);
+  it("should render every upcoming event by default", () => {
+    renderWithIntl(
+      <VibeEventsSection category="all" time="upcoming" today={TODAY} />,
+    );
 
     VIBE_EVENTS.forEach(({ title }) => {
-      expect(
-        screen.getByRole("heading", { level: 3, name: title }),
-      ).toBeInTheDocument();
+      expect(getEventHeading(title)).toBeInTheDocument();
     });
   });
 
   it("should render only the selected category", () => {
-    renderWithIntl(<VibeEventsSection filter="events" />);
+    renderWithIntl(
+      <VibeEventsSection category="events" time="upcoming" today={TODAY} />,
+    );
 
     VIBE_EVENTS.forEach(({ title, category }) => {
-      const heading = screen.queryByRole("heading", { level: 3, name: title });
-
       if (category === "events") {
-        expect(heading).toBeInTheDocument();
+        expect(getEventHeading(title)).toBeInTheDocument();
       } else {
-        expect(heading).not.toBeInTheDocument();
+        expect(getEventHeading(title)).not.toBeInTheDocument();
       }
     });
   });
 
-  it("should mark the active filter as the current page", () => {
-    renderWithIntl(<VibeEventsSection filter="events" />);
+  it("should render only events on the selected day", () => {
+    renderWithIntl(
+      <VibeEventsSection category="all" time="today" today={TODAY} />,
+    );
+
+    VIBE_EVENTS.forEach(({ title, date }) => {
+      if (date === TODAY) {
+        expect(getEventHeading(title)).toBeInTheDocument();
+      } else {
+        expect(getEventHeading(title)).not.toBeInTheDocument();
+      }
+    });
+  });
+
+  it("should render the empty message when nothing matches", () => {
+    renderWithIntl(
+      <VibeEventsSection category="nightlife" time="today" today={TODAY} />,
+    );
+
+    expect(screen.getByText(t.page.empty)).toBeInTheDocument();
+  });
+
+  it("should mark the active category and time filters", () => {
+    renderWithIntl(
+      <VibeEventsSection category="events" time="weekend" today={TODAY} />,
+    );
 
     expect(
       screen.getByRole("link", { name: t.items.events.title }),
     ).toHaveAttribute("aria-current", "page");
-    expect(screen.getByRole("link", { name: t.page.all })).not.toHaveAttribute(
-      "aria-current",
+    expect(
+      screen.getByRole("link", { name: new RegExp(`^${t.page.time.weekend}`) }),
+    ).toHaveAttribute("aria-current", "page");
+    expect(
+      screen.getByRole("link", { name: new RegExp(`^${t.page.time.today}`) }),
+    ).not.toHaveAttribute("aria-current");
+  });
+
+  it("should keep the selected category in the time filter links", () => {
+    renderWithIntl(
+      <VibeEventsSection category="events" time="upcoming" today={TODAY} />,
     );
+
+    expect(
+      screen.getByRole("link", {
+        name: new RegExp(`^${t.page.time.tomorrow}`),
+      }),
+    ).toHaveAttribute("href", "/vibe?category=events&when=tomorrow");
   });
 });

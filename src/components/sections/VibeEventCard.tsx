@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { FiClock, FiMapPin } from "react-icons/fi";
 
+import { Link } from "@/lib/i18n/navigation";
 import type { VibeEvent } from "@/mocks/vibeEvents";
 
 type VibeEventCardProps = {
@@ -9,12 +10,12 @@ type VibeEventCardProps = {
 };
 
 export default function VibeEventCard({
-  event: { category, title, location, time, image },
+  event: { id, category, title, location, time, image },
 }: VibeEventCardProps) {
   const t = useTranslations("Vibe");
 
   return (
-    <article className="overflow-hidden rounded-xl bg-background shadow-md">
+    <article className="relative overflow-hidden rounded-xl bg-background shadow-md">
       <div className="relative aspect-video w-full">
         <Image
           src={image}
@@ -30,7 +31,12 @@ export default function VibeEventCard({
 
       <div className="flex flex-col gap-4 px-4 pb-4 pt-5">
         <h3 className="font-hero text-base font-semibold text-charcoal">
-          {title}
+          <Link
+            href={`/vibe/${id}`}
+            className="transition-opacity after:absolute after:inset-0 hover:opacity-80"
+          >
+            {title}
+          </Link>
         </h3>
 
         <div className="flex items-center justify-between gap-4 border-t border-border pt-4 text-sm font-medium">

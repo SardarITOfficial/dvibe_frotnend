@@ -22,3 +22,10 @@ export function filterVibeEvents(
     ? events
     : events.filter(({ category }) => category === filter);
 }
+
+export function getVibeEventById(
+  events: VibeEvent[],
+  id: string,
+): VibeEvent | undefined {
+  return events.find((event) => event.id === id);
+}

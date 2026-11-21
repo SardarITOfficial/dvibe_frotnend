@@ -94,6 +94,12 @@
       "eventsTitle": "What's On",
       "empty": "Nothing planned in this category yet. Check back soon."
     },
+    "details": {
+      "back": "Back to all vibes",
+      "about": "About this event",
+      "location": "Location",
+      "time": "Time"
+    },
     "items": {
       "live-music": {
         "title": "Live Music",

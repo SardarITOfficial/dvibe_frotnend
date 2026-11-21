@@ -2,7 +2,9 @@ import { describe, it, expect } from "vitest";
 
 import { VIBE_EVENTS } from "@/mocks/vibeEvents";
 import { filterVibeEvents, parseVibeFilter } from "@/utils/vibe";
-
+import {
+  getVibeEventById,
+} from "@/utils/vibe";
 describe("parseVibeFilter", () => {
   it("should return a valid category", () => {
     expect(parseVibeFilter("events")).toBe("events");
@@ -25,5 +27,17 @@ describe("filterVibeEvents", () => {
 
     expect(result.length).toBeGreaterThan(0);
     expect(result.every(({ category }) => category === "nightlife")).toBe(true);
+  });
+});
+
+
+
+describe("getVibeEventById", () => {
+  it("should return the matching event", () => {
+    expect(getVibeEventById(VIBE_EVENTS, "dj-night")?.id).toBe("dj-night");
+  });
+
+  it("should return undefined for an unknown id", () => {
+    expect(getVibeEventById(VIBE_EVENTS, "missing")).toBeUndefined();
   });
 });

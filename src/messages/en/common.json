@@ -21,5 +21,38 @@
     "title": "DVIBE | Eat, Explore & Feel the Vibe in Cape Verde",
     "description": "Discover restaurants, events, nightlife, sunset spots, taxis and car rentals in Mindelo, São Vicente and across Cape Verde.",
     "ogImageAlt": "DVIBE – Mindelo, São Vicente, Cape Verde"
+  },
+  "Footer": {
+    "logoAlt": "DVIBE",
+    "tagline": "Discover real flavours, vibrant culture and unforgettable experiences in Cape Verde.",
+    "copyright": "© {year} DVIBE · Mindelo, Kabu Verdi",
+    "madeWith": "Made with love in Mindelo, Cape Verde",
+    "columns": {
+      "explore": {
+        "title": "Explore",
+        "links": {
+          "restaurants": "Restaurants",
+          "flavours": "Flavours",
+          "vibe": "Vibe",
+          "mindelo": "Mindelo"
+        }
+      },
+      "partners": {
+        "title": "For Partners",
+        "links": {
+          "partner-portal": "Partner Portal",
+          "register-place": "Register a Place"
+        }
+      },
+      "support": {
+        "title": "Support",
+        "links": {
+          "help-center": "Help Center",
+          "privacy-policy": "Privacy Policy",
+          "terms": "Terms & Conditions",
+          "contact": "Contact Us"
+        }
+      }
+    }
   }
 }

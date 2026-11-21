@@ -1,54 +1,51 @@
 import { describe, it, expect } from "vitest";
-import { render, screen } from "@testing-library/react";
+import { screen, within } from "@testing-library/react";
 
 import Footer from "@/components/layout/Footer";
-import { FOOTER_CONFIG, FOOTER_COLUMNS } from "@/mocks/footer";
+import { FOOTER_COLUMNS } from "@/mocks/footer";
+import { messages, renderWithIntl } from "@/test/utils/renderWithIntl";
+
+const t = messages.Footer;
 
 describe("Footer", () => {
-  it("should render the brand name", () => {
-    render(<Footer />);
+  it("should render the logo and tagline", () => {
+    renderWithIntl(<Footer />);
 
-    expect(
-      screen.getByText(FOOTER_CONFIG.brand.name, {
-        selector: "p:not([aria-hidden='true'])",
-      }),
-    ).toBeInTheDocument();
+    expect(screen.getByAltText(t.logoAlt)).toBeInTheDocument();
+    expect(screen.getByText(t.tagline)).toBeInTheDocument();
   });
 
-  it("should render the brand tagline", () => {
-    render(<Footer />);
+  it("should render every column with its links", () => {
+    renderWithIntl(<Footer />);
 
-    expect(screen.getByText(FOOTER_CONFIG.brand.tagline)).toBeInTheDocument();
-  });
+    FOOTER_COLUMNS.forEach(({ id, links }) => {
+      const column = t.columns[id as keyof typeof t.columns];
+      const nav = within(
+        screen.getByRole("navigation", { name: column.title }),
+      );
 
-  it("should render all footer columns", () => {
-    render(<Footer />);
+      expect(
+        screen.getByRole("heading", { level: 2, name: column.title }),
+      ).toBeInTheDocument();
 
-    FOOTER_COLUMNS.forEach((column) => {
-      expect(screen.getByText(column.title)).toBeInTheDocument();
-    });
-  });
-
-  it("should render all footer links", () => {
-    render(<Footer />);
-
-    FOOTER_COLUMNS.forEach((column) => {
-      column.links.forEach((link) => {
-        expect(screen.getByRole("link", { name: link.label })).toHaveAttribute(
-          "href",
-          link.href,
-        );
+      links.forEach(({ id: linkId, href }) => {
+        expect(
+          nav.getByRole("link", {
+            name: column.links[linkId as keyof typeof column.links],
+          }),
+        ).toHaveAttribute("href", href);
       });
     });
   });
 
-  it("should render the watermark", () => {
-    render(<Footer />);
+  it("should render the copyright and closing line", () => {
+    renderWithIntl(<Footer />);
 
     expect(
-      screen.getByText(FOOTER_CONFIG.watermark, {
-        selector: "p[aria-hidden='true']",
-      }),
+      screen.getByText(
+        t.copyright.replace("{year}", String(new Date().getFullYear())),
+      ),
     ).toBeInTheDocument();
+    expect(screen.getByText(t.madeWith)).toBeInTheDocument();
   });
 });

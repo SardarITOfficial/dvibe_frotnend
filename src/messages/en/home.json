@@ -86,6 +86,14 @@
     "eyebrow": "Feel the Vibe",
     "title": "Feel the Rhythm of Mindelo",
     "cta": "Explore All Vibes",
+    "page": {
+      "title": "Events, Music & Nightlife in Mindelo",
+      "description": "From live morna to rooftop parties, see what's happening around the island.",
+      "filtersLabel": "Filter by vibe",
+      "all": "All",
+      "eventsTitle": "What's On",
+      "empty": "Nothing planned in this category yet. Check back soon."
+    },
     "items": {
       "live-music": {
         "title": "Live Music",
@@ -121,19 +129,55 @@
     }
   },
   "Transport": {
-  "eyebrow": "Transport & Mobility",
-  "title": "Getting Around Mindelo Made Easy",
-  "items": {
-    "taxi": {
-      "title": "Taxi & Transfers",
-      "description": "Connect with local drivers and arrange your ride directly.",
-      "cta": "Find a Taxi"
-    },
-    "car-rental": {
-      "title": "Car Rental",
-      "description": "Discover car rental options and explore São Vicente at your own pace.",
-      "cta": "Explore Cars"
+    "eyebrow": "Transport & Mobility",
+    "title": "Getting Around Mindelo Made Easy",
+    "items": {
+      "taxi": {
+        "title": "Taxi & Transfers",
+        "description": "Connect with local drivers and arrange your ride directly.",
+        "cta": "Find a Taxi"
+      },
+      "car-rental": {
+        "title": "Car Rental",
+        "description": "Discover car rental options and explore São Vicente at your own pace.",
+        "cta": "Explore Cars"
+      }
     }
+  },
+  "Ferry": {
+    "eyebrow": "The Ferry Experience",
+    "title": "Your Ferry Journey with DVIBE",
+    "before": {
+      "title": "Before Ferry",
+      "description": "Food, coffee and transport before your departure.",
+      "cta": "Find Food Nearby",
+      "items": {
+        "restaurants": "Restaurants",
+        "coffee-snacks": "Coffee & Snacks",
+        "taxi-to-port": "Taxi to Port"
+      }
+    },
+    "schedules": {
+      "title": "Ferry Schedules",
+      "description": "Live and updated ferry times for São Vicente.",
+      "cta": "View Full Schedule",
+      "departure": "Departure"
+    },
+    "after": {
+      "title": "After Ferry",
+      "description": "Discover restaurants, transport & island experiences.",
+      "cta": "Explore After Arrival",
+      "items": {
+        "restaurants": "Restaurants",
+        "transport-car-rental": "Transport & Car Rental",
+        "local-experiences": "Local Experiences"
+      }
+    }
+  },
+  "Cta": {
+    "title": "Make Every Moment in Mindelo Count",
+    "description": "Discover the flavours, music, people and places that make Cape Verde unforgettable.",
+    "primaryCta": "Explore Mindelo",
+    "secondaryCta": "Discover the Vibe"
   }
-}
 }

@@ -1,6 +1,8 @@
 :root {
   --background: #ffffff;
-  --section_background: #f4fbfe --foreground: #007090;
+  --section_background: #f4fbfe;
+  --foreground: #007090;
+  --background_deep: #001D25;
   --accent: #007090;
   --accent-deep: #005770;
   --accent-soft: #e9f6ff;

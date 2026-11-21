@@ -20,7 +20,7 @@ export default function VibeSection() {
   return (
     <section
       aria-labelledby="vibe-heading"
-      className="bg-navy py-12 font-hero lg:py-15"
+      className="bg-background_deep py-12 font-hero lg:py-15"
     >
       <div className="container mx-auto flex flex-col gap-8 px-4 lg:gap-12">
         <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-end sm:justify-between">
@@ -50,7 +50,7 @@ export default function VibeSection() {
               <li key={id}>
                 <Link
                   href={href}
-                  className="group relative block aspect-[2/1] overflow-hidden rounded-xl border border-background/10"
+                  className="group relative block aspect-2/1 overflow-hidden rounded-xl border border-background/10"
                 >
                   <Image
                     src={image}

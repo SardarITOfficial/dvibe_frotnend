@@ -1,38 +1,41 @@
-
-export const FOOTER_CONFIG = {
-  brand: {
-    name: "My App",
-    tagline: "A modern application built for everyone.",
-  },
-  watermark: "My App",
+export type FooterLink = {
+  id: string;
+  href: string;
 };
 
-export const FOOTER_COLUMNS = [
+export type FooterColumn = {
+  id: string;
+  links: FooterLink[];
+};
+
+export const FOOTER_CONFIG = {
+  logo: "/logo_light.png",
+};
+
+export const FOOTER_COLUMNS: FooterColumn[] = [
   {
-    title: "Product",
+    id: "explore",
     links: [
-      { label: "Features", href: "/features" },
-      { label: "Pricing", href: "/pricing" },
-      { label: "Security", href: "/security" },
-      { label: "Changelog", href: "/changelog" },
+      { id: "restaurants", href: "/restaurants" },
+      { id: "flavours", href: "/foods" },
+      { id: "vibe", href: "/vibe" },
+      { id: "mindelo", href: "/explore" },
     ],
   },
   {
-    title: "Company",
+    id: "partners",
     links: [
-      { label: "About", href: "/about" },
-      { label: "Careers", href: "/careers" },
-      { label: "Blog", href: "/blog" },
-      { label: "Contact", href: "/contact" },
+      { id: "partner-portal", href: "/partners" },
+      { id: "register-place", href: "/partners/register" },
     ],
   },
   {
-    title: "Resources",
+    id: "support",
     links: [
-      { label: "Help Center", href: "/help" },
-      { label: "API Docs", href: "/docs" },
-      { label: "Status", href: "/status" },
-      { label: "Community", href: "/community" },
+      { id: "help-center", href: "/help" },
+      { id: "privacy-policy", href: "/privacy" },
+      { id: "terms", href: "/terms" },
+      { id: "contact", href: "/contact" },
     ],
   },
 ];

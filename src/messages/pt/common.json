@@ -21,5 +21,38 @@
     "title": "DVIBE | Coma, Explore e Sinta a Vibração em Cabo Verde",
     "description": "Descubra restaurantes, eventos, vida noturna, locais de pôr do sol, táxis e aluguer de carros em Mindelo, São Vicente e por todo Cabo Verde.",
     "ogImageAlt": "DVIBE – Mindelo, São Vicente, Cabo Verde"
+  },
+  "Footer": {
+  "logoAlt": "DVIBE",
+  "tagline": "Descubra sabores autênticos, cultura vibrante e experiências inesquecíveis em Cabo Verde.",
+  "copyright": "© {year} DVIBE · Mindelo, Kabu Verdi",
+  "madeWith": "Feito com amor no Mindelo, Cabo Verde",
+  "columns": {
+    "explore": {
+      "title": "Explorar",
+      "links": {
+        "restaurants": "Restaurantes",
+        "flavours": "Sabores",
+        "vibe": "Ambiente",
+        "mindelo": "Mindelo"
+      }
+    },
+    "partners": {
+      "title": "Para Parceiros",
+      "links": {
+        "partner-portal": "Portal de Parceiros",
+        "register-place": "Registar um Local"
+      }
+    },
+    "support": {
+      "title": "Suporte",
+      "links": {
+        "help-center": "Centro de Ajuda",
+        "privacy-policy": "Política de Privacidade",
+        "terms": "Termos e Condições",
+        "contact": "Contacte-nos"
+      }
+    }
   }
+}
 }

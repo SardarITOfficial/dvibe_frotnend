@@ -119,5 +119,41 @@
         "description": "Explore a ilha"
       }
     }
+  },
+  "Ferry": {
+    "eyebrow": "A Experiência de Ferry",
+    "title": "A Sua Viagem de Ferry com a DVIBE",
+    "before": {
+      "title": "Antes do Ferry",
+      "description": "Comida, café e transporte antes da sua partida.",
+      "cta": "Encontrar Comida Perto",
+      "items": {
+        "restaurants": "Restaurantes",
+        "coffee-snacks": "Café e Snacks",
+        "taxi-to-port": "Táxi para o Porto"
+      }
+    },
+    "schedules": {
+      "title": "Horários do Ferry",
+      "description": "Horários do ferry atualizados para São Vicente.",
+      "cta": "Ver Horário Completo",
+      "departure": "Partida"
+    },
+    "after": {
+      "title": "Depois do Ferry",
+      "description": "Descubra restaurantes, transporte e experiências na ilha.",
+      "cta": "Explorar Após a Chegada",
+      "items": {
+        "restaurants": "Restaurantes",
+        "transport-car-rental": "Transporte e Aluguer de Carros",
+        "local-experiences": "Experiências Locais"
+      }
+    }
+  },
+  "Cta": {
+    "title": "Faça Cada Momento no Mindelo Valer a Pena",
+    "description": "Descubra os sabores, a música, as pessoas e os lugares que tornam Cabo Verde inesquecível.",
+    "primaryCta": "Explorar o Mindelo",
+    "secondaryCta": "Descobrir o Ambiente"
   }
 }

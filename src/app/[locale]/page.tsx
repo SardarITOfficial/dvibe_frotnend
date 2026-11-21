@@ -9,6 +9,8 @@ import RestaurantsSection from "@/components/sections/RestaurantsSection";
 import VibeSection from "@/components/sections/VibeSection";
 import IslandSection from "@/components/sections/IslandSection";
 import TransportSection from "@/components/sections/TransportSection";
+import FerrySection from "@/components/sections/FerrySection";
+import CtaSection from "@/components/sections/CtaSection";
 type HomeProps = Readonly<{ params: Promise<{ locale: string }> }>;
 
 export async function generateMetadata({
@@ -32,6 +34,8 @@ export default async function Home({ params }: HomeProps) {
   <VibeSection />
   <IslandSection />
   <TransportSection />
+  <FerrySection />
+  <CtaSection />
 </main>
   );
 }

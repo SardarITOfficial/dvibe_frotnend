@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useFormatter, useTranslations } from "next-intl";
-import { FiArrowLeft, FiCalendar, FiMapPin } from "react-icons/fi";
+import { FiArrowLeft, FiCalendar, FiMapPin , FiClock} from "react-icons/fi";
 
 import { Link } from "@/lib/i18n/navigation";
 import type { VibeEvent } from "@/mocks/vibeEvents";
@@ -10,7 +10,7 @@ type VibeDetailsProps = {
 };
 
 export default function VibeDetails({
-  event: { category, title, description, date, location, image },
+  event: { category, title, description, date, location, image , time  },
 }: VibeDetailsProps) {
   const t = useTranslations("Vibe");
   const format = useFormatter();
@@ -61,7 +61,6 @@ export default function VibeDetails({
             </h2>
             <p className="text-base leading-7 text-charcoal">{description}</p>
           </div>
-
           <dl className="flex flex-col gap-5 rounded-xl bg-background p-5 shadow-md">
             <div className="flex items-start gap-3">
               <FiMapPin
@@ -90,6 +89,21 @@ export default function VibeDetails({
                 </dt>
                 <dd className="text-base font-semibold text-charcoal">
                   {format.dateTime(parseVibeDate(date), VIBE_DATE_FORMAT)}
+                </dd>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 border-t border-border pt-5">
+              <FiClock
+                size={18}
+                aria-hidden
+                className="mt-0.5 shrink-0 text-sun"
+              />
+              <div className="flex flex-col gap-0.5">
+                <dt className="text-xs font-medium text-muted">
+                  {t("details.time")}
+                </dt>
+                <dd className="text-base font-semibold text-charcoal">
+                  {time}
                 </dd>
               </div>
             </div>

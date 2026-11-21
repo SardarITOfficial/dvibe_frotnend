@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it } from "vitest";
 
 import { createOrder, getOrderByToken, OrderError } from "@/lib/api/orders";
-
+import { RESTAURANT_MENUS } from "@/mocks/restaurantMenus";
 const baseInput = {
   restaurantId: "pizzar",
   customerName: " Ana ",
@@ -18,9 +18,9 @@ describe("orders service", () => {
 
   it("creates a pending order with a server-side total", async () => {
     const order = await createOrder(baseInput);
-
+    const margherita = RESTAURANT_MENUS[0].categories[0].items[0];
     expect(order.status).toBe("pending");
-    expect(order.total).toBe(1800);
+    expect(order.total).toBe(margherita.price * 2);
     expect(order.customerName).toBe("Ana");
     expect(order.lines[0].name).toBe("Margherita");
   });

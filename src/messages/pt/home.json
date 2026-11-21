@@ -5,7 +5,7 @@
     "heading": "A sua porta de entrada para a experiência de Mindelo.",
     "description": {
       "highlight": "Coma, explore e sinta a vibração.",
-      "text": "Descubra sabores locais autênticos, música vibrante, ruas coloridas e vistas deslumbrantes do oceano. Mergulhe na rica cultura de Mindelo, na sua atmosfera animada e em experiências inesquecíveis."
+      "text": "Sabores locais, música ao vivo e vistas para o mar, tudo num só lugar."
     },
     "search": {
       "locationLabel": "Escolha a sua localização",
@@ -76,10 +76,76 @@
     "days": "Seg-Dom",
     "viewMenu": "Ver Menu",
     "viewMenuLabel": "Ver Menu – {name}",
+    "listing": {
+      "eyebrow": "Saboreie Mindelo",
+      "title": "Restaurantes em Mindelo",
+      "description": "Explore restaurantes locais, veja os menus e faça o pedido para takeaway diretamente no WhatsApp.",
+      "searchLabel": "Pesquisar restaurantes ou pratos",
+      "searchPlaceholder": "Pesquisar restaurantes ou pratos...",
+      "areaLabel": "Escolha uma zona",
+      "allAreas": "Todas as zonas",
+      "submit": "Pesquisar",
+      "cuisinesLabel": "Filtrar por cozinha",
+      "allCuisines": "Todas",
+      "featured": "Restaurantes em destaque",
+      "popular": "Restaurantes populares",
+      "all": "Todos os restaurantes",
+      "results": "{count, plural, one {# restaurante encontrado} other {# restaurantes encontrados}}",
+      "empty": "Nenhum restaurante corresponde à sua pesquisa. Tente outra zona, cozinha ou palavra-chave.",
+      "clear": "Limpar filtros",
+      "pagination": {
+        "navigation": "Paginação de restaurantes",
+        "previous": "Página anterior",
+        "next": "Página seguinte",
+        "page": "Página {page}"
+      }
+    },
+    "cuisines": {
+      "cape-verdean": "Cabo-verdiana",
+      "pizza": "Pizza",
+      "breakfast": "Pequeno-almoço"
+    },
+    "descriptions": {
+      "pizzar": "Pizzas artesanais feitas com ingredientes frescos, abertas até tarde para jantar e para matar a fome da noite.",
+      "monte-cara": "Uma pizzaria descontraída com pizzas e pratos tradicionais cabo-verdianos, ideal para refeições em família e em grupo.",
+      "casa-tchicau": "Um espaço acolhedor para o pequeno-almoço cabo-verdiano tradicional, do cuscuz quentinho aos pastéis acabados de fritar."
+    },
     "items": {
       "pizzar": "Pizzas artesanais",
       "monte-cara": "Pratos locais",
       "casa-tchicau": "Cabo-verdiano · Tradicional"
+    },
+    "RestaurantProfile": {
+      "menuTitle": "Menu",
+      "categoriesLabel": "Categorias do menu",
+      "emptyMenu": "Este menu ainda não está disponível.",
+      "price": "{amount} CVE",
+      "rating": "{rating} · {count, plural, one {# avaliação} other {# avaliações}}",
+      "status": {
+        "open": "Aberto agora",
+        "closed": "Fechado"
+      },
+      "services": {
+        "takeaway": "Takeaway",
+        "reservation": "Reserva de mesa"
+      },
+      "reserve": {
+        "cta": "Reservar mesa",
+        "label": "Reservar mesa em {restaurant} no WhatsApp",
+        "message": "Olá {restaurant}! Gostaria de reservar uma mesa. Data: … Hora: … Número de pessoas: …"
+      },
+      "cart": {
+        "add": "Adicionar ao carrinho",
+        "unavailable": "Indisponível",
+        "addLabel": "Adicionar {dish} ao carrinho",
+        "increaseLabel": "Aumentar a quantidade de {dish}",
+        "decreaseLabel": "Diminuir a quantidade de {dish}",
+        "summaryLabel": "Resumo do carrinho",
+        "items": "{count, plural, one {# item} other {# itens}}",
+        "viewCart": "Ver carrinho",
+        "otherRestaurant": "O seu carrinho tem itens de outro restaurante. Limpe-o para pedir aqui.",
+        "clearAndStart": "Limpar carrinho"
+      }
     }
   },
   "Vibe": {
@@ -106,9 +172,35 @@
     "details": {
       "back": "Voltar a todas as vibes",
       "about": "Sobre este evento",
+      "whatToExpect": "O que esperar",
       "location": "Local",
       "date": "Data",
-      "time": "Hora"
+      "time": "Hora",
+      "share": {
+        "label": "Partilhar",
+        "copied": "Ligação copiada"
+      },
+      "countdown": {
+        "label": "O evento começa em",
+        "days": "Dias",
+        "hours": "Horas",
+        "minutes": "Min",
+        "seconds": "Seg"
+      },
+      "venue": {
+        "title": "Local do evento",
+        "openMap": "Abrir no Google Maps"
+      },
+      "policy": {
+        "title": "Política do evento"
+      },
+      "booking": {
+        "title": "Bilhetes e reservas",
+        "description": "Contacte diretamente o organizador pelo WhatsApp para reservar.",
+        "ticketsLabel": "Tipos de bilhete",
+        "cta": "Reservar no WhatsApp",
+        "message": "Olá! Gostaria de reservar para {title} no dia {date} às {time}."
+      }
     },
     "items": {
       "live-music": {

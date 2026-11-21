@@ -1,0 +1,34 @@
+{
+  "RestaurantProfile": {
+    "rating": "{rating} ({count, plural, one {# review} other {# reviews}})",
+    "status": {
+      "open": "Open now",
+      "closed": "Closed"
+    },
+    "reserve": {
+      "cta": "Reserve a table",
+      "label": "Reserve a table at {restaurant} on WhatsApp",
+      "message": "Hello, I would like to reserve a table at {restaurant}."
+    },
+    "services": {
+      "takeaway": "Takeaway",
+      "reservation": "Table reservation"
+    },
+    "menuTitle": "Menu",
+    "emptyMenu": "The menu is not available yet.",
+    "categoriesLabel": "Menu categories",
+    "price": "{amount} CVE",
+    "cart": {
+      "add": "Add to cart",
+      "unavailable": "Unavailable",
+      "addLabel": "Add {dish} to cart",
+      "increaseLabel": "Increase quantity of {dish}",
+      "decreaseLabel": "Decrease quantity of {dish}",
+      "summaryLabel": "Cart summary",
+      "items": "{count, plural, one {# item} other {# items}}",
+      "viewCart": "View cart",
+      "otherRestaurant": "Your cart has items from another restaurant. Clear it to order from here.",
+      "clearAndStart": "Clear cart"
+    }
+  }
+}

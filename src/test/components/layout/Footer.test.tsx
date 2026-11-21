@@ -1,8 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { screen, within } from "@testing-library/react";
-
 import Footer from "@/components/layout/Footer";
-import { FOOTER_COLUMNS } from "@/mocks/footer";
+import { FOOTER_COLUMNS, SOCIAL_LINKS } from "@/mocks/footer";
 import { messages, renderWithIntl } from "@/test/utils/renderWithIntl";
 
 const t = messages.Footer;
@@ -47,5 +46,21 @@ describe("Footer", () => {
       ),
     ).toBeInTheDocument();
     expect(screen.getByText(t.madeWith)).toBeInTheDocument();
+  });
+  it("should render the social media links", () => {
+    renderWithIntl(<Footer />);
+
+    expect(
+      screen.getByRole("heading", { level: 2, name: t.social.title }),
+    ).toBeInTheDocument();
+    SOCIAL_LINKS.forEach(({ id, href }) => {
+      const link = screen.getByRole("link", {
+        name: t.social.links[id as keyof typeof t.social.links],
+      });
+
+      expect(link).toHaveAttribute("href", href);
+      expect(link).toHaveAttribute("target", "_blank");
+      expect(link).toHaveAttribute("rel", "noopener noreferrer");
+    });
   });
 });

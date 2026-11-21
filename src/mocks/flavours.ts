@@ -4,7 +4,7 @@ export type FlavourItem = {
 };
 
 export const FLAVOURS_CONFIG = {
-  href: "/foods",
+  href: "/restaurants",
   flavours: [
     { id: "cachupa", image: "/image/flavours/cachupa.jpg" },
     { id: "friedMoray", image: "/image/flavours/fried-moray.jpg" },

@@ -4,8 +4,10 @@ import { VIBE_EVENTS } from "@/mocks/vibeEvents";
 import {
   buildVibeHref,
   filterVibeEvents,
+  getVibeCountdown,
   getVibeDateRange,
   getVibeEventById,
+  getVibeEventStart,
   getVibeToday,
   parseVibeFilter,
   parseVibeTimeFilter,
@@ -163,6 +165,22 @@ describe("filterVibeEvents", () => {
 
     expect(getIds(result)).toEqual(["dj-night"]);
   });
+  it("should include multi-day events that are still running", () => {
+    const festival = {
+      ...VIBE_EVENTS[0],
+      id: "festival",
+      date: "2026-11-19",
+      endDate: "2026-11-23",
+    };
+
+    const result = filterVibeEvents([festival], {
+      category: "all",
+      time: "today",
+      today: SATURDAY,
+    });
+
+    expect(getIds(result)).toEqual(["festival"]);
+  });
 });
 
 describe("buildVibeHref", () => {
@@ -190,5 +208,33 @@ describe("getVibeEventById", () => {
 
   it("should return undefined for an unknown id", () => {
     expect(getVibeEventById(VIBE_EVENTS, "missing")).toBeUndefined();
+  });
+});
+
+describe("getVibeEventStart", () => {
+  it("should convert the Cape Verde start time to a timestamp", () => {
+    expect(getVibeEventStart("2026-11-21", "21:00")).toBe(
+      Date.UTC(2026, 10, 21, 22, 0, 0),
+    );
+  });
+});
+
+describe("getVibeCountdown", () => {
+  const start = getVibeEventStart("2026-11-21", "21:00");
+
+  it("should split the remaining time into units", () => {
+    const now = start - ((86400 + 2 * 3600 + 3 * 60 + 4) * 1000);
+
+    expect(getVibeCountdown(start, now)).toEqual({
+      days: 1,
+      hours: 2,
+      minutes: 3,
+      seconds: 4,
+    });
+  });
+
+  it("should return null once the event has started", () => {
+    expect(getVibeCountdown(start, start)).toBeNull();
+    expect(getVibeCountdown(start, start + 1000)).toBeNull();
   });
 });

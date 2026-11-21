@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { screen } from "@testing-library/react";
-
+import { FEATURES } from "@/constants/features";
 import TransportSection from "@/components/sections/TransportSection";
 import { TRANSPORT_CONFIG } from "@/mocks/transport";
 import { messages, renderWithIntl } from "@/test/utils/renderWithIntl";
@@ -32,5 +32,15 @@ describe("TransportSection", () => {
         screen.getByRole("link", { name: new RegExp(item.title) }),
       ).toHaveAttribute("href", href);
     });
+  });
+  it("should show the car rental card only when the feature is enabled", () => {
+    renderWithIntl(<TransportSection />);
+
+    const heading = screen.queryByRole("heading", {
+      level: 3,
+      name: t.items["car-rental"].title,
+    });
+
+    expect(heading !== null).toBe(FEATURES.carRental);
   });
 });

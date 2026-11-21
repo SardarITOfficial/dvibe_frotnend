@@ -15,7 +15,7 @@ export default function RestaurantCard({
   const t = useTranslations("Restaurants");
 
   return (
-    <article className="overflow-hidden rounded-xl bg-background shadow-md">
+    <article className="relative overflow-hidden rounded-xl bg-background shadow-md transition-shadow hover:shadow-lg has-focus-visible:ring-2 has-focus-visible:ring-accent">
       <div className="relative aspect-video w-full">
         <Image
           src={image}
@@ -52,7 +52,7 @@ export default function RestaurantCard({
           <Link
             href={href}
             aria-label={t("viewMenuLabel", { name })}
-            className="flex shrink-0 items-center gap-1.5 text-sm font-medium text-sun transition-opacity hover:opacity-80"
+            className="flex shrink-0 items-center gap-1.5 text-sm font-medium text-sun transition-opacity after:absolute after:inset-0 hover:opacity-80"
           >
             {t("viewMenu")}
             <FiArrowRight size={14} aria-hidden />

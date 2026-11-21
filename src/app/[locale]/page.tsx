@@ -26,16 +26,17 @@ export default async function Home({ params }: HomeProps) {
   setRequestLocale(locale);
 
   return (
-<main className="min-h-screen">
-  <HeroSection />
-  <CategoriesSection />
-  <FlavoursSection />
-  <RestaurantsSection />
-  <VibeSection />
-  <IslandSection />
-  <TransportSection />
-  <FerrySection />
-  <CtaSection />
-</main>
+    <main className="min-h-screen">
+      <HeroSection />
+      <CategoriesSection />
+      <FlavoursSection />
+      <RestaurantsSection />
+      <FerrySection />
+      <VibeSection />
+      <IslandSection />
+      <TransportSection />
+
+      <CtaSection />
+    </main>
   );
 }

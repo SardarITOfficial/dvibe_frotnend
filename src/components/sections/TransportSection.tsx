@@ -26,7 +26,7 @@ export default function TransportSection() {
           </h2>
         </div>
 
-        <ul className="grid gap-5 lg:grid-cols-2">
+        <ul className={`grid gap-5 lg:grid-cols-2`}>
           {TRANSPORT_CONFIG.services.map(({ id, href, image }) => (
             <li key={id}>
               <Link

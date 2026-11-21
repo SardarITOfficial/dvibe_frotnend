@@ -53,6 +53,13 @@
           "contact": "Contact Us"
         }
       }
+    },
+    "social": {
+      "title": "Find us on social media",
+      "links": {
+        "instagram": "DVIBE on Instagram",
+        "facebook": "DVIBE on Facebook"
+      }
     }
   }
 }

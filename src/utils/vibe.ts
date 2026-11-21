@@ -114,7 +114,7 @@ export function filterVibeEvents(
     .filter(
       (event) =>
         (category === "all" || event.category === category) &&
-        event.date >= from &&
+        (event.endDate ?? event.date) >= from &&
         (to === null || event.date <= to),
     )
     .sort(
@@ -143,4 +143,38 @@ export function getVibeEventById(
   id: string,
 ): VibeEvent | undefined {
   return events.find((event) => event.id === id);
+}
+
+
+const CAPE_VERDE_UTC_OFFSET = "-01:00";
+
+export type VibeCountdown = {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+};
+
+export function getVibeEventStart(date: string, time: string): number {
+  return new Date(`${date}T${time}:00${CAPE_VERDE_UTC_OFFSET}`).getTime();
+}
+
+export function getVibeCountdown(
+  start: number,
+  now: number,
+): VibeCountdown | null {
+  const remaining = start - now;
+
+  if (remaining <= 0) {
+    return null;
+  }
+
+  const totalSeconds = Math.floor(remaining / 1000);
+
+  return {
+    days: Math.floor(totalSeconds / 86400),
+    hours: Math.floor((totalSeconds % 86400) / 3600),
+    minutes: Math.floor((totalSeconds % 3600) / 60),
+    seconds: totalSeconds % 60,
+  };
 }

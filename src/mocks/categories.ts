@@ -6,7 +6,7 @@ export type CategoryItem = {
 
 export const CATEGORIES_CONFIG = {
   categories: [
-    { id: "food", href: "/foods", image: "/image/categories/food.png" },
+    { id: "food", href: "/restaurants", image: "/image/categories/food.png" },
     { id: "vibe", href: "/vibe", image: "/image/categories/vibe.jpg" },
     {
       id: "sunset",

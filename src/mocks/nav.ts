@@ -12,7 +12,7 @@ export const HEADER_CONFIG = {
 export const NAV_LINKS = [
   { key: "explore", path: "/explore" },
   { key: "vibe", path: "/vibe" },
-  { key: "foods", path: "/foods" },
+  { key: "foods", path: "/restaurants" },
   {
     key: "services",
     path: "/services",

@@ -5,7 +5,7 @@
     "heading": "Your Gateway to the Mindelo Experience.",
     "description": {
       "highlight": "Eat, explore & feel the vibe.",
-      "text": "Discover authentic local flavours, vibrant music, colourful streets and breathtaking ocean views. Immerse yourself in Mindelo's rich culture, lively atmosphere and unforgettable experiences."
+      "text": "Local flavours, live music and ocean views, all in one place."
     },
     "search": {
       "locationLabel": "Choose your location",
@@ -76,10 +76,76 @@
     "days": "Mon-Sun",
     "viewMenu": "View Menu",
     "viewMenuLabel": "View Menu – {name}",
+    "listing": {
+      "eyebrow": "Taste Mindelo",
+      "title": "Restaurants in Mindelo",
+      "description": "Browse local restaurants, check their menus and order takeaway directly on WhatsApp.",
+      "searchLabel": "Search restaurants or dishes",
+      "searchPlaceholder": "Search restaurants or dishes...",
+      "areaLabel": "Choose an area",
+      "allAreas": "All areas",
+      "submit": "Search",
+      "cuisinesLabel": "Filter by cuisine",
+      "allCuisines": "All",
+      "featured": "Featured restaurants",
+      "popular": "Popular restaurants",
+      "all": "All restaurants",
+      "results": "{count, plural, one {# restaurant} other {# restaurants}} found",
+      "empty": "No restaurants match your search. Try another area, cuisine or keyword.",
+      "clear": "Clear filters",
+      "pagination": {
+        "navigation": "Restaurants pagination",
+        "previous": "Previous page",
+        "next": "Next page",
+        "page": "Page {page}"
+      }
+    },
+    "cuisines": {
+      "cape-verdean": "Cape Verdean",
+      "pizza": "Pizza",
+      "breakfast": "Breakfast"
+    },
+    "descriptions": {
+      "pizzar": "Artisanal pizzas made with fresh ingredients, open late for dinner and night-time cravings.",
+      "monte-cara": "A relaxed pizzeria serving pizzas and traditional Cape Verdean dishes, ideal for family meals and groups.",
+      "casa-tchicau": "A cosy spot for traditional Cape Verdean breakfast, from warm cuscuz to freshly fried pastéis."
+    },
     "items": {
       "pizzar": "Artisanal pizzas",
       "monte-cara": "Local dishes",
       "casa-tchicau": "Cape Verdean · Traditional"
+    },
+    "RestaurantProfile": {
+      "menuTitle": "Menu",
+      "categoriesLabel": "Menu categories",
+      "emptyMenu": "This menu is not available yet.",
+      "price": "{amount} CVE",
+      "rating": "{rating} · {count, plural, one {# review} other {# reviews}}",
+      "status": {
+        "open": "Open now",
+        "closed": "Closed"
+      },
+      "services": {
+        "takeaway": "Takeaway",
+        "reservation": "Table reservation"
+      },
+      "reserve": {
+        "cta": "Reserve a table",
+        "label": "Reserve a table at {restaurant} on WhatsApp",
+        "message": "Hello {restaurant}! I would like to reserve a table. Date: … Time: … Number of people: …"
+      },
+      "cart": {
+        "add": "Add to cart",
+        "unavailable": "Unavailable",
+        "addLabel": "Add {dish} to cart",
+        "increaseLabel": "Increase quantity of {dish}",
+        "decreaseLabel": "Decrease quantity of {dish}",
+        "summaryLabel": "Cart summary",
+        "items": "{count, plural, one {# item} other {# items}}",
+        "viewCart": "View cart",
+        "otherRestaurant": "Your cart has items from another restaurant. Clear it to order from here.",
+        "clearAndStart": "Clear cart"
+      }
     }
   },
   "Vibe": {
@@ -106,9 +172,35 @@
     "details": {
       "back": "Back to all vibes",
       "about": "About this event",
+      "whatToExpect": "What to expect",
       "location": "Location",
       "date": "Date",
-      "time": "Time"
+      "time": "Time",
+      "share": {
+        "label": "Share",
+        "copied": "Link copied"
+      },
+      "countdown": {
+        "label": "Event starts in",
+        "days": "Days",
+        "hours": "Hours",
+        "minutes": "Min",
+        "seconds": "Sec"
+      },
+      "venue": {
+        "title": "Event venue",
+        "openMap": "Open in Google Maps"
+      },
+      "policy": {
+        "title": "Event policy"
+      },
+      "booking": {
+        "title": "Tickets & booking",
+        "description": "Contact the organiser directly on WhatsApp to reserve.",
+        "ticketsLabel": "Ticket types",
+        "cta": "Book on WhatsApp",
+        "message": "Hello! I would like to book for {title} on {date} at {time}."
+      }
     },
     "items": {
       "live-music": {

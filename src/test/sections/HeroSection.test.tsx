@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { fireEvent, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-
+import { FEATURES } from "@/constants/features";
 import HeroSection from "@/components/sections/HeroSection";
 import { HERO_CONFIG } from "@/mocks/hero";
 import { messages, renderWithIntl } from "@/test/utils/renderWithIntl";
@@ -100,5 +100,14 @@ describe("HeroSection", () => {
     );
 
     expect(screen.queryByRole("alert")).not.toBeInTheDocument();
+  });
+  it("should show the car rental shortcut only when the feature is enabled", () => {
+    renderWithIntl(<HeroSection />);
+
+    const link = screen.queryByRole("link", {
+      name: t.categories["car-rental"],
+    });
+
+    expect(link !== null).toBe(FEATURES.carRental);
   });
 });

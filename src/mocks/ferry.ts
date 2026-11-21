@@ -8,7 +8,7 @@ export type FerryRoute = {
 
 export const FERRY_CONFIG = {
   before: {
-    href: "/foods",
+    href: "/restaurants",
     items: ["restaurants", "coffee-snacks", "taxi-to-port"],
   },
   schedules: {

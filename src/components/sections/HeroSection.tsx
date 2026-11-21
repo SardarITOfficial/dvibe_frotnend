@@ -38,7 +38,7 @@ export default function HeroSection() {
             <div className="flex w-full  flex-col gap-4 lg:gap-6">
               <h1
                 id="hero-heading"
-                className="font-display text-[clamp(2.75rem,6vw,4.9rem)] font-normal italic leading-[1.2] text-background "
+                className="font-display text-[clamp(2rem,4.5vw,3.75rem)] font-normal italic leading-[1.2] text-background"
               >
                 {t("heading")}
               </h1>

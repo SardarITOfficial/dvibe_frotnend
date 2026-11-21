@@ -1,0 +1,2 @@
+export const RESTAURANTS_PER_PAGE = 6;
+export const RESTAURANT_HIGHLIGHTS_LIMIT = 6;

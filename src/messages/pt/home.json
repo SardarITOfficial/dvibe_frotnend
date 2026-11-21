@@ -86,6 +86,30 @@
     "eyebrow": "Sinta o Ambiente",
     "title": "Sinta o Ritmo do Mindelo",
     "cta": "Explorar Todos os Ambientes",
+    "page": {
+      "title": "Eventos, Música e Vida Noturna no Mindelo",
+      "description": "Da morna ao vivo às festas no terraço, veja o que se passa na ilha.",
+      "filtersLabel": "Filtrar por vibe",
+      "all": "Todos",
+      "eventsTitle": "O Que Se Passa",
+      "empty": "Ainda não há nada planeado para esta seleção. Experimente outra data ou categoria.",
+      "time": {
+        "label": "Filtrar por data",
+        "today": "Hoje",
+        "tomorrow": "Amanhã",
+        "weekend": "Fim de semana",
+        "week": "Esta semana",
+        "upcoming": "Próximos",
+        "fromToday": "A partir de hoje"
+      }
+    },
+    "details": {
+      "back": "Voltar a todas as vibes",
+      "about": "Sobre este evento",
+      "location": "Local",
+      "date": "Data",
+      "time": "Hora"
+    },
     "items": {
       "live-music": {
         "title": "Música ao Vivo",

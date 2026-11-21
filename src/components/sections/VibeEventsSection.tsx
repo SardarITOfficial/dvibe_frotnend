@@ -2,16 +2,27 @@ import { useTranslations } from "next-intl";
 
 import VibeEventCard from "@/components/sections/VibeEventCard";
 import VibeFilters from "@/components/sections/VibeFilters";
+import VibeTimeFilters from "@/components/sections/VibeTimeFilters";
 import { VIBE_EVENTS } from "@/mocks/vibeEvents";
-import { filterVibeEvents, type VibeFilter } from "@/utils/vibe";
+import {
+  filterVibeEvents,
+  type VibeFilter,
+  type VibeTimeFilter,
+} from "@/utils/vibe";
 
 type VibeEventsSectionProps = {
-  filter: VibeFilter;
+  category: VibeFilter;
+  time: VibeTimeFilter;
+  today: string;
 };
 
-export default function VibeEventsSection({ filter }: VibeEventsSectionProps) {
+export default function VibeEventsSection({
+  category,
+  time,
+  today,
+}: VibeEventsSectionProps) {
   const t = useTranslations("Vibe");
-  const events = filterVibeEvents(VIBE_EVENTS, filter);
+  const events = filterVibeEvents(VIBE_EVENTS, { category, time, today });
 
   return (
     <section
@@ -26,7 +37,10 @@ export default function VibeEventsSection({ filter }: VibeEventsSectionProps) {
           >
             {t("page.eventsTitle")}
           </h2>
-          <VibeFilters active={filter} />
+          <div className="flex flex-col gap-4">
+            <VibeFilters active={category} time={time} />
+            <VibeTimeFilters active={time} category={category} today={today} />
+          </div>
         </div>
 
         {events.length > 0 ? (

@@ -92,7 +92,16 @@
       "filtersLabel": "Filter by vibe",
       "all": "All",
       "eventsTitle": "What's On",
-      "empty": "Nothing planned in this category yet. Check back soon."
+      "empty": "Nothing planned for this selection yet. Try another date or category.",
+      "time": {
+        "label": "Filter by date",
+        "today": "Today",
+        "tomorrow": "Tomorrow",
+        "weekend": "Weekend",
+        "week": "This week",
+        "upcoming": "Upcoming",
+        "fromToday": "From today"
+      }
     },
     "details": {
       "back": "Back to all vibes",

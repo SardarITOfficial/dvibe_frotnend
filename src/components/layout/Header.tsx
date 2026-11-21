@@ -83,7 +83,7 @@ export default function Header() {
             id="mobile-navigation"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mt-2 rounded-3xl bg-background p-6 lg:hidden"
+            className="mt-2 rounded-3xl bg-background p-6 lg:hidden shadow-md"
           >
             <nav className="flex flex-col gap-4">
               {NAV_LINKS.map((link) => (

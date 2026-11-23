@@ -1,0 +1,41 @@
+{
+  "Cart": {
+    "title": "Your cart",
+    "subtitle": "{count, plural, one {# item} other {# items}} from {restaurant}",
+    "backToMenu": "Back to menu",
+    "loading": "Loading your cart...",
+    "price": "{amount} CVE",
+    "total": "Total",
+    "removeLabel": "Remove {dish} from cart",
+    "decreaseLabel": "Decrease quantity of {dish}",
+    "increaseLabel": "Increase quantity of {dish}",
+    "summary": {
+      "title": "Order summary",
+      "clear": "Clear cart",
+      "items": "Items"
+    },
+    "empty": {
+      "title": "Your cart is empty",
+      "description": "Browse restaurants and add your favourite dishes.",
+      "cta": "Browse restaurants"
+    },
+    "form": {
+      "title": "Pickup details",
+      "nameLabel": "Your name",
+      "phoneLabel": "Phone number",
+      "noteLabel": "Note for the restaurant (optional)",
+      "nameError": "Enter your name.",
+      "phoneError": "Enter a valid phone number.",
+      "noteError": "The note is too long (300 characters maximum).",
+      "submit": "Order on WhatsApp",
+      "direct": "Your order goes directly to {restaurant} on WhatsApp.",
+      "orderError": "We could not place your order. Please try again."
+    },
+    "message": {
+      "header": "Hello! New takeaway order {orderNumber} from {name} ({phone}):",
+      "line": "{quantity} x {name} - {amount} CVE",
+      "total": "Total: {amount} CVE",
+      "note": "Note: {note}"
+    }
+  }
+}

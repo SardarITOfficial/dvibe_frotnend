@@ -1,11 +1,12 @@
 import type { ReactElement } from "react";
 import { render } from "@testing-library/react";
 import { NextIntlClientProvider } from "next-intl";
-
+import cart from "@/messages/en/cart.json";
 import common from "@/messages/en/common.json";
 import home from "@/messages/en/home.json";
+import restaurantProfile from "@/messages/en/restaurantProfile.json";
 
-const messages = { ...common, ...home };
+const messages = { ...common, ...home, ...restaurantProfile, ...cart };
 
 export function renderWithIntl(ui: ReactElement) {
   return render(

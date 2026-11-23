@@ -16,7 +16,7 @@ type FoodCardProps = {
 };
 
 export default function FoodCard({
-  item: { id, name, description, price, image, isAvailable },
+  item: { id, name, price, image, isAvailable },
   restaurantId,
 }: FoodCardProps) {
   const t = useTranslations("RestaurantProfile");
@@ -27,7 +27,7 @@ export default function FoodCard({
   const canAdd = isAvailable && !isOtherRestaurantCart(restaurantId);
 
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-background shadow-sm transition-shadow hover:shadow-md">
+    <article className="group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-background">
       <div className="relative aspect-4/3 w-full overflow-hidden bg-accent-soft">
         {image ? (
           <Image
@@ -50,45 +50,42 @@ export default function FoodCard({
             <FiImage size={40} />
           </div>
         )}
-
-        <span className="absolute right-3 top-3 rounded-full bg-background/95 px-3 py-1 font-hero text-sm font-bold text-accent shadow-sm">
-          {t("price", { amount: format.number(price) })}
-        </span>
       </div>
 
-      <div className="flex flex-1 flex-col justify-between gap-4 p-5">
-        <div className="flex flex-col gap-1.5">
-          <h4 className="font-hero text-lg font-semibold text-charcoal">
-            {name}
-          </h4>
-          <p className="line-clamp-2 text-sm leading-relaxed text-muted">
-            {description}
-          </p>
-        </div>
+      <div className="flex flex-1 flex-col justify-between gap-4 p-4">
+        <h4 className="font-hero text-base font-semibold text-charcoal">
+          {name}
+        </h4>
 
-        {quantity > 0 ? (
-          <QuantityStepper
-            quantity={quantity}
-            max={MAX_LINE_QUANTITY}
-            decreaseLabel={t("cart.decreaseLabel", { dish: name })}
-            increaseLabel={t("cart.increaseLabel", { dish: name })}
-            onChange={(next) => updateQuantity(id, next)}
-            className="self-start"
-          />
-        ) : (
-          <Button
-            variant="accent"
-            size="sm"
-            type="button"
-            disabled={!canAdd}
-            aria-label={t("cart.addLabel", { dish: name })}
-            onClick={() => add(restaurantId, id)}
-            className="w-full"
-          >
-            <FiShoppingCart size={14} aria-hidden />
-            {t(isAvailable ? "cart.add" : "cart.unavailable")}
-          </Button>
-        )}
+        <div className="flex items-center justify-between gap-3">
+          <p className="font-hero text-lg font-bold text-sun">
+            {t("price", { amount: format.number(price) })}
+          </p>
+
+          {quantity > 0 ? (
+            <QuantityStepper
+              quantity={quantity}
+              max={MAX_LINE_QUANTITY}
+              decreaseLabel={t("cart.decreaseLabel", { dish: name })}
+              increaseLabel={t("cart.increaseLabel", { dish: name })}
+              onChange={(next) => updateQuantity(id, next)}
+              className="shrink-0"
+            />
+          ) : (
+            <Button
+              variant="accent"
+              size="sm"
+              type="button"
+              disabled={!canAdd}
+              aria-label={t("cart.addLabel", { dish: name })}
+              onClick={() => add(restaurantId, id)}
+              className="shrink-0"
+            >
+              <FiShoppingCart size={14} aria-hidden />
+              {t(isAvailable ? "cart.add" : "cart.unavailable")}
+            </Button>
+          )}
+        </div>
       </div>
     </article>
   );

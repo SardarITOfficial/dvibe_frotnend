@@ -1,4 +1,4 @@
-import type { RestaurantMenu, MenuCategory } from "@/mocks/restaurantMenus";
+import type { RestaurantMenu } from "@/mocks/restaurantMenus";
 import type { RestaurantItem } from "@/mocks/restaurants";
 import type { RestaurantFilters, RestaurantSearchParams } from "@/types";
 

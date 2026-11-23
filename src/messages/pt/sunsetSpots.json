@@ -1,0 +1,19 @@
+{
+  "SunsetSpots": {
+    "eyebrow": "Hora Dourada",
+    "title": "Miradouros de Pôr do Sol em São Vicente",
+    "description": "Os melhores lugares da ilha para ver o sol a pôr-se sobre o Atlântico.",
+    "listTitle": "Onde Ver o Pôr do Sol",
+    "card": {
+      "takeMeThere": "Leva-me lá",
+      "bestTime": "Melhor às {time}",
+      "opensInNewTab": "abre no Google Maps num novo separador"
+    },
+    "descriptions": {
+      "laginha-beach": "Uma praia ampla de areia com uma baía calma, perfeita para um passeio tranquilo enquanto o céu fica laranja.",
+      "baia-das-gatas": "Uma baía tranquila na costa, ideal para ver o pôr do sol ao som das ondas.",
+      "fortim-del-rei": "Um forte histórico acima do Mindelo com vista aberta sobre a baía e o porto.",
+      "monte-verde": "O ponto mais alto da ilha, com vistas amplas de São Vicente e das ilhas vizinhas."
+    }
+  }
+}

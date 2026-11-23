@@ -1,0 +1,19 @@
+{
+  "SunsetSpots": {
+    "eyebrow": "Golden Hour",
+    "title": "Sunset Spots in São Vicente",
+    "description": "The best places around the island to watch the sun go down over the Atlantic.",
+    "listTitle": "Where to Watch the Sunset",
+    "card": {
+      "takeMeThere": "Take me there",
+      "bestTime": "Best at {time}",
+      "opensInNewTab": "opens in Google Maps in a new tab"
+    },
+    "descriptions": {
+      "laginha-beach": "A wide sandy beach with a calm bay, perfect for a relaxed walk as the sky turns orange.",
+      "baia-das-gatas": "A quiet bay on the coast, ideal for watching the sunset with the sound of the waves.",
+      "fortim-del-rei": "A historic fort above Mindelo with open views over the bay and the harbour.",
+      "monte-verde": "The island's highest point, with sweeping views of São Vicente and the neighbouring islands."
+    }
+  }
+}

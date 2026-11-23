@@ -3,7 +3,13 @@ import { getRequestConfig } from "next-intl/server";
 
 import { routing } from "./routing";
 
-const MESSAGE_FILES = ["common", "home", "restaurantProfile", "cart"] as const;
+const MESSAGE_FILES = [
+  "common",
+  "home",
+  "restaurantProfile",
+  "cart",
+  "sunsetSpots",
+] as const;
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const requested = await requestLocale;

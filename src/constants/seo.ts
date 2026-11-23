@@ -9,4 +9,4 @@ export const OG_IMAGE = {
   height: 630,
 };
 
-export const SITEMAP_PATHS = ["/"];
+export const SITEMAP_PATHS = ["/", "/sunset-spots"];

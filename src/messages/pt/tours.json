@@ -25,6 +25,14 @@
         "description": "Contacte diretamente o operador pelo WhatsApp para reservar o seu lugar.",
         "cta": "Reservar pelo WhatsApp",
         "message": "Olá! Gostaria de reservar o tour {tour}. Data: … Número de pessoas: …"
+      },
+      "gallery": {
+        "title": "Galeria de fotos",
+        "imageAlt": "{tour}, foto {index}",
+        "showLabel": "Mostrar foto {index} de {total}",
+        "previousLabel": "Foto anterior",
+        "nextLabel": "Foto seguinte",
+        "counter": "{current} / {total}"
       }
     },
     "sections": {

@@ -2,16 +2,16 @@ import { useTranslations } from "next-intl";
 import { FiArrowLeft } from "react-icons/fi";
 
 import SectionCard from "@/components/common/SectionCard";
+import TourBooking from "@/components/sections/TourBooking";
+import TourDetailsHero from "@/components/sections/TourDetailsHero";
+import TourExtraDetails from "@/components/sections/TourExtraDetails";
+import TourFactsBar from "@/components/sections/TourFactsBar";
+import TourGallery from "@/components/sections/TourGallery";
+import TourHighlights from "@/components/sections/TourHighlights";
+import TourListSection from "@/components/sections/TourListSection";
+import TourMeetingPoint from "@/components/sections/TourMeetingPoint";
 import { Link } from "@/lib/i18n/navigation";
 import type { Tour } from "@/mocks/tours";
-import TourBooking from "./TourBooking";
-import TourDetailsHero from "./TourDetailsHero";
-import TourExtraDetails from "./TourExtraDetails";
-import TourFactsBar from "./TourFactsBar";
-import TourGallery from "./TourGallery";
-import TourHighlights from "./TourHighlights";
-import TourListSection from "./TourListSection";
-import TourMeetingPoint from "./TourMeetingPoint";
 
 type TourDetailsProps = {
   tour: Tour;
@@ -19,6 +19,7 @@ type TourDetailsProps = {
 
 export default function TourDetails({ tour }: TourDetailsProps) {
   const t = useTranslations("Tours");
+  const { id, gallery, highlights, included, meetingPoint } = tour;
 
   return (
     <>
@@ -34,7 +35,7 @@ export default function TourDetails({ tour }: TourDetailsProps) {
             {t("details.back")}
           </Link>
 
-          <TourGallery tourId={tour.id} images={tour.gallery} />
+          <TourGallery tourId={id} images={gallery} />
 
           <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_380px] lg:items-start">
             <div className="flex flex-col gap-6">
@@ -42,18 +43,18 @@ export default function TourDetails({ tour }: TourDetailsProps) {
 
               <SectionCard title={t("details.about")}>
                 <p className="text-base leading-relaxed text-muted">
-                  {t(`items.${tour.id}.description`)}
+                  {t(`items.${id}.description`)}
                 </p>
               </SectionCard>
 
-              <TourHighlights tourId={tour.id} keys={tour.highlights} />
+              <TourHighlights tourId={id} keys={highlights} />
               <TourListSection
                 group="included"
                 title={t("details.included")}
-                keys={tour.included}
+                keys={included}
               />
               <TourExtraDetails tour={tour} />
-              <TourMeetingPoint meetingPoint={tour.meetingPoint} />
+              <TourMeetingPoint meetingPoint={meetingPoint} />
             </div>
 
             <aside className="lg:sticky lg:top-24">

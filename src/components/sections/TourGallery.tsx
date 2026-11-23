@@ -1,159 +1,107 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
-import { useCallback, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
-import { FiChevronLeft, FiChevronRight, FiGrid, FiX } from "react-icons/fi";
-
-import type { TourGalleryImage } from "@/mocks/tours";
-
-const MAX_PREVIEW_IMAGES = 5;
-const CONTROL_CLASSES =
-  "absolute z-10 flex size-12 items-center justify-center rounded-full border-[0.5px] border-stroke bg-background/10 text-background backdrop-blur-md transition-opacity hover:opacity-80";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 type TourGalleryProps = {
   tourId: string;
-  images?: TourGalleryImage[];
+  images: string[];
 };
 
-function getTileClasses(index: number, count: number) {
-  if (index > 0) return "hidden sm:block";
-
-  return count === 1 ? "sm:col-span-4 sm:row-span-2" : "sm:col-span-2 sm:row-span-2";
-}
+const ARROW_CLASSES =
+  "absolute top-1/2 flex size-11 -translate-y-1/2 cursor-pointer items-center justify-center rounded-full bg-background/90 text-accent shadow-md transition-opacity hover:opacity-80";
 
 export default function TourGallery({ tourId, images }: TourGalleryProps) {
-  const t = useTranslations("Tours");
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const tTour = useTranslations("Tours");
+  const t = useTranslations("Tours.details.gallery");
+  const [activeIndex, setActiveIndex] = useState(0);
 
-  const count = images?.length ?? 0;
-  const isOpen = activeIndex !== null;
+  if (images.length === 0) return null;
 
-  const step = useCallback(
-    (direction: 1 | -1) =>
-      setActiveIndex((current) =>
-        current === null ? current : (current + direction + count) % count,
-      ),
-    [count],
-  );
-
-  useEffect(() => {
-    if (!isOpen) return;
-
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setActiveIndex(null);
-      if (event.key === "ArrowRight") step(1);
-      if (event.key === "ArrowLeft") step(-1);
-    };
-    const previousOverflow = document.body.style.overflow;
-
-    document.body.style.overflow = "hidden";
-    document.addEventListener("keydown", onKeyDown);
-
-    return () => {
-      document.body.style.overflow = previousOverflow;
-      document.removeEventListener("keydown", onKeyDown);
-    };
-  }, [isOpen, step]);
-
-  if (!images?.length) return null;
-
-  const name = t(`items.${tourId}.name`);
-  const getAlt = (index: number) => `${name} ${index + 1}`;
+  const total = images.length;
+  const name = tTour(`items.${tourId}.name`);
+  const showPrevious = () => setActiveIndex((index) => (index - 1 + total) % total);
+  const showNext = () => setActiveIndex((index) => (index + 1) % total);
 
   return (
-    <>
-      <div className="relative">
-        <div className="grid h-64 grid-rows-1 gap-2 overflow-hidden rounded-2xl shadow-md sm:h-96 sm:grid-cols-4 sm:grid-rows-2">
-          {images.slice(0, MAX_PREVIEW_IMAGES).map((image, index) => (
-            <button
-              key={image.src}
-              type="button"
-              onClick={() => setActiveIndex(index)}
-              className={`group relative size-full overflow-hidden ${getTileClasses(index, count)}`}
-            >
-              <Image
-                src={image.src}
-                alt={getAlt(index)}
-                fill
-                sizes="(min-width: 640px) 50vw, 100vw"
-                className="object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-            </button>
-          ))}
-        </div>
+    <section aria-labelledby="tour-gallery-heading">
+      <h2 id="tour-gallery-heading" className="sr-only">
+        {t("title")}
+      </h2>
 
-        {count > 1 && (
-          <button
-            type="button"
-            onClick={() => setActiveIndex(0)}
-            className="absolute bottom-4 right-4 inline-flex items-center gap-2 rounded-full bg-background px-4 py-2 text-sm font-medium text-charcoal shadow-md transition-opacity hover:opacity-80"
-          >
-            <FiGrid size={16} aria-hidden />
-            {t("gallery.viewAll", { count })}
-          </button>
-        )}
-      </div>
-
-      {activeIndex !== null && (
-        <div
-          role="dialog"
-          aria-modal="true"
-          aria-label={name}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-background_deep/95 p-4 sm:p-8"
-        >
-          <button
-            type="button"
-            tabIndex={-1}
+      <div className="grid gap-3 lg:grid-cols-[minmax(0,1fr)_9rem] lg:gap-4">
+        <div className="relative aspect-4/3 w-full overflow-hidden rounded-2xl bg-accent-soft shadow-md sm:aspect-video lg:aspect-auto lg:h-120">
+          <Image
+            src={images[activeIndex]}
+            alt={t("imageAlt", { tour: name, index: activeIndex + 1 })}
+            fill
+            sizes="(min-width: 1280px) 1000px, 100vw"
+            className="object-cover"
+          />
+          <span
             aria-hidden
-            onClick={() => setActiveIndex(null)}
-            className="absolute inset-0 cursor-default"
+            className="absolute inset-x-0 bottom-0 h-1/4 bg-linear-to-t from-background_deep/50 to-transparent"
           />
 
-          <div className="pointer-events-none relative h-full max-h-[80vh] w-full max-w-5xl">
-            <Image
-              src={images[activeIndex].src}
-              alt={getAlt(activeIndex)}
-              fill
-              sizes="100vw"
-              className="object-contain"
-            />
-          </div>
-
-          <button
-            type="button"
-            aria-label={t("gallery.close")}
-            onClick={() => setActiveIndex(null)}
-            className={`${CONTROL_CLASSES} right-4 top-4`}
-          >
-            <FiX size={20} aria-hidden />
-          </button>
-
-          {count > 1 && (
+          {total > 1 && (
             <>
               <button
                 type="button"
-                aria-label={t("gallery.previous")}
-                onClick={() => step(-1)}
-                className={`${CONTROL_CLASSES} left-4 top-1/2 -translate-y-1/2`}
+                aria-label={t("previousLabel")}
+                onClick={showPrevious}
+                className={`${ARROW_CLASSES} left-4`}
               >
                 <FiChevronLeft size={22} aria-hidden />
               </button>
               <button
                 type="button"
-                aria-label={t("gallery.next")}
-                onClick={() => step(1)}
-                className={`${CONTROL_CLASSES} right-4 top-1/2 -translate-y-1/2`}
+                aria-label={t("nextLabel")}
+                onClick={showNext}
+                className={`${ARROW_CLASSES} right-4`}
               >
                 <FiChevronRight size={22} aria-hidden />
               </button>
-              <p className="absolute bottom-4 left-1/2 z-10 -translate-x-1/2 text-sm font-medium text-background">
-                {activeIndex + 1} / {count}
+              <p
+                aria-live="polite"
+                className="absolute bottom-4 left-4 rounded-full bg-background_deep/70 px-3 py-1 text-xs font-medium text-background backdrop-blur-sm"
+              >
+                {t("counter", { current: activeIndex + 1, total })}
               </p>
             </>
           )}
         </div>
-      )}
-    </>
+
+        {total > 1 && (
+          <ul className="flex gap-3 overflow-x-auto pb-1 lg:h-120 lg:flex-col lg:overflow-y-auto lg:overflow-x-hidden lg:pb-0 lg:pr-1">
+            {images.map((src, index) => (
+              <li key={`${src}-${index}`} className="shrink-0 lg:w-full">
+                <button
+                  type="button"
+                  aria-label={t("showLabel", { index: index + 1, total })}
+                  aria-pressed={index === activeIndex}
+                  onClick={() => setActiveIndex(index)}
+                  className={[
+                    "relative block aspect-4/3 w-28 cursor-pointer overflow-hidden rounded-xl border-2 transition-all hover:opacity-90 sm:w-36 lg:w-full",
+                    index === activeIndex
+                      ? "border-accent"
+                      : "border-transparent opacity-70",
+                  ].join(" ")}
+                >
+                  <Image
+                    src={src}
+                    alt=""
+                    fill
+                    sizes="(min-width: 1024px) 144px, 144px"
+                    className="object-cover"
+                  />
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </section>
   );
 }

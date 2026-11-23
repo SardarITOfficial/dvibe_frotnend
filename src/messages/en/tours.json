@@ -25,6 +25,14 @@
         "description": "Contact the operator directly on WhatsApp to reserve your spot.",
         "cta": "Book on WhatsApp",
         "message": "Hello! I would like to book the tour {tour}. Date: … Number of people: …"
+      },
+      "gallery": {
+        "title": "Photo gallery",
+        "imageAlt": "{tour}, photo {index}",
+        "showLabel": "Show photo {index} of {total}",
+        "previousLabel": "Previous photo",
+        "nextLabel": "Next photo",
+        "counter": "{current} / {total}"
       }
     },
     "sections": {
@@ -41,12 +49,7 @@
       "accessible": "Wheelchair accessible",
       "freeCancellation": "Free cancellation up to {hours}h before"
     },
-    "gallery": {
-      "viewAll": "View all {count} photos",
-      "close": "Close gallery",
-      "previous": "Previous photo",
-      "next": "Next photo"
-    },
+
     "rating": {
       "basedOn": "Based on {count} reviews",
       "guide": "Guide",

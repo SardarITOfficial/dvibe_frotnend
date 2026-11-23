@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { screen } from "@testing-library/react";
-
+import userEvent from "@testing-library/user-event";
 import TourDetails from "@/components/sections/TourDetails";
 import { TOURS } from "@/mocks/tours";
 import { messages, renderWithIntl } from "@/test/utils/renderWithIntl";
@@ -89,5 +89,30 @@ describe("TourDetails", () => {
     expect(
       screen.queryByRole("heading", { level: 2, name: t.sections.itinerary }),
     ).not.toBeInTheDocument();
+  });
+  it("should render a gallery thumbnail for every photo", () => {
+    renderWithIntl(<TourDetails tour={tour} />);
+
+    expect(
+      screen.getByRole("heading", { level: 2, name: t.details.gallery.title }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getAllByRole("button", { name: /^Show photo \d+ of \d+$/ }),
+    ).toHaveLength(tour.gallery.length);
+  });
+
+  it("should switch the main photo when a thumbnail is selected", async () => {
+    const user = userEvent.setup();
+
+    renderWithIntl(<TourDetails tour={tour} />);
+
+    const second = screen.getByRole("button", {
+      name: `Show photo 2 of ${tour.gallery.length}`,
+    });
+
+    await user.click(second);
+
+    expect(second).toHaveAttribute("aria-pressed", "true");
+    expect(screen.getByAltText(`${copy.name}, photo 2`)).toBeInTheDocument();
   });
 });

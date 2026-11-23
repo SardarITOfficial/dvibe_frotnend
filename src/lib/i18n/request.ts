@@ -9,10 +9,12 @@ const MESSAGE_FILES = [
   "restaurantProfile",
   "cart",
   "sunsetSpots",
+  "beaches",
   "tours",
   "status",
+  "auth",
+  "taxi",
 ] as const;
-
 export default getRequestConfig(async ({ requestLocale }) => {
   const requested = await requestLocale;
   const locale = hasLocale(routing.locales, requested)
@@ -20,7 +22,9 @@ export default getRequestConfig(async ({ requestLocale }) => {
     : routing.defaultLocale;
 
   const modules = await Promise.all(
-    MESSAGE_FILES.map((file) => import(`../../messages/${locale}/${file}.json`)),
+    MESSAGE_FILES.map(
+      (file) => import(`../../messages/${locale}/${file}.json`),
+    ),
   );
 
   return {

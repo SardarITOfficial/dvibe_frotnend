@@ -1,0 +1,26 @@
+{
+  "Beaches": {
+    "eyebrow": "Sol e Mar",
+    "title": "Praias em São Vicente",
+    "description": "Areia dourada, baías calmas e costas ventosas: encontre a praia ideal para o seu dia na ilha.",
+    "listTitle": "Onde Passar o Dia à Beira-Mar",
+    "card": {
+      "takeMeThere": "Leva-me lá",
+      "opensInNewTab": "abre no Google Maps num novo separador"
+    },
+    "highlights": {
+      "calm-water": "Água calma",
+      "family": "Ideal para famílias",
+      "lively": "Ambiente animado",
+      "windsurf": "Windsurf e kitesurf"
+    },
+    "descriptions": {
+      "laginha-beach": "A praia mais popular do Mindelo, com areia fina, cafés por perto e um ambiente local descontraído.",
+      "praia-grande": "Uma longa faixa de areia perto do centro da cidade, de fácil acesso para um mergulho rápido.",
+      "baia-das-gatas": "Uma baía abrigada com bares de praia e casa do famoso festival de música da ilha.",
+      "salamansa": "Uma costa selvagem e ventosa, de areia negra, com das melhores condições para desportos de vento.",
+      "calhau": "Uma pacata aldeia à beira-mar com uma praia tranquila, longe dos locais mais movimentados.",
+      "sao-pedro": "Uma praia ampla perto do aeroporto, com espaço de sobra e vistas limpas sobre o mar."
+    }
+  }
+}

@@ -8,14 +8,20 @@ import restaurantProfile from "@/messages/en/restaurantProfile.json";
 import sunsetSpots from "@/messages/en/sunsetSpots.json";
 import tours from "@/messages/en/tours.json";
 import status from "@/messages/en/status.json";
+import auth from "@/messages/en/auth.json";
+import taxi from "@/messages/en/taxi.json";
+import beaches from "@/messages/en/beaches.json";
 const messages = {
   ...common,
   ...home,
   ...restaurantProfile,
   ...cart,
   ...sunsetSpots,
+  ...beaches,
   ...tours,
   ...status,
+  ...auth,
+  ...taxi,
 };
 
 export function renderWithIntl(ui: ReactElement) {

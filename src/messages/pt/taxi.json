@@ -1,0 +1,55 @@
+{
+  "Taxi": {
+    "eyebrow": "Táxi e Transferes",
+    "title": "Reserve um Táxi no Mindelo",
+    "description": "Escolha um motorista local, indique os detalhes da viagem e envie o pedido diretamente pelo WhatsApp.",
+    "drivers": {
+      "title": "Táxis perto de si",
+      "description": "Escolha um motorista disponível para iniciar o seu pedido.",
+      "empty": "Não há táxis disponíveis neste momento. Tente novamente mais tarde.",
+      "status": {
+        "available": "Disponível agora",
+        "unavailable": "Indisponível"
+      },
+      "rating": "{rating} · {count, plural, one {# avaliação} other {# avaliações}}",
+      "select": "Reservar agora",
+      "selectLabel": "Reservar agora – {driver}",
+      "eta": "a {minutes} min"
+    },
+    "booking": {
+      "title": "Reservar um táxi com {driver}",
+      "closeLabel": "Fechar formulário de reserva",
+      "tripTitle": "Detalhes da viagem",
+      "contactTitle": "Os seus dados",
+      "fields": {
+        "pickup": "Local de recolha",
+        "dropoff": "Local de destino",
+        "date": "Data",
+        "time": "Hora",
+        "passengers": "Passageiros",
+        "name": "Nome completo",
+        "phone": "Número de telefone",
+        "note": "Nota para o motorista (opcional)"
+      },
+      "errors": {
+        "pickup": "Indique o local de recolha.",
+        "dropoff": "Indique o local de destino.",
+        "date": "Escolha hoje ou uma data futura.",
+        "time": "Escolha a hora de recolha.",
+        "passengers": "Indique um número de passageiros válido.",
+        "name": "Indique o seu nome completo.",
+        "phone": "Indique um número de telefone válido.",
+        "note": "A nota deve ter no máximo 300 caracteres."
+      },
+      "submit": "Pedir no WhatsApp",
+      "direct": "O seu pedido abre no WhatsApp. O motorista confirma a disponibilidade e o preço diretamente."
+    },
+    "message": {
+      "greeting": "Olá {driver}! Gostaria de reservar um táxi.",
+      "customer": "Nome: {name} · Telefone: {phone}",
+      "route": "De: {pickup} · Para: {dropoff}",
+      "schedule": "Data: {date} · Hora: {time} · Passageiros: {passengers}",
+      "note": "Nota: {note}"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "Beaches": {
+    "eyebrow": "Sun & Sea",
+    "title": "Beaches in São Vicente",
+    "description": "Golden sand, calm bays and windy shores: find the right beach for your day on the island.",
+    "listTitle": "Where to Spend the Day by the Sea",
+    "card": {
+      "takeMeThere": "Take me there",
+      "opensInNewTab": "opens in Google Maps in a new tab"
+    },
+    "highlights": {
+      "calm-water": "Calm water",
+      "family": "Family friendly",
+      "lively": "Lively atmosphere",
+      "windsurf": "Windsurf & kitesurf"
+    },
+    "descriptions": {
+      "laginha-beach": "Mindelo's most popular beach, with soft sand, nearby cafés and a relaxed local crowd.",
+      "praia-grande": "A long stretch of sand close to the city centre, easy to reach for a quick swim.",
+      "baia-das-gatas": "A sheltered bay with beach bars and the home of the island's famous music festival.",
+      "salamansa": "A wild, windy shore with black sand and some of the best conditions for wind sports.",
+      "calhau": "A quiet seaside village with a peaceful beach, far from the busier spots.",
+      "sao-pedro": "A wide beach near the airport with space to spread out and clear views over the sea."
+    }
+  }
+}

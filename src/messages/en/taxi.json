@@ -1,0 +1,55 @@
+{
+  "Taxi": {
+    "eyebrow": "Taxi & Transfers",
+    "title": "Book a Taxi in Mindelo",
+    "description": "Choose a local driver, add your trip details and send your request directly on WhatsApp.",
+    "drivers": {
+      "title": "Taxis near you",
+      "description": "Choose an available driver to start your request.",
+      "empty": "No taxis are available right now. Please try again later.",
+      "status": {
+        "available": "Available now",
+        "unavailable": "Unavailable"
+      },
+      "rating": "{rating} · {count, plural, one {# review} other {# reviews}}",
+      "select": "Book now",
+      "selectLabel": "Book now – {driver}",
+      "eta": "{minutes} min away"
+    },
+    "booking": {
+      "title": "Book a taxi with {driver}",
+      "closeLabel": "Close booking form",
+      "tripTitle": "Trip details",
+      "contactTitle": "Your details",
+      "fields": {
+        "pickup": "Pickup location",
+        "dropoff": "Drop-off location",
+        "date": "Date",
+        "time": "Time",
+        "passengers": "Passengers",
+        "name": "Full name",
+        "phone": "Phone number",
+        "note": "Note for the driver (optional)"
+      },
+      "errors": {
+        "pickup": "Enter your pickup location.",
+        "dropoff": "Enter your drop-off location.",
+        "date": "Choose today or a future date.",
+        "time": "Choose a pickup time.",
+        "passengers": "Enter a valid number of passengers.",
+        "name": "Enter your full name.",
+        "phone": "Enter a valid phone number.",
+        "note": "Keep your note under 300 characters."
+      },
+      "submit": "Request on WhatsApp",
+      "direct": "Your request opens in WhatsApp. The driver confirms availability and price directly."
+    },
+    "message": {
+      "greeting": "Hello {driver}! I would like to book a taxi.",
+      "customer": "Name: {name} · Phone: {phone}",
+      "route": "From: {pickup} · To: {dropoff}",
+      "schedule": "Date: {date} · Time: {time} · Passengers: {passengers}",
+      "note": "Note: {note}"
+    }
+  }
+}

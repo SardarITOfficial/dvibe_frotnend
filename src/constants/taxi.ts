@@ -1,0 +1,1 @@
+export const TAXI_MAX_PASSENGERS = 8;

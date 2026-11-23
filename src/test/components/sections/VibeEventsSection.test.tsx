@@ -85,4 +85,21 @@ describe("VibeEventsSection", () => {
       }),
     ).toHaveAttribute("href", "/vibe?category=events&when=tomorrow");
   });
+
+  it("should link every event card to its event page", () => {
+    renderWithIntl(
+      <VibeEventsSection category="all" time="upcoming" today={TODAY} />,
+    );
+
+    const links = screen.getAllByRole("link", {
+      name: new RegExp(`^${t.card.takeMeThere}`),
+    });
+
+    expect(links).toHaveLength(VIBE_EVENTS.length);
+    VIBE_EVENTS.forEach(({ id }) => {
+      expect(
+        links.some((link) => link.getAttribute("href") === `/vibe/${id}`),
+      ).toBe(true);
+    });
+  });
 });

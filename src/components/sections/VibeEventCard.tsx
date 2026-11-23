@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useFormatter, useTranslations } from "next-intl";
-import { FiCalendar, FiMapPin } from "react-icons/fi";
+import { FiArrowRight, FiCalendar, FiMapPin } from "react-icons/fi";
 
 import { Link } from "@/lib/i18n/navigation";
 import type { VibeEvent } from "@/mocks/vibeEvents";
@@ -33,12 +33,7 @@ export default function VibeEventCard({
 
       <div className="flex flex-col gap-4 px-4 pb-4 pt-5">
         <h3 className="font-hero text-base font-semibold text-charcoal">
-          <Link
-            href={`/vibe/${id}`}
-            className="outline-none after:absolute after:inset-0"
-          >
-            {title}
-          </Link>
+          {title}
         </h3>
 
         <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 border-t border-border pt-4 text-sm font-medium">
@@ -52,6 +47,15 @@ export default function VibeEventCard({
             {time}
           </p>
         </div>
+
+        <Link
+          href={`/vibe/${id}`}
+          className="inline-flex w-full items-center justify-center gap-3 rounded-full border-2 border-accent px-6 py-2.5 text-base font-medium text-accent outline-none transition-opacity hover:opacity-80 after:absolute after:inset-0"
+        >
+          <FiArrowRight size={16} aria-hidden className="shrink-0" />
+          {t("card.takeMeThere")}
+          <span className="sr-only">: {title}</span>
+        </Link>
       </div>
     </article>
   );

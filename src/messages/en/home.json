@@ -169,6 +169,9 @@
         "fromToday": "From today"
       }
     },
+    "card": {
+      "takeMeThere": "Take me there"
+    },
     "details": {
       "back": "Back to all vibes",
       "about": "About this event",

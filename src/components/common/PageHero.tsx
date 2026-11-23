@@ -22,7 +22,7 @@ export default function PageHero({
         </p>
         <h1
           id={id}
-          className="font-hero text-4xl font-bold leading-[1.125] text-background lg:text-6xl"
+          className="font-hero text-4xl font-bold leading-[1.125] text-background lg:text-5xl"
         >
           {title}
         </h1>

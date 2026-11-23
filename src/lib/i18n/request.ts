@@ -10,6 +10,7 @@ const MESSAGE_FILES = [
   "cart",
   "sunsetSpots",
   "tours",
+  "status",
 ] as const;
 
 export default getRequestConfig(async ({ requestLocale }) => {

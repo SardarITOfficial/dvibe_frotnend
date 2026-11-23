@@ -7,6 +7,7 @@ import home from "@/messages/en/home.json";
 import restaurantProfile from "@/messages/en/restaurantProfile.json";
 import sunsetSpots from "@/messages/en/sunsetSpots.json";
 import tours from "@/messages/en/tours.json";
+import status from "@/messages/en/status.json";
 const messages = {
   ...common,
   ...home,
@@ -14,6 +15,7 @@ const messages = {
   ...cart,
   ...sunsetSpots,
   ...tours,
+  ...status,
 };
 
 export function renderWithIntl(ui: ReactElement) {

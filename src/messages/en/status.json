@@ -1,0 +1,15 @@
+{
+  "Status": {
+    "home": "Back to homepage",
+    "retry": "Try again",
+    "reference": "Error reference: {id}",
+    "notFound": {
+      "title": "Page not found",
+      "description": "The page you are looking for does not exist or has been moved."
+    },
+    "error": {
+      "title": "Something went wrong",
+      "description": "We could not load this page. Please try again in a moment."
+    }
+  }
+}

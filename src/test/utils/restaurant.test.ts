@@ -93,12 +93,24 @@ describe("restaurant filters", () => {
   });
 
   it("searches by dish name", () => {
-    expect(search({ q: "cachupa" })).toEqual(["monte-cara"]);
+    expect(search({ q: "cachupa" })).toEqual(["monte-cara", "casa-tchicau"]);
+    expect(search({ q: "octopus" })).toEqual(["monte-cara"]);
   });
 
   it("combines filters", () => {
     expect(search({ cuisine: "pizza", q: "cachupa" })).toEqual(["monte-cara"]);
-    expect(search({ cuisine: "breakfast", q: "cachupa" })).toEqual([]);
+    expect(search({ cuisine: "breakfast", q: "cachupa" })).toEqual([
+      "casa-tchicau",
+    ]);
+    expect(search({ cuisine: "breakfast", q: "octopus" })).toEqual([]);
+  });
+
+  it("combines filters", () => {
+    expect(search({ cuisine: "pizza", q: "cachupa" })).toEqual(["monte-cara"]);
+    expect(search({ cuisine: "breakfast", q: "cachupa" })).toEqual([
+      "casa-tchicau",
+    ]);
+    expect(search({ cuisine: "breakfast", q: "octopus" })).toEqual([]);
   });
 
   it("lists unique cuisines", () => {

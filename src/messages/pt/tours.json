@@ -1,0 +1,173 @@
+{
+  "Tours": {
+    "eyebrow": "Explore a Ilha",
+    "title": "Tours e Passeios em São Vicente",
+    "description": "Caminhadas guiadas, excursões de um dia e passeios pela cidade com operadores locais.",
+    "listTitle": "Escolha o Seu Tour",
+    "price": "{amount} CVE",
+    "perPerson": "por pessoa",
+    "duration": "{hours, plural, one {# hora} other {# horas}}",
+    "card": {
+      "viewDetails": "Ver detalhes"
+    },
+    "details": {
+      "back": "Voltar a todos os tours",
+      "about": "Sobre este tour",
+      "highlights": "Destaques",
+      "included": "O que está incluído",
+      "meetingPoint": "Ponto de encontro",
+      "openMap": "Abrir no Google Maps",
+      "location": "Local",
+      "duration": "Duração",
+      "price": "Preço",
+      "booking": {
+        "title": "Reservar este tour",
+        "description": "Contacte diretamente o operador pelo WhatsApp para reservar o seu lugar.",
+        "cta": "Reservar pelo WhatsApp",
+        "message": "Olá! Gostaria de reservar o tour {tour}. Data: … Número de pessoas: …"
+      }
+    },
+    "sections": {
+      "notIncluded": "Não incluído",
+      "bring": "O que levar",
+      "knowBeforeYouGo": "Antes de ir",
+      "itinerary": "Itinerário",
+      "ratings": "Avaliações",
+      "faq": "Perguntas frequentes"
+    },
+    "facts": {
+      "languages": "Idiomas",
+      "pickup": "Recolha incluída",
+      "accessible": "Acessível a cadeira de rodas",
+      "freeCancellation": "Cancelamento gratuito até {hours}h antes"
+    },
+    "gallery": {
+      "viewAll": "Ver todas as {count} fotos",
+      "close": "Fechar galeria",
+      "previous": "Foto anterior",
+      "next": "Foto seguinte"
+    },
+    "rating": {
+      "basedOn": "Com base em {count} avaliações",
+      "guide": "Guia",
+      "transportation": "Transporte",
+      "valueForMoney": "Qualidade/preço"
+    },
+    "included": {
+      "guide": "Guia local",
+      "transport": "Transporte",
+      "water": "Água potável",
+      "lunch": "Almoço",
+      "ferry": "Bilhete de ferry de ida e volta",
+      "briefing": "Breve explicação do tour",
+      "safety": "Instruções de segurança",
+      "gear": "Máscara e colete de snorkeling",
+      "photos": "Fotos e vídeos"
+    },
+    "notIncluded": {
+      "food": "Comida e bebidas",
+      "tips": "Gorjetas"
+    },
+    "bring": {
+      "swimwear": "Fato de banho",
+      "towel": "Toalha",
+      "sunscreen": "Protetor solar amigo dos recifes",
+      "phoneCase": "Capa à prova de água para o telemóvel"
+    },
+    "knowBeforeYouGo": {
+      "comfortableInWater": "Os participantes devem sentir-se à vontade na água",
+      "respectMarineLife": "O respeito pela vida marinha e pelo ambiente é obrigatório",
+      "noTouching": "Não toque nas tartarugas"
+    },
+    "items": {
+      "monte-verde-hike": {
+        "name": "Caminhada ao Nascer do Sol no Monte Verde",
+        "description": "Suba ao ponto mais alto de São Vicente com um guia local e desfrute de vistas amplas sobre a ilha e a costa.",
+        "highlights": {
+          "views": {
+            "title": "Vistas do Cume",
+            "description": "Veja o Mindelo, a baía e as ilhas vizinhas lá do alto."
+          },
+          "guide": {
+            "title": "Guia Local",
+            "description": "Conheça as plantas, a história e as histórias da ilha pelo caminho."
+          }
+        }
+      },
+      "santo-antao-day-trip": {
+        "name": "Excursão a Santo Antão",
+        "description": "Apanhe o ferry para Santo Antão e passe um dia inteiro entre vales verdes, estradas de montanha e comida local.",
+        "highlights": {
+          "ferry": {
+            "title": "Travessia de Ferry",
+            "description": "Uma travessia panorâmica entre as duas ilhas."
+          },
+          "valleys": {
+            "title": "Vales Verdes",
+            "description": "Percorra paisagens de montanha impressionantes e aldeias agrícolas."
+          }
+        }
+      },
+      "mindelo-city-walk": {
+        "name": "Passeio pelo Mindelo",
+        "description": "Um passeio tranquilo pelo centro colonial do Mindelo, os seus mercados, praças e locais ligados à música.",
+        "highlights": {
+          "history": {
+            "title": "Centro Colonial",
+            "description": "Descubra as ruas antigas, o mercado e a zona ribeirinha."
+          },
+          "music": {
+            "title": "Histórias da Música",
+            "description": "Visite lugares ligados à morna e aos músicos famosos da ilha."
+          }
+        }
+      },
+      "sea-turtles-sao-pedro": {
+        "name": "Nadar com Tartarugas Marinhas em São Pedro",
+        "description": "Faça snorkeling com tartarugas marinhas na aldeia piscatória de São Pedro. Uma equipa local dá uma breve explicação e leva-o até águas cristalinas onde as tartarugas nadam livremente, numa experiência segura e respeitadora dos animais.",
+        "highlights": {
+          "snorkel": {
+            "title": "Snorkeling com Tartarugas",
+            "description": "Nade ao lado das tartarugas em águas calmas e cristalinas."
+          },
+          "marineLife": {
+            "title": "Vida Marinha de Perto",
+            "description": "Veja peixes e o fundo do mar no seu ambiente natural."
+          }
+        },
+        "itinerary": {
+          "pickup": {
+            "title": "Recolha no Mindelo",
+            "text": "Encontre o motorista no ponto de recolha combinado."
+          },
+          "snorkel": {
+            "title": "Snorkeling com tartarugas",
+            "text": "Explicação, viagem de barco e snorkeling guiado."
+          },
+          "return": {
+            "title": "Regresso ao Mindelo",
+            "text": "De volta ao seu ponto de recolha."
+          }
+        },
+        "faq": {
+          "swimmer": {
+            "question": "Preciso de ser bom nadador?",
+            "answer": "Não, mas deve sentir-se à vontade na água. Máscaras e coletes são fornecidos."
+          },
+          "children": {
+            "question": "É adequado para crianças?",
+            "answer": "Pergunte ao operador pelo WhatsApp sobre os limites de idade."
+          },
+          "weather": {
+            "question": "E se o tempo estiver mau?",
+            "answer": "O operador entrará em contacto consigo para remarcar."
+          },
+          "videos": {
+            "question": "Recebo fotos ou vídeos?",
+            "answer": "Sim, a equipa tira-os e partilha-os consigo."
+          }
+        }
+      }
+    }
+  }
+}

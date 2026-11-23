@@ -1,0 +1,173 @@
+{
+  "Tours": {
+    "eyebrow": "Explore the Island",
+    "title": "Tours & Walks in São Vicente",
+    "description": "Guided hikes, day trips and city walks with local operators.",
+    "listTitle": "Choose Your Tour",
+    "price": "{amount} CVE",
+    "perPerson": "per person",
+    "duration": "{hours, plural, one {# hour} other {# hours}}",
+    "card": {
+      "viewDetails": "View details"
+    },
+    "details": {
+      "back": "Back to all tours",
+      "about": "About this tour",
+      "highlights": "Highlights",
+      "included": "What's included",
+      "meetingPoint": "Meeting point",
+      "openMap": "Open in Google Maps",
+      "location": "Location",
+      "duration": "Duration",
+      "price": "Price",
+      "booking": {
+        "title": "Book this tour",
+        "description": "Contact the operator directly on WhatsApp to reserve your spot.",
+        "cta": "Book on WhatsApp",
+        "message": "Hello! I would like to book the tour {tour}. Date: … Number of people: …"
+      }
+    },
+    "sections": {
+      "notIncluded": "Not included",
+      "bring": "What to bring",
+      "knowBeforeYouGo": "Know before you go",
+      "itinerary": "Itinerary",
+      "ratings": "Ratings",
+      "faq": "Frequently asked questions"
+    },
+    "facts": {
+      "languages": "Languages",
+      "pickup": "Pickup included",
+      "accessible": "Wheelchair accessible",
+      "freeCancellation": "Free cancellation up to {hours}h before"
+    },
+    "gallery": {
+      "viewAll": "View all {count} photos",
+      "close": "Close gallery",
+      "previous": "Previous photo",
+      "next": "Next photo"
+    },
+    "rating": {
+      "basedOn": "Based on {count} reviews",
+      "guide": "Guide",
+      "transportation": "Transportation",
+      "valueForMoney": "Value for money"
+    },
+    "included": {
+      "guide": "Local guide",
+      "transport": "Transport",
+      "water": "Drinking water",
+      "lunch": "Lunch",
+      "ferry": "Return ferry ticket",
+      "briefing": "Short tour briefing",
+      "safety": "Safety instructions",
+      "gear": "Snorkeling mask and vest",
+      "photos": "Photos and videos"
+    },
+    "notIncluded": {
+      "food": "Food and drinks",
+      "tips": "Tips"
+    },
+    "bring": {
+      "swimwear": "Swimwear",
+      "towel": "Towel",
+      "sunscreen": "Reef-safe sunscreen",
+      "phoneCase": "Waterproof phone case"
+    },
+    "knowBeforeYouGo": {
+      "comfortableInWater": "Participants should be comfortable in the water",
+      "respectMarineLife": "Respect for marine life and the environment is mandatory",
+      "noTouching": "Do not touch the turtles"
+    },
+    "items": {
+      "monte-verde-hike": {
+        "name": "Monte Verde Sunrise Hike",
+        "description": "Climb the highest peak of São Vicente with a local guide and enjoy wide views over the island and the nearby coast.",
+        "highlights": {
+          "views": {
+            "title": "Summit Views",
+            "description": "Look out over Mindelo, the bay and the neighbouring islands."
+          },
+          "guide": {
+            "title": "Local Guide",
+            "description": "Learn about the island's plants, history and stories on the way."
+          }
+        }
+      },
+      "santo-antao-day-trip": {
+        "name": "Santo Antão Day Trip",
+        "description": "Take the ferry to Santo Antão for a full day of green valleys, mountain roads and local food.",
+        "highlights": {
+          "ferry": {
+            "title": "Ferry Crossing",
+            "description": "A scenic crossing between the two islands."
+          },
+          "valleys": {
+            "title": "Green Valleys",
+            "description": "Drive through dramatic mountain landscapes and farming villages."
+          }
+        }
+      },
+      "mindelo-city-walk": {
+        "name": "Mindelo City Walk",
+        "description": "A relaxed walk through the colonial centre of Mindelo, its markets, squares and music landmarks.",
+        "highlights": {
+          "history": {
+            "title": "Colonial Centre",
+            "description": "Discover the old streets, the market and the waterfront."
+          },
+          "music": {
+            "title": "Music Stories",
+            "description": "Visit places linked to morna and the island's famous musicians."
+          }
+        }
+      },
+      "sea-turtles-sao-pedro": {
+        "name": "Swim with Sea Turtles in São Pedro",
+        "description": "Snorkel with sea turtles in the fishing village of São Pedro. A local team gives a short briefing, then takes you to clear water where turtles swim freely, keeping the experience safe and respectful of the animals.",
+        "highlights": {
+          "snorkel": {
+            "title": "Snorkel with Turtles",
+            "description": "Swim alongside turtles in clear, calm water."
+          },
+          "marineLife": {
+            "title": "Marine Life Up Close",
+            "description": "See fish and the seabed in their natural setting."
+          }
+        },
+        "itinerary": {
+          "pickup": {
+            "title": "Pickup in Mindelo",
+            "text": "Meet your driver at the agreed pickup point."
+          },
+          "snorkel": {
+            "title": "Snorkeling with turtles",
+            "text": "Briefing, boat ride and guided snorkeling."
+          },
+          "return": {
+            "title": "Return to Mindelo",
+            "text": "Back at your pickup location."
+          }
+        },
+        "faq": {
+          "swimmer": {
+            "question": "Do I need to be a strong swimmer?",
+            "answer": "No, but you should be comfortable in the water. Masks and vests are provided."
+          },
+          "children": {
+            "question": "Is it suitable for children?",
+            "answer": "Ask the operator on WhatsApp about age limits."
+          },
+          "weather": {
+            "question": "What if the weather is bad?",
+            "answer": "The operator will contact you to reschedule."
+          },
+          "videos": {
+            "question": "Will I get photos or videos?",
+            "answer": "Yes, the team takes them and shares them with you."
+          }
+        }
+      }
+    }
+  }
+}

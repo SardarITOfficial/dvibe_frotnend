@@ -9,6 +9,7 @@ const MESSAGE_FILES = [
   "restaurantProfile",
   "cart",
   "sunsetSpots",
+  "tours",
 ] as const;
 
 export default getRequestConfig(async ({ requestLocale }) => {

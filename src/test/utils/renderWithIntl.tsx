@@ -6,12 +6,14 @@ import common from "@/messages/en/common.json";
 import home from "@/messages/en/home.json";
 import restaurantProfile from "@/messages/en/restaurantProfile.json";
 import sunsetSpots from "@/messages/en/sunsetSpots.json";
+import tours from "@/messages/en/tours.json";
 const messages = {
   ...common,
   ...home,
   ...restaurantProfile,
   ...cart,
   ...sunsetSpots,
+  ...tours,
 };
 
 export function renderWithIntl(ui: ReactElement) {

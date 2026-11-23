@@ -46,7 +46,7 @@ export default function HeroSearchForm() {
         role="search"
         noValidate
         onSubmit={handleSubmit}
-        className="flex w-full flex-col gap-2 rounded-3xl bg-background p-2 sm:flex-row sm:items-center sm:gap-6 sm:rounded-full sm:py-1"
+        className="flex w-full flex-col gap-2 rounded-3xl bg-background p-2 sm:flex-row sm:items-center sm:gap-6 sm:rounded-full sm:py-1 shadow-md"
       >
         <div className="flex min-w-0 flex-col sm:flex-1 sm:flex-row sm:items-center">
           <Select

@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { fireEvent, screen } from "@testing-library/react";
+import { fireEvent, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { FEATURES } from "@/constants/features";
 import HeroSection from "@/components/sections/HeroSection";
@@ -109,5 +109,13 @@ describe("HeroSection", () => {
     });
 
     expect(link !== null).toBe(FEATURES.carRental);
+  });
+  it("should render the search form outside the hero image section", () => {
+    renderWithIntl(<HeroSection />);
+
+    const hero = screen.getByRole("region", { name: t.heading });
+
+    expect(within(hero).queryByRole("search")).not.toBeInTheDocument();
+    expect(screen.getByRole("search")).toBeInTheDocument();
   });
 });

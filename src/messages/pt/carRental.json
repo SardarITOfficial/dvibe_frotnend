@@ -1,0 +1,63 @@
+{
+  "CarRental": {
+    "eyebrow": "Aluguer de Carros",
+    "title": "Alugue um Carro no Mindelo",
+    "description": "Escolha um carro, indique as datas e envie o pedido diretamente ao proprietário pelo WhatsApp.",
+    "cars": {
+      "title": "Carros disponíveis",
+      "description": "Escolha um carro para iniciar o seu pedido de aluguer.",
+      "empty": "Não há carros disponíveis neste momento. Tente novamente mais tarde.",
+      "status": {
+        "available": "Disponível",
+        "unavailable": "Indisponível"
+      },
+      "categories": {
+        "economy": "Económico",
+        "suv": "SUV",
+        "van": "Carrinha"
+      },
+      "transmission": {
+        "manual": "Manual",
+        "automatic": "Automática"
+      },
+      "specs": {
+        "seats": "Lugares",
+        "transmission": "Caixa",
+        "price": "Por dia"
+      },
+      "select": "Pedir este carro",
+      "selectLabel": "Pedir este carro – {car}"
+    },
+    "booking": {
+      "title": "Alugar o {car}",
+      "closeLabel": "Fechar formulário de aluguer",
+      "rentalTitle": "Detalhes do aluguer",
+      "contactTitle": "Os seus dados",
+      "fields": {
+        "pickup": "Local de recolha",
+        "startDate": "Data de início",
+        "endDate": "Data de fim",
+        "name": "Nome completo",
+        "phone": "Número de telefone",
+        "note": "Nota para o proprietário (opcional)"
+      },
+      "errors": {
+        "pickup": "Indique o local de recolha.",
+        "startDate": "Escolha hoje ou uma data futura.",
+        "endDate": "Escolha uma data de fim igual ou posterior à de início.",
+        "name": "Indique o seu nome completo.",
+        "phone": "Indique um número de telefone válido.",
+        "note": "A nota deve ter no máximo 300 caracteres."
+      },
+      "submit": "Pedir no WhatsApp",
+      "direct": "O seu pedido abre no WhatsApp. O proprietário confirma a disponibilidade e o preço diretamente."
+    },
+    "message": {
+      "greeting": "Olá! Gostaria de alugar o {car}.",
+      "customer": "Nome: {name} · Telefone: {phone}",
+      "pickup": "Recolha: {pickup}",
+      "period": "De: {start} · Até: {end}",
+      "note": "Nota: {note}"
+    }
+  }
+}

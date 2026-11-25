@@ -4,6 +4,16 @@ export type TourMeetingPoint = {
   mapUrl: string;
 };
 
+export type TourRatingBreakdown = {
+  guide: number;
+  transportation: number;
+  valueForMoney: number;
+};
+
+export type TourItineraryStop = {
+  id: string;
+};
+
 export type Tour = {
   id: string;
   location: string;
@@ -15,6 +25,18 @@ export type Tour = {
   highlights: string[];
   included: string[];
   meetingPoint: TourMeetingPoint;
+  rating?: number;
+  reviewCount?: number;
+  ratingBreakdown?: TourRatingBreakdown;
+  itinerary?: TourItineraryStop[];
+  notIncluded?: string[];
+  bring?: string[];
+  knowBeforeYouGo?: string[];
+  faq?: string[];
+  languages?: string[];
+  pickupIncluded?: boolean;
+  wheelchairAccessible?: boolean;
+  freeCancellationHours?: number;
 };
 
 export const TOURS: Tour[] = [
@@ -82,6 +104,39 @@ export const TOURS: Tour[] = [
       address: "Praça Nova, Mindelo, São Vicente",
       mapUrl:
         "https://www.google.com/maps/search/?api=1&query=Pra%C3%A7a+Nova+Mindelo",
+    },
+  },
+  {
+    id: "sea-turtles-sao-pedro",
+    location: "São Pedro",
+    durationHours: 3,
+    price: 3500,
+    image: "/image/island/beaches.jpg",
+    gallery: [
+      "/image/island/beaches.jpg",
+      "/image/cta/mindelo-bay.jpg",
+      "/image/categories/tour.jpg",
+    ],
+    whatsapp: "+238 999 10 04",
+    highlights: ["snorkel", "marineLife"],
+    included: ["briefing", "safety", "gear", "photos", "transport"],
+    notIncluded: ["food", "tips"],
+    bring: ["swimwear", "towel", "sunscreen", "phoneCase"],
+    knowBeforeYouGo: [
+      "comfortableInWater",
+      "respectMarineLife",
+      "noTouching",
+    ],
+    itinerary: [{ id: "pickup" }, { id: "snorkel" }, { id: "return" }],
+    faq: ["swimmer", "children", "weather", "videos"],
+    languages: ["en", "pt"],
+    pickupIncluded: true,
+    freeCancellationHours: 24,
+    meetingPoint: {
+      name: "São Pedro Beach",
+      address: "São Pedro, São Vicente",
+      mapUrl:
+        "https://www.google.com/maps/search/?api=1&query=S%C3%A3o+Pedro+S%C3%A3o+Vicente",
     },
   },
 ];

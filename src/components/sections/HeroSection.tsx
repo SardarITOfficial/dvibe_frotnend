@@ -13,6 +13,7 @@ export default function HeroSection() {
   return (
     <>
       <section
+        id="hero"
         aria-labelledby="hero-heading"
         className="relative flex min-h-[70svh] items-center overflow-hidden pb-16 pt-28 font-hero lg:pb-12 lg:pt-44.75"
       >

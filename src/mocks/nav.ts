@@ -1,3 +1,9 @@
+type NavLink = {
+  key: string;
+  path: string;
+  children?: { key: string; path: string }[];
+};
+
 export const HEADER_CONFIG = {
   brand: {
     name: "DVIBE",
@@ -9,18 +15,11 @@ export const HEADER_CONFIG = {
   },
 };
 
-export const NAV_LINKS = [
-  { key: "explore", path: "/explore" },
+export const NAV_LINKS: NavLink[] = [
+  { key: "explore", path: "/#hero" },
   { key: "vibe", path: "/vibe" },
-  { key: "foods", path: "/restaurants" },
-  {
-    key: "services",
-    path: "/services",
-    children: [
-      { key: "webDesign", path: "/services/web-design" },
-      { key: "photography", path: "/services/photography" },
-      { key: "transport", path: "/services/transport" },
-      { key: "events", path: "/services/events" },
-    ],
-  },
+  { key: "restaurants", path: "/restaurants" },
+  { key: "sunsetSpots", path: "/sunset-spots" },
+  { key: "taxi", path: "/taxi" },
+  { key: "carRental", path: "/car-rental" },
 ];

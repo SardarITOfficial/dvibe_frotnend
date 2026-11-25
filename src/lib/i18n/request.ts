@@ -14,6 +14,7 @@ const MESSAGE_FILES = [
   "status",
   "auth",
   "taxi",
+  "carRental",
 ] as const;
 export default getRequestConfig(async ({ requestLocale }) => {
   const requested = await requestLocale;

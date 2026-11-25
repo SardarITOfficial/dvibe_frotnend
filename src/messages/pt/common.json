@@ -3,8 +3,10 @@
     "nav": {
       "explore": "Explorar",
       "vibe": "Vibe",
-      "foods": "Comidas",
-      "services": "Serviços"
+      "restaurants": "Restaurantes",
+      "sunsetSpots": "Pôr do Sol",
+      "taxi": "Táxi",
+      "carRental": "Aluguer de Carros"
     },
     "servicesMenu": {
       "webDesign": "Design Web",

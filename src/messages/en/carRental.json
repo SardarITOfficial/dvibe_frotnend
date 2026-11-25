@@ -1,0 +1,63 @@
+{
+  "CarRental": {
+    "eyebrow": "Car Rental",
+    "title": "Rent a Car in Mindelo",
+    "description": "Choose a car, pick your dates and send your request directly to the owner on WhatsApp.",
+    "cars": {
+      "title": "Available cars",
+      "description": "Choose a car to start your rental request.",
+      "empty": "No cars are available right now. Please try again later.",
+      "status": {
+        "available": "Available",
+        "unavailable": "Unavailable"
+      },
+      "categories": {
+        "economy": "Economy",
+        "suv": "SUV",
+        "van": "Van"
+      },
+      "transmission": {
+        "manual": "Manual",
+        "automatic": "Automatic"
+      },
+      "specs": {
+        "seats": "Seats",
+        "transmission": "Transmission",
+        "price": "Per day"
+      },
+      "select": "Request this car",
+      "selectLabel": "Request this car – {car}"
+    },
+    "booking": {
+      "title": "Rent the {car}",
+      "closeLabel": "Close rental form",
+      "rentalTitle": "Rental details",
+      "contactTitle": "Your details",
+      "fields": {
+        "pickup": "Pickup location",
+        "startDate": "Start date",
+        "endDate": "End date",
+        "name": "Full name",
+        "phone": "Phone number",
+        "note": "Note for the owner (optional)"
+      },
+      "errors": {
+        "pickup": "Enter your pickup location.",
+        "startDate": "Choose today or a future date.",
+        "endDate": "Choose an end date on or after the start date.",
+        "name": "Enter your full name.",
+        "phone": "Enter a valid phone number.",
+        "note": "Keep your note under 300 characters."
+      },
+      "submit": "Request on WhatsApp",
+      "direct": "Your request opens in WhatsApp. The owner confirms availability and price directly."
+    },
+    "message": {
+      "greeting": "Hello! I would like to rent the {car}.",
+      "customer": "Name: {name} · Phone: {phone}",
+      "pickup": "Pickup: {pickup}",
+      "period": "From: {start} · To: {end}",
+      "note": "Note: {note}"
+    }
+  }
+}

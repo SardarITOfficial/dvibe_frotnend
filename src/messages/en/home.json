@@ -108,12 +108,18 @@
     "descriptions": {
       "pizzar": "Artisanal pizzas made with fresh ingredients, open late for dinner and night-time cravings.",
       "monte-cara": "A relaxed pizzeria serving pizzas and traditional Cape Verdean dishes, ideal for family meals and groups.",
-      "casa-tchicau": "A cosy spot for traditional Cape Verdean breakfast, from warm cuscuz to freshly fried pastéis."
+      "casa-tchicau": "A cosy spot for traditional Cape Verdean breakfast, from warm cuscuz to freshly fried pastéis.",
+      "cantinho-do-mar": "Home-style Cape Verdean seafood and daily specials, served in a welcoming setting close to the bay.",
+      "pao-quente": "Fresh bread, pastries and coffee from early morning, perfect for a quick takeaway breakfast.",
+      "forno-da-praca": "Wood-fired pizzas and local favourites in the heart of Mindelo, open from lunch until midnight."
     },
     "items": {
       "pizzar": "Artisanal pizzas",
       "monte-cara": "Local dishes",
-      "casa-tchicau": "Cape Verdean · Traditional"
+      "casa-tchicau": "Cape Verdean · Traditional",
+      "cantinho-do-mar": "Fresh seafood",
+      "pao-quente": "Fresh bread & pastries",
+      "forno-da-praca": "Wood-fired pizzas"
     },
     "RestaurantProfile": {
       "menuTitle": "Menu",

@@ -108,12 +108,18 @@
     "descriptions": {
       "pizzar": "Pizzas artesanais feitas com ingredientes frescos, abertas até tarde para jantar e para matar a fome da noite.",
       "monte-cara": "Uma pizzaria descontraída com pizzas e pratos tradicionais cabo-verdianos, ideal para refeições em família e em grupo.",
-      "casa-tchicau": "Um espaço acolhedor para o pequeno-almoço cabo-verdiano tradicional, do cuscuz quentinho aos pastéis acabados de fritar."
+      "casa-tchicau": "Um espaço acolhedor para o pequeno-almoço cabo-verdiano tradicional, do cuscuz quentinho aos pastéis acabados de fritar.",
+      "cantinho-do-mar": "Peixe e marisco ao estilo caseiro cabo-verdiano e pratos do dia, num espaço acolhedor perto da baía.",
+      "pao-quente": "Pão fresco, pastelaria e café desde cedo, perfeito para um pequeno-almoço rápido para levar.",
+      "forno-da-praca": "Pizzas no forno a lenha e favoritos locais no coração do Mindelo, abertas do almoço até à meia-noite."
     },
     "items": {
       "pizzar": "Pizzas artesanais",
       "monte-cara": "Pratos locais",
-      "casa-tchicau": "Cabo-verdiano · Tradicional"
+      "casa-tchicau": "Cabo-verdiano · Tradicional",
+      "cantinho-do-mar": "Marisco fresco",
+      "pao-quente": "Pão e pastelaria frescos",
+      "forno-da-praca": "Pizzas no forno a lenha"
     },
     "RestaurantProfile": {
       "menuTitle": "Menu",

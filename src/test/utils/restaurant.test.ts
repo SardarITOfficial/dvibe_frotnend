@@ -72,7 +72,10 @@ describe("restaurant filters", () => {
   });
 
   it("filters by cuisine", () => {
-    expect(search({ cuisine: "breakfast" })).toEqual(["casa-tchicau"]);
+    expect(search({ cuisine: "breakfast" })).toEqual([
+      "casa-tchicau",
+      "pao-quente",
+    ]);
   });
 
   it("filters by area", () => {
@@ -125,10 +128,12 @@ describe("restaurant filters", () => {
     expect(getFeaturedRestaurants(restaurants).map((r) => r.id)).toEqual([
       "pizzar",
       "casa-tchicau",
+      "forno-da-praca",
     ]);
     expect(getPopularRestaurants(restaurants).map((r) => r.id)).toEqual([
       "monte-cara",
       "casa-tchicau",
+      "cantinho-do-mar",
     ]);
   });
 });

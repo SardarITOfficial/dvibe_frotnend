@@ -13,7 +13,7 @@ export const SUNSET_SPOTS: SunsetSpot[] = [
     name: "Laginha Beach",
     location: "Laginha",
     bestTime: "18:15",
-    image: "/image/island/sunset-spots.jpg",
+    image: "/image/sunset/sunset-spots_Laginha_Beach.avif",
     mapUrl:
       "https://www.google.com/maps/search/?api=1&query=Praia+da+Laginha+Mindelo",
   },
@@ -22,7 +22,7 @@ export const SUNSET_SPOTS: SunsetSpot[] = [
     name: "Baía das Gatas",
     location: "Baía das Gatas",
     bestTime: "18:20",
-    image: "/image/categories/sunset.jpg",
+    image: "/image/sunset/sunset-spots_Baía_das_Gatas.jpeg",
     mapUrl:
       "https://www.google.com/maps/search/?api=1&query=Ba%C3%ADa+das+Gatas+S%C3%A3o+Vicente",
   },
@@ -31,7 +31,7 @@ export const SUNSET_SPOTS: SunsetSpot[] = [
     name: "Fortim d'El Rei",
     location: "Mindelo",
     bestTime: "18:10",
-    image: "/image/island/sunset-spots.jpg",
+    image: "/image/sunset/sunset_Fortim_d'El_Rei.jpeg",
     mapUrl:
       "https://www.google.com/maps/search/?api=1&query=Fortim+d%27El+Rei+Mindelo",
   },
@@ -40,7 +40,7 @@ export const SUNSET_SPOTS: SunsetSpot[] = [
     name: "Monte Verde",
     location: "Monte Verde",
     bestTime: "18:25",
-    image: "/image/categories/sunset.jpg",
+    image: "/image/sunset/sunset-spot_Monte_Verde.avif",
     mapUrl:
       "https://www.google.com/maps/search/?api=1&query=Monte+Verde+S%C3%A3o+Vicente",
   },

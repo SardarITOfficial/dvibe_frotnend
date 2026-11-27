@@ -1,0 +1,67 @@
+{
+  "Header": {
+    "nav": {
+      "explore": "Explorar",
+      "vibe": "Vibe",
+      "restaurants": "Restaurantes",
+      "sunsetSpots": "Puestas de sol",
+      "taxi": "Taxi",
+      "carRental": "Alquiler de coches"
+    },
+    "servicesMenu": {
+      "webDesign": "Diseño web",
+      "photography": "Fotografía",
+      "transport": "Transporte",
+      "events": "Eventos"
+    },
+    "cta": "Iniciar sesión",
+    "languageLabel": "Seleccionar idioma",
+    "openMenu": "Abrir menú de navegación",
+    "closeMenu": "Cerrar menú de navegación"
+  },
+  "Metadata": {
+    "title": "DVIBE | Come, explora y siente el vibe en Cabo Verde",
+    "description": "Descubre restaurantes, eventos, vida nocturna, puestas de sol, taxis y alquiler de coches en Mindelo, São Vicente y en todo Cabo Verde.",
+    "ogImageAlt": "DVIBE – Mindelo, São Vicente, Cabo Verde"
+  },
+  "Footer": {
+    "logoAlt": "DVIBE",
+    "tagline": "Descubre sabores auténticos, una cultura vibrante y experiencias inolvidables en Cabo Verde.",
+    "copyright": "© {year} DVIBE · Mindelo, Kabu Verdi",
+    "madeWith": "Hecho con cariño en Mindelo, Cabo Verde",
+    "columns": {
+      "explore": {
+        "title": "Explorar",
+        "links": {
+          "restaurants": "Restaurantes",
+          "flavours": "Sabores",
+          "vibe": "Vibe",
+          "mindelo": "Mindelo"
+        }
+      },
+      "partners": {
+        "title": "Para socios",
+        "links": {
+          "partner-portal": "Portal de socios",
+          "register-place": "Registrar un local"
+        }
+      },
+      "support": {
+        "title": "Soporte",
+        "links": {
+          "help-center": "Centro de ayuda",
+          "privacy-policy": "Política de privacidad",
+          "terms": "Términos y condiciones",
+          "contact": "Contáctanos"
+        }
+      }
+    },
+    "social": {
+      "title": "Síguenos en redes sociales",
+      "links": {
+        "instagram": "DVIBE en Instagram",
+        "facebook": "DVIBE en Facebook"
+      }
+    }
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "Hero": {
+    "imageAlt": "Strand og bukt i Mindelo på São Vicente, Kapp Verde",
+    "badge": "Velkommen til Mindelo · São Vicente",
+    "heading": "Din inngang til Mindelo-opplevelsen.",
+    "description": {
+      "highlight": "Spis, utforsk og kjenn vibben.",
+      "text": "Lokale smaker, levende musikk og havutsikt, alt på ett sted."
+    },
+    "search": {
+      "locationLabel": "Velg sted",
+      "locationPlaceholder": "Velg sted",
+      "inputLabel": "Søk etter restauranter, retter eller arrangementer",
+      "inputPlaceholder": "Søk etter restauranter, retter eller arrangementer...",
+      "submitLabel": "Søk",
+      "error": "Velg et sted eller skriv inn et søkeord."
+    },
+    "locations": {
+      "mindelo": "Mindelo",
+      "laginha": "Laginha",
+      "calhau": "Calhau",
+      "baia-das-gatas": "Baía das Gatas",
+      "salamansa": "Salamansa"
+    },
+    "categories": {
+      "restaurants": "Restauranter",
+      "events": "Arrangementer",
+      "sunset-spots": "Solnedgangssteder",
+      "taxi": "Drosje",
+      "car-rental": "Bilutleie"
+    }
+  },
+  "Categories": {
+    "eyebrow": "Utforsk etter kategori",
+    "title": "Oppdag Mindelo på din måte",
+    "slider": {
+      "prevLabel": "Forrige kategorier",
+      "nextLabel": "Neste kategorier"
+    },
+    "items": {
+      "food": "Mat",
+      "vibe": "Vibe",
+      "sunset": "Solnedgang",
+      "tours": "Turer",
+      "taxi": "Drosje"
+    }
+  },
+  "Weather": {
+    "title": "I dag i Mindelo",
+    "description": "En liten smakebit av hva som skjer rundt på øya i dag.",
+    "metrics": {
+      "temperature": "Delvis skyet",
+      "sunset": "Solnedgang",
+      "wind": "Vind",
+      "sea": "Hav"
+    }
+  },
+  "Flavours": {
+    "eyebrow": "Smaker fra Kapp Verde",
+    "title": "Det beste fra kapverdisk mat",
+    "cta": "Utforsk alle smaker",
+    "items": {
+      "cachupa": "Cachupa",
+      "friedMoray": "Stekt murene",
+      "octopus": "Blekksprut",
+      "fish": "Fisk",
+      "shrimp": "Reker",
+      "chicken": "Kylling"
+    }
+  },
+  "Restaurants": {
+    "eyebrow": "Utvalgte restauranter",
+    "title": "Finn ditt neste favorittsted.",
+    "cta": "Utforsk alle restauranter",
+    "openingHours": "Åpningstider",
+    "days": "Man–søn",
+    "viewMenu": "Se meny",
+    "viewMenuLabel": "Se meny – {name}",
+    "listing": {
+      "eyebrow": "Smak på Mindelo",
+      "title": "Restauranter i Mindelo",
+      "description": "Utforsk lokale restauranter, se menyene og bestill take away direkte på WhatsApp.",
+      "searchLabel": "Søk etter restauranter eller retter",
+      "searchPlaceholder": "Søk etter restauranter eller retter...",
+      "areaLabel": "Velg et område",
+      "allAreas": "Alle områder",
+      "submit": "Søk",
+      "cuisinesLabel": "Filtrer etter kjøkken",
+      "allCuisines": "Alle",
+      "featured": "Utvalgte restauranter",
+      "popular": "Populære restauranter",
+      "all": "Alle restauranter",
+      "results": "{count, plural, one {# restaurant} other {# restauranter}} funnet",
+      "empty": "Ingen restauranter samsvarer med søket ditt. Prøv et annet område, kjøkken eller søkeord.",
+      "clear": "Fjern filtre",
+      "pagination": {
+        "navigation": "Sideinndeling for restauranter",
+        "previous": "Forrige side",
+        "next": "Neste side",
+        "page": "Side {page}"
+      }
+    },
+    "cuisines": {
+      "cape-verdean": "Kapverdisk",
+      "pizza": "Pizza",
+      "breakfast": "Frokost"
+    },
+    "descriptions": {
+      "pizzar": "Håndlagde pizzaer med ferske råvarer, åpent sent for middag og nattesug.",
+      "monte-cara": "En avslappet pizzeria som serverer pizza og tradisjonelle kapverdiske retter, ideell for familiemåltider og grupper.",
+      "casa-tchicau": "Et koselig sted for tradisjonell kapverdisk frokost, fra varm cuscuz til nysteke pastéis.",
+      "cantinho-do-mar": "Kapverdisk sjømat og dagens retter i hjemmekoselige omgivelser nær bukten.",
+      "pao-quente": "Ferskt brød, bakverk og kaffe fra tidlig morgen, perfekt for en rask take away-frokost.",
+      "forno-da-praca": "Vedfyrt pizza og lokale favoritter i hjertet av Mindelo, åpent fra lunsj til midnatt."
+    },
+    "items": {
+      "pizzar": "Håndlagde pizzaer",
+      "monte-cara": "Lokale retter",
+      "casa-tchicau": "Kapverdisk · Tradisjonell",
+      "cantinho-do-mar": "Fersk sjømat",
+      "pao-quente": "Ferskt brød og bakverk",
+      "forno-da-praca": "Vedfyrt pizza"
+    },
+    "RestaurantProfile": {
+      "menuTitle": "Meny",
+      "categoriesLabel": "Menykategorier",
+      "emptyMenu": "Denne menyen er ikke tilgjengelig ennå.",
+      "price": "{amount} CVE",
+      "rating": "{rating} · {count, plural, one {# anmeldelse} other {# anmeldelser}}",
+      "status": {
+        "open": "Åpent nå",
+        "closed": "Stengt"
+      },
+      "services": {
+        "takeaway": "Take away",
+        "reservation": "Bordreservasjon"
+      },
+      "reserve": {
+        "cta": "Reserver bord",
+        "label": "Reserver bord hos {restaurant} på WhatsApp",
+        "message": "Hei {restaurant}! Jeg vil gjerne reservere bord. Dato: … Tid: … Antall personer: …"
+      },
+      "cart": {
+        "add": "Legg i handlekurv",
+        "unavailable": "Utilgjengelig",
+        "addLabel": "Legg {dish} i handlekurven",
+        "increaseLabel": "Øk antall {dish}",
+        "decreaseLabel": "Reduser antall {dish}",
+        "summaryLabel": "Handlekurvoversikt",
+        "items": "{count, plural, one {# vare} other {# varer}}",
+        "viewCart": "Se handlekurv",
+        "otherRestaurant": "Handlekurven din har varer fra en annen restaurant. Tøm den for å bestille herfra.",
+        "clearAndStart": "Tøm handlekurven"
+      }
+    }
+  },
+  "Vibe": {
+    "eyebrow": "Kjenn vibben",
+    "title": "Kjenn rytmen i Mindelo",
+    "cta": "Utforsk alle vibber",
+    "page": {
+      "title": "Arrangementer, musikk og uteliv i Mindelo",
+      "description": "Fra levende morna til takfester, se hva som skjer rundt på øya.",
+      "filtersLabel": "Filtrer etter vibe",
+      "all": "Alle",
+      "eventsTitle": "Hva skjer",
+      "empty": "Ingenting er planlagt for dette utvalget ennå. Prøv en annen dato eller kategori.",
+      "time": {
+        "label": "Filtrer etter dato",
+        "today": "I dag",
+        "tomorrow": "I morgen",
+        "weekend": "Helgen",
+        "week": "Denne uken",
+        "upcoming": "Kommende",
+        "fromToday": "Fra i dag"
+      }
+    },
+    "card": {
+      "takeMeThere": "Ta meg dit"
+    },
+    "details": {
+      "back": "Tilbake til alle vibber",
+      "about": "Om dette arrangementet",
+      "whatToExpect": "Hva du kan forvente",
+      "location": "Sted",
+      "date": "Dato",
+      "time": "Tid",
+      "share": {
+        "label": "Del",
+        "copied": "Lenke kopiert"
+      },
+      "countdown": {
+        "label": "Arrangementet starter om",
+        "days": "Dager",
+        "hours": "Timer",
+        "minutes": "Min",
+        "seconds": "Sek"
+      },
+      "venue": {
+        "title": "Arrangementssted",
+        "openMap": "Åpne i Google Maps"
+      },
+      "policy": {
+        "title": "Regler for arrangementet"
+      },
+      "booking": {
+        "title": "Billetter og booking",
+        "description": "Kontakt arrangøren direkte på WhatsApp for å reservere.",
+        "ticketsLabel": "Billettyper",
+        "cta": "Book på WhatsApp",
+        "message": "Hei! Jeg vil gjerne booke {title} den {date} kl. {time}."
+      }
+    },
+    "items": {
+      "live-music": {
+        "title": "Levende musikk",
+        "description": "Oppdag lokale lyder"
+      },
+      "events": {
+        "title": "Arrangementer",
+        "description": "Hva som skjer i dag"
+      },
+      "nightlife": {
+        "title": "Uteliv",
+        "description": "Opplev natten"
+      }
+    }
+  },
+  "Island": {
+    "eyebrow": "Utenfor byen",
+    "title": "Oppdag skjønnheten på São Vicente",
+    "cta": "Utforsk alt",
+    "items": {
+      "beaches": {
+        "title": "Strender",
+        "description": "Sol, sand og hav"
+      },
+      "sunset-spots": {
+        "title": "Solnedgangssteder",
+        "description": "Oppdag vakker utsikt"
+      },
+      "tours": {
+        "title": "Turer og vandringer",
+        "description": "Utforsk øya"
+      }
+    }
+  },
+  "Transport": {
+    "eyebrow": "Transport og mobilitet",
+    "title": "Enkelt å ta seg rundt i Mindelo",
+    "items": {
+      "taxi": {
+        "title": "Drosje og transfer",
+        "description": "Ta kontakt med lokale sjåfører og avtal turen direkte.",
+        "cta": "Finn en drosje"
+      },
+      "car-rental": {
+        "title": "Bilutleie",
+        "description": "Oppdag alternativer for bilutleie og utforsk São Vicente i ditt eget tempo.",
+        "cta": "Utforsk biler"
+      }
+    }
+  },
+  "Ferry": {
+    "eyebrow": "Ferjeopplevelsen",
+    "title": "Din ferjereise med DVIBE",
+    "before": {
+      "title": "Før ferja",
+      "description": "Mat, kaffe og transport før avreise.",
+      "cta": "Finn mat i nærheten",
+      "items": {
+        "restaurants": "Restauranter",
+        "coffee-snacks": "Kaffe og snacks",
+        "taxi-to-port": "Drosje til havnen"
+      }
+    },
+    "schedules": {
+      "title": "Ferjerutetider",
+      "description": "Oppdaterte ferjetider for São Vicente.",
+      "cta": "Se full rutetabell",
+      "departure": "Avgang"
+    },
+    "after": {
+      "title": "Etter ferja",
+      "description": "Oppdag restauranter, transport og øyopplevelser.",
+      "cta": "Utforsk etter ankomst",
+      "items": {
+        "restaurants": "Restauranter",
+        "transport-car-rental": "Transport og bilutleie",
+        "local-experiences": "Lokale opplevelser"
+      }
+    }
+  },
+  "Cta": {
+    "title": "Få hvert øyeblikk i Mindelo til å telle",
+    "description": "Oppdag smakene, musikken, menneskene og stedene som gjør Kapp Verde uforglemmelig.",
+    "primaryCta": "Utforsk Mindelo",
+    "secondaryCta": "Oppdag vibben"
+  }
+}

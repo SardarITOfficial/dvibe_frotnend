@@ -1,0 +1,300 @@
+{
+  "Hero": {
+    "imageAlt": "Strand und Bucht von Mindelo auf São Vicente, Kap Verde",
+    "badge": "Willkommen in Mindelo · São Vicente",
+    "heading": "Dein Tor zum Mindelo-Erlebnis.",
+    "description": {
+      "highlight": "Essen, entdecken & den Vibe spüren.",
+      "text": "Lokale Aromen, Livemusik und Meerblick, alles an einem Ort."
+    },
+    "search": {
+      "locationLabel": "Wähle deinen Ort",
+      "locationPlaceholder": "Wähle deinen Ort",
+      "inputLabel": "Restaurants, Gerichte oder Events suchen",
+      "inputPlaceholder": "Restaurants, Gerichte oder Events suchen...",
+      "submitLabel": "Suchen",
+      "error": "Wähle einen Ort oder gib einen Suchbegriff ein."
+    },
+    "locations": {
+      "mindelo": "Mindelo",
+      "laginha": "Laginha",
+      "calhau": "Calhau",
+      "baia-das-gatas": "Baía das Gatas",
+      "salamansa": "Salamansa"
+    },
+    "categories": {
+      "restaurants": "Restaurants",
+      "events": "Events",
+      "sunset-spots": "Sonnenuntergangs-Spots",
+      "taxi": "Taxi",
+      "car-rental": "Mietwagen"
+    }
+  },
+  "Categories": {
+    "eyebrow": "Nach Kategorien entdecken",
+    "title": "Entdecke Mindelo auf deine Art",
+    "slider": {
+      "prevLabel": "Vorherige Kategorien",
+      "nextLabel": "Nächste Kategorien"
+    },
+    "items": {
+      "food": "Essen",
+      "vibe": "Vibe",
+      "sunset": "Sonnenuntergang",
+      "tours": "Touren",
+      "taxi": "Taxi"
+    }
+  },
+  "Weather": {
+    "title": "Heute in Mindelo",
+    "description": "Ein kleiner Einblick, was heute auf der Insel los ist.",
+    "metrics": {
+      "temperature": "Teilweise bewölkt",
+      "sunset": "Sonnenuntergang",
+      "wind": "Wind",
+      "sea": "Meer"
+    }
+  },
+  "Flavours": {
+    "eyebrow": "Aromen von Kap Verde",
+    "title": "Das Beste der kapverdischen Küche",
+    "cta": "Alle Aromen entdecken",
+    "items": {
+      "cachupa": "Cachupa",
+      "friedMoray": "Frittierte Muräne",
+      "octopus": "Oktopus",
+      "fish": "Fisch",
+      "shrimp": "Garnelen",
+      "chicken": "Hähnchen"
+    }
+  },
+  "Restaurants": {
+    "eyebrow": "Ausgewählte Restaurants",
+    "title": "Finde deinen nächsten Lieblingsort.",
+    "cta": "Alle Restaurants entdecken",
+    "openingHours": "Öffnungszeiten",
+    "days": "Mo–So",
+    "viewMenu": "Speisekarte ansehen",
+    "viewMenuLabel": "Speisekarte ansehen – {name}",
+    "listing": {
+      "eyebrow": "Mindelo schmecken",
+      "title": "Restaurants in Mindelo",
+      "description": "Stöbere in lokalen Restaurants, sieh dir die Speisekarten an und bestelle Takeaway direkt per WhatsApp.",
+      "searchLabel": "Restaurants oder Gerichte suchen",
+      "searchPlaceholder": "Restaurants oder Gerichte suchen...",
+      "areaLabel": "Gebiet wählen",
+      "allAreas": "Alle Gebiete",
+      "submit": "Suchen",
+      "cuisinesLabel": "Nach Küche filtern",
+      "allCuisines": "Alle",
+      "featured": "Ausgewählte Restaurants",
+      "popular": "Beliebte Restaurants",
+      "all": "Alle Restaurants",
+      "results": "{count, plural, one {# Restaurant} other {# Restaurants}} gefunden",
+      "empty": "Keine Restaurants entsprechen deiner Suche. Versuche ein anderes Gebiet, eine andere Küche oder ein anderes Stichwort.",
+      "clear": "Filter zurücksetzen",
+      "pagination": {
+        "navigation": "Restaurant-Seitennavigation",
+        "previous": "Vorherige Seite",
+        "next": "Nächste Seite",
+        "page": "Seite {page}"
+      }
+    },
+    "cuisines": {
+      "cape-verdean": "Kapverdisch",
+      "pizza": "Pizza",
+      "breakfast": "Frühstück"
+    },
+    "descriptions": {
+      "pizzar": "Handwerklich gemachte Pizzen aus frischen Zutaten, abends und nachts lange geöffnet.",
+      "monte-cara": "Eine entspannte Pizzeria mit Pizzen und traditionellen kapverdischen Gerichten, ideal für Familienessen und Gruppen.",
+      "casa-tchicau": "Ein gemütlicher Ort für traditionelles kapverdisches Frühstück, von warmem Cuscuz bis zu frisch frittierten Pastéis.",
+      "cantinho-do-mar": "Hausgemachte kapverdische Meeresfrüchte und Tagesgerichte in einladender Atmosphäre nahe der Bucht.",
+      "pao-quente": "Frisches Brot, Gebäck und Kaffee ab den frühen Morgenstunden, perfekt für ein schnelles Takeaway-Frühstück.",
+      "forno-da-praca": "Holzofenpizzen und lokale Favoriten im Herzen von Mindelo, geöffnet von Mittag bis Mitternacht."
+    },
+    "items": {
+      "pizzar": "Handwerkliche Pizzen",
+      "monte-cara": "Lokale Gerichte",
+      "casa-tchicau": "Kapverdisch · Traditionell",
+      "cantinho-do-mar": "Frische Meeresfrüchte",
+      "pao-quente": "Frisches Brot & Gebäck",
+      "forno-da-praca": "Holzofenpizzen"
+    },
+    "RestaurantProfile": {
+      "menuTitle": "Speisekarte",
+      "categoriesLabel": "Menükategorien",
+      "emptyMenu": "Diese Speisekarte ist noch nicht verfügbar.",
+      "price": "{amount} CVE",
+      "rating": "{rating} · {count, plural, one {# Bewertung} other {# Bewertungen}}",
+      "status": {
+        "open": "Jetzt geöffnet",
+        "closed": "Geschlossen"
+      },
+      "services": {
+        "takeaway": "Takeaway",
+        "reservation": "Tischreservierung"
+      },
+      "reserve": {
+        "cta": "Tisch reservieren",
+        "label": "Tisch bei {restaurant} per WhatsApp reservieren",
+        "message": "Hallo {restaurant}! Ich möchte gerne einen Tisch reservieren. Datum: … Uhrzeit: … Anzahl der Personen: …"
+      },
+      "cart": {
+        "add": "In den Warenkorb",
+        "unavailable": "Nicht verfügbar",
+        "addLabel": "{dish} in den Warenkorb legen",
+        "increaseLabel": "Menge von {dish} erhöhen",
+        "decreaseLabel": "Menge von {dish} verringern",
+        "summaryLabel": "Warenkorb-Übersicht",
+        "items": "{count, plural, one {# Artikel} other {# Artikel}}",
+        "viewCart": "Warenkorb ansehen",
+        "otherRestaurant": "Dein Warenkorb enthält Artikel eines anderen Restaurants. Leere ihn, um hier zu bestellen.",
+        "clearAndStart": "Warenkorb leeren"
+      }
+    }
+  },
+  "Vibe": {
+    "eyebrow": "Den Vibe spüren",
+    "title": "Spüre den Rhythmus von Mindelo",
+    "cta": "Alle Vibes entdecken",
+    "page": {
+      "title": "Events, Musik & Nachtleben in Mindelo",
+      "description": "Von Live-Morna bis zu Rooftop-Partys: Sieh, was auf der Insel los ist.",
+      "filtersLabel": "Nach Vibe filtern",
+      "all": "Alle",
+      "eventsTitle": "Was läuft",
+      "empty": "Für diese Auswahl ist noch nichts geplant. Probiere ein anderes Datum oder eine andere Kategorie.",
+      "time": {
+        "label": "Nach Datum filtern",
+        "today": "Heute",
+        "tomorrow": "Morgen",
+        "weekend": "Wochenende",
+        "week": "Diese Woche",
+        "upcoming": "Demnächst",
+        "fromToday": "Ab heute"
+      }
+    },
+    "card": {
+      "takeMeThere": "Bring mich hin"
+    },
+    "details": {
+      "back": "Zurück zu allen Vibes",
+      "about": "Über dieses Event",
+      "whatToExpect": "Was dich erwartet",
+      "location": "Ort",
+      "date": "Datum",
+      "time": "Uhrzeit",
+      "share": {
+        "label": "Teilen",
+        "copied": "Link kopiert"
+      },
+      "countdown": {
+        "label": "Das Event beginnt in",
+        "days": "Tage",
+        "hours": "Std.",
+        "minutes": "Min.",
+        "seconds": "Sek."
+      },
+      "venue": {
+        "title": "Veranstaltungsort",
+        "openMap": "In Google Maps öffnen"
+      },
+      "policy": {
+        "title": "Event-Richtlinien"
+      },
+      "booking": {
+        "title": "Tickets & Buchung",
+        "description": "Kontaktiere den Veranstalter direkt per WhatsApp, um zu reservieren.",
+        "ticketsLabel": "Tickettypen",
+        "cta": "Per WhatsApp buchen",
+        "message": "Hallo! Ich möchte gerne {title} am {date} um {time} buchen."
+      }
+    },
+    "items": {
+      "live-music": {
+        "title": "Livemusik",
+        "description": "Entdecke lokale Klänge"
+      },
+      "events": {
+        "title": "Events",
+        "description": "Was heute los ist"
+      },
+      "nightlife": {
+        "title": "Nachtleben",
+        "description": "Erlebe die Nacht"
+      }
+    }
+  },
+  "Island": {
+    "eyebrow": "Jenseits der Stadt",
+    "title": "Entdecke die Schönheit von São Vicente",
+    "cta": "Alle entdecken",
+    "items": {
+      "beaches": {
+        "title": "Strände",
+        "description": "Sonne, Sand und Meer"
+      },
+      "sunset-spots": {
+        "title": "Sonnenuntergangs-Spots",
+        "description": "Entdecke wunderschöne Aussichten"
+      },
+      "tours": {
+        "title": "Touren & Spaziergänge",
+        "description": "Erkunde die Insel"
+      }
+    }
+  },
+  "Transport": {
+    "eyebrow": "Transport & Mobilität",
+    "title": "Mindelo einfach erkunden",
+    "items": {
+      "taxi": {
+        "title": "Taxi & Transfers",
+        "description": "Verbinde dich mit lokalen Fahrern und vereinbare deine Fahrt direkt.",
+        "cta": "Taxi finden"
+      },
+      "car-rental": {
+        "title": "Mietwagen",
+        "description": "Entdecke Mietwagen-Optionen und erkunde São Vicente in deinem eigenen Tempo.",
+        "cta": "Autos ansehen"
+      }
+    }
+  },
+  "Ferry": {
+    "eyebrow": "Das Fährerlebnis",
+    "title": "Deine Fährreise mit DVIBE",
+    "before": {
+      "title": "Vor der Fähre",
+      "description": "Essen, Kaffee und Transport vor deiner Abfahrt.",
+      "cta": "Essen in der Nähe finden",
+      "items": {
+        "restaurants": "Restaurants",
+        "coffee-snacks": "Kaffee & Snacks",
+        "taxi-to-port": "Taxi zum Hafen"
+      }
+    },
+    "schedules": {
+      "title": "Fährfahrpläne",
+      "description": "Aktuelle Fährzeiten für São Vicente.",
+      "cta": "Vollständigen Fahrplan ansehen",
+      "departure": "Abfahrt"
+    },
+    "after": {
+      "title": "Nach der Fähre",
+      "description": "Entdecke Restaurants, Transport & Inselerlebnisse.",
+      "cta": "Nach der Ankunft entdecken",
+      "items": {
+        "restaurants": "Restaurants",
+        "transport-car-rental": "Transport & Mietwagen",
+        "local-experiences": "Lokale Erlebnisse"
+      }
+    }
+  },
+  "Cta": {
+    "title": "Lass jeden Moment in Mindelo zählen",
+    "description": "Entdecke die Aromen, die Musik, die Menschen und die Orte, die Kap Verde unvergesslich machen.",
+    "primaryCta": "Mindelo entdecken",
+    "secondaryCta": "Den Vibe entdecken"
+  }
+}

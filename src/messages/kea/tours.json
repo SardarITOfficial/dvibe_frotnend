@@ -1,0 +1,175 @@
+{
+  "Tours": {
+    "eyebrow": "Diskubri ilha",
+    "title": "Pasius i kaminhadas na Sã Visenti",
+    "description": "Kaminhadas gidadu, viajis di un dia i pasius pa sidadi ku operadoris di terra.",
+    "listTitle": "Skodje bu pasiu",
+    "price": "{amount} CVE",
+    "perPerson": "pur pesoa",
+    "duration": "{hours, plural, =1 {# ora} other {# oras}}",
+    "card": {
+      "viewDetails": "Odja detalhi"
+    },
+    "details": {
+      "back": "Volta pa tudu pasius",
+      "about": "Sobri es pasiu",
+      "highlights": "Distakis",
+      "included": "Kuzé ki sta inkluídu",
+      "meetingPoint": "Lugar di enkontru",
+      "openMap": "Abri na Google Maps",
+      "location": "Lugar",
+      "duration": "Durason",
+      "price": "Presu",
+      "booking": {
+        "title": "Rizerva es pasiu",
+        "description": "Kontakta operador diretu na WhatsApp pa garanti bu lugar.",
+        "cta": "Rizerva na WhatsApp",
+        "message": "Olá! N kre rizerva pasiu {tour}. Data: … Númeru di pesoas: …"
+      },
+      "gallery": {
+        "title": "Galeria di fotus",
+        "imageAlt": "{tour}, fotu {index}",
+        "showLabel": "Mostra fotu {index} di {total}",
+        "previousLabel": "Fotu anterior",
+        "nextLabel": "Fotu siginti",
+        "counter": "{current} / {total}"
+      }
+    },
+    "sections": {
+      "notIncluded": "Ka inkluídu",
+      "bring": "Kuzé pa leba",
+      "knowBeforeYouGo": "Sabe antis di bai",
+      "itinerary": "Itinerariu",
+      "ratings": "Avaliasons",
+      "faq": "Pergunta frekuenti"
+    },
+    "facts": {
+      "languages": "Linguas",
+      "pickup": "Rekolha inkluídu",
+      "accessible": "Asesível pa kadera di roda",
+      "freeCancellation": "Kanselamentu grátis té {hours}h antis"
+    },
+    "rating": {
+      "basedOn": "Baseadu na {count} avaliasons",
+      "guide": "Gia",
+      "transportation": "Transporti",
+      "valueForMoney": "Valor pa dinheru"
+    },
+    "included": {
+      "guide": "Gia di terra",
+      "transport": "Transporti",
+      "water": "Água di bebe",
+      "lunch": "Almosu",
+      "ferry": "Bilheti di barku di volta",
+      "briefing": "Splikason kurtu di pasiu",
+      "safety": "Instruson di seguransa",
+      "gear": "Mask di snorkel i kolete",
+      "photos": "Fotus i vidiu"
+    },
+    "notIncluded": {
+      "food": "Kumida i bebida",
+      "tips": "Gorjeta"
+    },
+    "bring": {
+      "swimwear": "Roupa di banhu",
+      "towel": "Toalha",
+      "sunscreen": "Protetor solar ki ka ta danifika korais",
+      "phoneCase": "Kapa di telemóvel a prova di água"
+    },
+    "knowBeforeYouGo": {
+      "comfortableInWater": "Partisipantis ta ten ki sinti-s sertu na água",
+      "respectMarineLife": "Respeitu pa vida marinha i anbiente é obrigatóriu",
+      "noTouching": "Ka toka na tartarugas"
+    },
+    "items": {
+      "monte-verde-hike": {
+        "name": "Kaminhada di alvorada na Monti Verdi",
+        "description": "Sobi pa pikus más altu di Sã Visenti ku un gia di terra i gosta di vista largu riba di ilha i kosta pertu.",
+        "highlights": {
+          "views": {
+            "title": "Vista di kume",
+            "description": "Odja Mindelu, baía i ilhas vizinhu."
+          },
+          "guide": {
+            "title": "Gia di terra",
+            "description": "Aprendi sobri planta, istória i estória di ilha na kaminhu."
+          }
+        }
+      },
+      "santo-antao-day-trip": {
+        "name": "Viaji di un dia pa Santu Antãu",
+        "description": "Pega barku pa Santu Antãu pa un dia intero di vali verdi, strada di montanha i kumida di terra.",
+        "highlights": {
+          "ferry": {
+            "title": "Travesia di barku",
+            "description": "Un travesia bonitu entri dós ilha."
+          },
+          "valleys": {
+            "title": "Vali verdi",
+            "description": "Pasa pa paizajen dramátiku di montanha i vila di agrikultura."
+          }
+        }
+      },
+      "mindelo-city-walk": {
+        "name": "Pasiu pa sidadi di Mindelu",
+        "description": "Un kaminhada rilaxadu pa sentru kolonial di Mindelu, se mersadu, praça i lugar di músika.",
+        "highlights": {
+          "history": {
+            "title": "Sentru kolonial",
+            "description": "Diskubri rua antigu, mersadu i beira-mar."
+          },
+          "music": {
+            "title": "Estórias di músika",
+            "description": "Vizita lugar ligadu a morna i a músikus famozu di ilha."
+          }
+        }
+      },
+      "sea-turtles-sao-pedro": {
+        "name": "Nada ku tartaruga di mar na Sã Pedru",
+        "description": "Faze snorkel ku tartaruga di mar na vila di pexkador di Sã Pedru. Un ekipa di terra ta da un splikason kurtu, dipus ta leba-u pa água limpu undi tartaruga ta nada livri, ku spiriénsia seguru i ku respeitu pa animal.",
+        "highlights": {
+          "snorkel": {
+            "title": "Snorkel ku tartarugas",
+            "description": "Nada la un ladu di tartaruga na água limpu i kalmu."
+          },
+          "marineLife": {
+            "title": "Vida marinha di pertu",
+            "description": "Odja pexi i fundu di mar na se anbiente natural."
+          }
+        },
+        "itinerary": {
+          "pickup": {
+            "title": "Rekolha na Mindelu",
+            "text": "Ankontra bu motorista na lugar di rekolha kombinadu."
+          },
+          "snorkel": {
+            "title": "Snorkel ku tartarugas",
+            "text": "Splikason, pasiu di barku i snorkel gidadu."
+          },
+          "return": {
+            "title": "Volta pa Mindelu",
+            "text": "Di volta na bu lugar di rekolha."
+          }
+        },
+        "faq": {
+          "swimmer": {
+            "question": "N ten ki sabe nada bem?",
+            "answer": "Nau, ma bu ten ki sinti-u sertu na água. Mask i kolete ta fornesidu."
+          },
+          "children": {
+            "question": "E adekuadu pa kriansa?",
+            "answer": "Pergunta operador na WhatsApp sobri limiti di idadi."
+          },
+          "weather": {
+            "question": "Kuzé ki ta pasa si tenpu sta mau?",
+            "answer": "Operador ta kontakta-u pa marka di novu."
+          },
+          "videos": {
+            "question": "N ta risebe fotus o vidius?",
+            "answer": "Sin, ekipa ta faze-s i ta partilha-s ku bo."
+          }
+        }
+      }
+    }
+  }
+}

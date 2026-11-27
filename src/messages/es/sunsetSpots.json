@@ -1,0 +1,19 @@
+{
+  "SunsetSpots": {
+    "eyebrow": "Hora dorada",
+    "title": "Puestas de sol en São Vicente",
+    "description": "Los mejores lugares de la isla para ver caer el sol sobre el Atlántico.",
+    "listTitle": "Dónde ver la puesta de sol",
+    "card": {
+      "takeMeThere": "Llévame allí",
+      "bestTime": "Mejor a las {time}",
+      "opensInNewTab": "se abre en Google Maps en una pestaña nueva"
+    },
+    "descriptions": {
+      "laginha-beach": "Una amplia playa de arena con una bahía tranquila, perfecta para un paseo relajado mientras el cielo se vuelve naranja.",
+      "baia-das-gatas": "Una bahía tranquila en la costa, ideal para ver la puesta de sol con el sonido de las olas.",
+      "fortim-del-rei": "Un fuerte histórico sobre Mindelo con vistas abiertas a la bahía y al puerto.",
+      "monte-verde": "El punto más alto de la isla, con vistas panorámicas de São Vicente y las islas vecinas."
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "CarRental": {
+    "eyebrow": "Alquiler de coches",
+    "title": "Alquila un coche en Mindelo",
+    "description": "Elige un coche, selecciona tus fechas y envía tu solicitud directamente al propietario por WhatsApp.",
+    "cars": {
+      "title": "Coches disponibles",
+      "description": "Elige un coche para iniciar tu solicitud de alquiler.",
+      "empty": "No hay coches disponibles en este momento. Inténtalo de nuevo más tarde.",
+      "status": {
+        "available": "Disponible",
+        "unavailable": "No disponible"
+      },
+      "categories": {
+        "economy": "Económico",
+        "suv": "SUV",
+        "van": "Furgoneta"
+      },
+      "transmission": {
+        "manual": "Manual",
+        "automatic": "Automático"
+      },
+      "specs": {
+        "seats": "Plazas",
+        "transmission": "Transmisión",
+        "price": "Por día"
+      },
+      "select": "Solicitar este coche",
+      "selectLabel": "Solicitar este coche – {car}",
+      "provider": "De {provider}",
+      "filter": {
+        "label": "Filtrar por empresa de alquiler",
+        "all": "Todas las empresas"
+      }
+    },
+    "booking": {
+      "title": "Alquila el {car}",
+      "closeLabel": "Cerrar formulario de alquiler",
+      "rentalTitle": "Detalles del alquiler",
+      "contactTitle": "Tus datos",
+      "fields": {
+        "pickup": "Lugar de recogida",
+        "startDate": "Fecha de inicio",
+        "endDate": "Fecha de fin",
+        "name": "Nombre completo",
+        "phone": "Número de teléfono",
+        "note": "Nota para el propietario (opcional)"
+      },
+      "errors": {
+        "pickup": "Introduce tu lugar de recogida.",
+        "startDate": "Elige hoy o una fecha futura.",
+        "endDate": "Elige una fecha de fin igual o posterior a la de inicio.",
+        "name": "Introduce tu nombre completo.",
+        "phone": "Introduce un número de teléfono válido.",
+        "note": "Mantén tu nota por debajo de 300 caracteres."
+      },
+      "submit": "Solicitar por WhatsApp",
+      "direct": "Tu solicitud se abre en WhatsApp. El propietario confirma la disponibilidad y el precio directamente."
+    },
+    "message": {
+      "greeting": "¡Hola! Me gustaría alquilar el {car}.",
+      "customer": "Nombre: {name} · Teléfono: {phone}",
+      "pickup": "Recogida: {pickup}",
+      "period": "Desde: {start} · Hasta: {end}",
+      "note": "Nota: {note}"
+    }
+  }
+}

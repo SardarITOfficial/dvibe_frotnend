@@ -1,0 +1,15 @@
+{
+  "Status": {
+    "home": "Tilbake til forsiden",
+    "retry": "Prøv igjen",
+    "reference": "Feilreferanse: {id}",
+    "notFound": {
+      "title": "Siden ble ikke funnet",
+      "description": "Siden du leter etter finnes ikke eller har blitt flyttet."
+    },
+    "error": {
+      "title": "Noe gikk galt",
+      "description": "Vi kunne ikke laste denne siden. Prøv igjen om et øyeblikk."
+    }
+  }
+}

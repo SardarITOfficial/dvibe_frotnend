@@ -1,0 +1,41 @@
+{
+  "Cart": {
+    "title": "Bu karinhu",
+    "subtitle": "{count, plural, =1 {# item} other {# itens}} di {restaurant}",
+    "backToMenu": "Volta pa menu",
+    "loading": "Ta karega bu karinhu...",
+    "price": "{amount} CVE",
+    "total": "Total",
+    "removeLabel": "Tira {dish} di karinhu",
+    "decreaseLabel": "Diminui kuantidadi di {dish}",
+    "increaseLabel": "Aumenta kuantidadi di {dish}",
+    "summary": {
+      "title": "Rezumu di pedidu",
+      "clear": "Diskarega karinhu",
+      "items": "Itens"
+    },
+    "empty": {
+      "title": "Bu karinhu sta vaziu",
+      "description": "Odja restorantis i djunta bu pratus favoritu.",
+      "cta": "Odja restorantis"
+    },
+    "form": {
+      "title": "Detalhi di rekolha",
+      "nameLabel": "Bu nómi",
+      "phoneLabel": "Númeru di telefoni",
+      "noteLabel": "Nota pa restorante (opsional)",
+      "nameError": "Skrebe bu nómi.",
+      "phoneError": "Skrebe un númeru di telefoni válidu.",
+      "noteError": "Nota sta lunga dimás (máksimu 300 karátere).",
+      "submit": "Pidi na WhatsApp",
+      "direct": "Bu pedidu ta bai diretu pa {restaurant} na WhatsApp.",
+      "orderError": "No ka konsegi faze bu pedidu. Tenta di novu."
+    },
+    "message": {
+      "header": "Olá! Novu pedidu di takeaway {orderNumber} di {name} ({phone}):",
+      "line": "{quantity} x {name} - {amount} CVE",
+      "total": "Total: {amount} CVE",
+      "note": "Nota: {note}"
+    }
+  }
+}

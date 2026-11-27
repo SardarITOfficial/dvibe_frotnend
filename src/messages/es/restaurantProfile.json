@@ -1,0 +1,38 @@
+{
+  "RestaurantProfile": {
+    "rating": "{rating} ({count, plural, one {# reseña} other {# reseñas}})",
+    "status": {
+      "open": "Abierto ahora",
+      "closed": "Cerrado"
+    },
+    "reserve": {
+      "cta": "Reservar una mesa",
+      "label": "Reservar una mesa en {restaurant} por WhatsApp",
+      "message": "Hola, me gustaría reservar una mesa en {restaurant}."
+    },
+    "services": {
+      "takeaway": "Para llevar",
+      "reservation": "Reserva de mesa"
+    },
+    "map": {
+      "cta": "Llévame allí",
+      "label": "Abrir {name} en Google Maps"
+    },
+    "menuTitle": "Menú",
+    "emptyMenu": "El menú aún no está disponible.",
+    "categoriesLabel": "Categorías del menú",
+    "price": "{amount} CVE",
+    "cart": {
+      "add": "Añadir al carrito",
+      "unavailable": "No disponible",
+      "addLabel": "Añadir {dish} al carrito",
+      "increaseLabel": "Aumentar la cantidad de {dish}",
+      "decreaseLabel": "Reducir la cantidad de {dish}",
+      "summaryLabel": "Resumen del carrito",
+      "items": "{count, plural, one {# artículo} other {# artículos}}",
+      "viewCart": "Ver carrito",
+      "otherRestaurant": "Tu carrito tiene artículos de otro restaurante. Vacíalo para pedir aquí.",
+      "clearAndStart": "Vaciar carrito"
+    }
+  }
+}

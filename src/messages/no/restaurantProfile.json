@@ -1,0 +1,38 @@
+{
+  "RestaurantProfile": {
+    "rating": "{rating} ({count, plural, one {# anmeldelse} other {# anmeldelser}})",
+    "status": {
+      "open": "Åpent nå",
+      "closed": "Stengt"
+    },
+    "reserve": {
+      "cta": "Reserver bord",
+      "label": "Reserver bord hos {restaurant} på WhatsApp",
+      "message": "Hei, jeg vil gjerne reservere bord hos {restaurant}."
+    },
+    "services": {
+      "takeaway": "Take away",
+      "reservation": "Bordreservasjon"
+    },
+    "map": {
+      "cta": "Ta meg dit",
+      "label": "Åpne {name} i Google Maps"
+    },
+    "menuTitle": "Meny",
+    "emptyMenu": "Menyen er ikke tilgjengelig ennå.",
+    "categoriesLabel": "Menykategorier",
+    "price": "{amount} CVE",
+    "cart": {
+      "add": "Legg i handlekurv",
+      "unavailable": "Utilgjengelig",
+      "addLabel": "Legg {dish} i handlekurven",
+      "increaseLabel": "Øk antall {dish}",
+      "decreaseLabel": "Reduser antall {dish}",
+      "summaryLabel": "Handlekurvoversikt",
+      "items": "{count, plural, one {# vare} other {# varer}}",
+      "viewCart": "Se handlekurv",
+      "otherRestaurant": "Handlekurven din har varer fra en annen restaurant. Tøm den for å bestille herfra.",
+      "clearAndStart": "Tøm handlekurven"
+    }
+  }
+}

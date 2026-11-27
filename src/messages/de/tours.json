@@ -1,0 +1,175 @@
+{
+  "Tours": {
+    "eyebrow": "Die Insel entdecken",
+    "title": "Touren & Spaziergänge auf São Vicente",
+    "description": "Geführte Wanderungen, Tagesausflüge und Stadtspaziergänge mit lokalen Anbietern.",
+    "listTitle": "Wähle deine Tour",
+    "price": "{amount} CVE",
+    "perPerson": "pro Person",
+    "duration": "{hours, plural, one {# Stunde} other {# Stunden}}",
+    "card": {
+      "viewDetails": "Details ansehen"
+    },
+    "details": {
+      "back": "Zurück zu allen Touren",
+      "about": "Über diese Tour",
+      "highlights": "Highlights",
+      "included": "Das ist inbegriffen",
+      "meetingPoint": "Treffpunkt",
+      "openMap": "In Google Maps öffnen",
+      "location": "Ort",
+      "duration": "Dauer",
+      "price": "Preis",
+      "booking": {
+        "title": "Diese Tour buchen",
+        "description": "Kontaktiere den Anbieter direkt per WhatsApp, um deinen Platz zu reservieren.",
+        "cta": "Per WhatsApp buchen",
+        "message": "Hallo! Ich möchte gerne die Tour {tour} buchen. Datum: … Anzahl der Personen: …"
+      },
+      "gallery": {
+        "title": "Fotogalerie",
+        "imageAlt": "{tour}, Foto {index}",
+        "showLabel": "Foto {index} von {total} anzeigen",
+        "previousLabel": "Vorheriges Foto",
+        "nextLabel": "Nächstes Foto",
+        "counter": "{current} / {total}"
+      }
+    },
+    "sections": {
+      "notIncluded": "Nicht inbegriffen",
+      "bring": "Was du mitbringen solltest",
+      "knowBeforeYouGo": "Wissenswertes vor der Tour",
+      "itinerary": "Ablauf",
+      "ratings": "Bewertungen",
+      "faq": "Häufig gestellte Fragen"
+    },
+    "facts": {
+      "languages": "Sprachen",
+      "pickup": "Abholung inbegriffen",
+      "accessible": "Rollstuhlgerecht",
+      "freeCancellation": "Kostenlose Stornierung bis {hours} Std. vorher"
+    },
+    "rating": {
+      "basedOn": "Basierend auf {count} Bewertungen",
+      "guide": "Guide",
+      "transportation": "Transport",
+      "valueForMoney": "Preis-Leistungs-Verhältnis"
+    },
+    "included": {
+      "guide": "Lokaler Guide",
+      "transport": "Transport",
+      "water": "Trinkwasser",
+      "lunch": "Mittagessen",
+      "ferry": "Rückfahrt-Fährticket",
+      "briefing": "Kurze Tour-Einweisung",
+      "safety": "Sicherheitshinweise",
+      "gear": "Schnorchelmaske und Weste",
+      "photos": "Fotos und Videos"
+    },
+    "notIncluded": {
+      "food": "Speisen und Getränke",
+      "tips": "Trinkgelder"
+    },
+    "bring": {
+      "swimwear": "Badebekleidung",
+      "towel": "Handtuch",
+      "sunscreen": "Riffschonende Sonnencreme",
+      "phoneCase": "Wasserdichte Handyhülle"
+    },
+    "knowBeforeYouGo": {
+      "comfortableInWater": "Teilnehmende sollten sich im Wasser wohlfühlen",
+      "respectMarineLife": "Respekt vor der Meereswelt und der Umwelt ist Pflicht",
+      "noTouching": "Berühre die Schildkröten nicht"
+    },
+    "items": {
+      "monte-verde-hike": {
+        "name": "Monte-Verde-Sonnenaufgangswanderung",
+        "description": "Besteige mit einem lokalen Guide den höchsten Gipfel von São Vicente und genieße weite Ausblicke über die Insel und die nahe Küste.",
+        "highlights": {
+          "views": {
+            "title": "Gipfelblick",
+            "description": "Blicke über Mindelo, die Bucht und die Nachbarinseln."
+          },
+          "guide": {
+            "title": "Lokaler Guide",
+            "description": "Erfahre unterwegs mehr über Pflanzen, Geschichte und Geschichten der Insel."
+          }
+        }
+      },
+      "santo-antao-day-trip": {
+        "name": "Tagesausflug nach Santo Antão",
+        "description": "Nimm die Fähre nach Santo Antão für einen ganzen Tag voller grüner Täler, Bergstraßen und lokaler Küche.",
+        "highlights": {
+          "ferry": {
+            "title": "Fährüberfahrt",
+            "description": "Eine landschaftlich schöne Überfahrt zwischen den beiden Inseln."
+          },
+          "valleys": {
+            "title": "Grüne Täler",
+            "description": "Fahre durch dramatische Berglandschaften und Bauerndörfer."
+          }
+        }
+      },
+      "mindelo-city-walk": {
+        "name": "Stadtspaziergang durch Mindelo",
+        "description": "Ein entspannter Spaziergang durch das koloniale Zentrum von Mindelo, seine Märkte, Plätze und Musik-Wahrzeichen.",
+        "highlights": {
+          "history": {
+            "title": "Koloniales Zentrum",
+            "description": "Entdecke die alten Gassen, den Markt und die Uferpromenade."
+          },
+          "music": {
+            "title": "Musikgeschichten",
+            "description": "Besuche Orte, die mit Morna und den berühmten Musikern der Insel verbunden sind."
+          }
+        }
+      },
+      "sea-turtles-sao-pedro": {
+        "name": "Schwimmen mit Meeresschildkröten in São Pedro",
+        "description": "Schnorchle mit Meeresschildkröten im Fischerdorf São Pedro. Ein lokales Team gibt eine kurze Einweisung und bringt dich dann zu klarem Wasser, in dem die Schildkröten frei schwimmen – sicher und respektvoll gegenüber den Tieren.",
+        "highlights": {
+          "snorkel": {
+            "title": "Schnorcheln mit Schildkröten",
+            "description": "Schwimme neben Schildkröten in klarem, ruhigem Wasser."
+          },
+          "marineLife": {
+            "title": "Meeresleben hautnah",
+            "description": "Sieh Fische und den Meeresboden in ihrer natürlichen Umgebung."
+          }
+        },
+        "itinerary": {
+          "pickup": {
+            "title": "Abholung in Mindelo",
+            "text": "Triff deinen Fahrer am vereinbarten Abholpunkt."
+          },
+          "snorkel": {
+            "title": "Schnorcheln mit Schildkröten",
+            "text": "Einweisung, Bootsfahrt und geführtes Schnorcheln."
+          },
+          "return": {
+            "title": "Rückfahrt nach Mindelo",
+            "text": "Zurück an deinem Abholort."
+          }
+        },
+        "faq": {
+          "swimmer": {
+            "question": "Muss ich ein guter Schwimmer sein?",
+            "answer": "Nein, aber du solltest dich im Wasser wohlfühlen. Masken und Westen werden gestellt."
+          },
+          "children": {
+            "question": "Ist die Tour für Kinder geeignet?",
+            "answer": "Frage den Anbieter per WhatsApp nach Altersgrenzen."
+          },
+          "weather": {
+            "question": "Was passiert bei schlechtem Wetter?",
+            "answer": "Der Anbieter meldet sich bei dir, um einen neuen Termin zu vereinbaren."
+          },
+          "videos": {
+            "question": "Bekomme ich Fotos oder Videos?",
+            "answer": "Ja, das Team macht sie und teilt sie mit dir."
+          }
+        }
+      }
+    }
+  }
+}

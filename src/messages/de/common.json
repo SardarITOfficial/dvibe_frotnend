@@ -1,0 +1,67 @@
+{
+  "Header": {
+    "nav": {
+      "explore": "Entdecken",
+      "vibe": "Vibe",
+      "restaurants": "Restaurants",
+      "sunsetSpots": "Sonnenuntergangs-Spots",
+      "taxi": "Taxi",
+      "carRental": "Mietwagen"
+    },
+    "servicesMenu": {
+      "webDesign": "Webdesign",
+      "photography": "Fotografie",
+      "transport": "Transport",
+      "events": "Events"
+    },
+    "cta": "Anmelden",
+    "languageLabel": "Sprache wählen",
+    "openMenu": "Navigationsmenü öffnen",
+    "closeMenu": "Navigationsmenü schließen"
+  },
+  "Metadata": {
+    "title": "DVIBE | Essen, Entdecken & den Vibe spüren auf Kap Verde",
+    "description": "Entdecke Restaurants, Events, Nachtleben, Sonnenuntergangs-Spots, Taxis und Mietwagen in Mindelo, São Vicente und auf ganz Kap Verde.",
+    "ogImageAlt": "DVIBE – Mindelo, São Vicente, Kap Verde"
+  },
+  "Footer": {
+    "logoAlt": "DVIBE",
+    "tagline": "Entdecke echte Aromen, lebendige Kultur und unvergessliche Erlebnisse auf Kap Verde.",
+    "copyright": "© {year} DVIBE · Mindelo, Kabu Verdi",
+    "madeWith": "Mit Liebe gemacht in Mindelo, Kap Verde",
+    "columns": {
+      "explore": {
+        "title": "Entdecken",
+        "links": {
+          "restaurants": "Restaurants",
+          "flavours": "Aromen",
+          "vibe": "Vibe",
+          "mindelo": "Mindelo"
+        }
+      },
+      "partners": {
+        "title": "Für Partner",
+        "links": {
+          "partner-portal": "Partnerportal",
+          "register-place": "Ort registrieren"
+        }
+      },
+      "support": {
+        "title": "Support",
+        "links": {
+          "help-center": "Hilfezentrum",
+          "privacy-policy": "Datenschutzerklärung",
+          "terms": "Allgemeine Geschäftsbedingungen",
+          "contact": "Kontakt"
+        }
+      }
+    },
+    "social": {
+      "title": "Folge uns in den sozialen Medien",
+      "links": {
+        "instagram": "DVIBE auf Instagram",
+        "facebook": "DVIBE auf Facebook"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "Status": {
+    "home": "Volver a la página de inicio",
+    "retry": "Intentar de nuevo",
+    "reference": "Referencia del error: {id}",
+    "notFound": {
+      "title": "Página no encontrada",
+      "description": "La página que buscas no existe o ha sido movida."
+    },
+    "error": {
+      "title": "Algo salió mal",
+      "description": "No pudimos cargar esta página. Inténtalo de nuevo en un momento."
+    }
+  }
+}

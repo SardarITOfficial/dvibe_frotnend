@@ -1,0 +1,19 @@
+{
+  "SunsetSpots": {
+    "eyebrow": "Gyllen time",
+    "title": "Solnedgangssteder på São Vicente",
+    "description": "De beste stedene rundt øya for å se solen gå ned over Atlanterhavet.",
+    "listTitle": "Hvor du kan se solnedgangen",
+    "card": {
+      "takeMeThere": "Ta meg dit",
+      "bestTime": "Best kl. {time}",
+      "opensInNewTab": "åpnes i Google Maps i en ny fane"
+    },
+    "descriptions": {
+      "laginha-beach": "En bred sandstrand med en rolig bukt, perfekt for en avslappet spasertur mens himmelen blir oransje.",
+      "baia-das-gatas": "En stille bukt ved kysten, ideell for å se solnedgangen med lyden av bølgene.",
+      "fortim-del-rei": "Et historisk fort over Mindelo med åpen utsikt over bukten og havnen.",
+      "monte-verde": "Øyas høyeste punkt, med vid utsikt over São Vicente og naboøyene."
+    }
+  }
+}

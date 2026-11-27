@@ -1,0 +1,68 @@
+{
+  "CarRental": {
+    "eyebrow": "Bilutleie",
+    "title": "Lei bil i Mindelo",
+    "description": "Velg en bil, velg datoer og send forespørselen din direkte til eieren på WhatsApp.",
+    "cars": {
+      "title": "Tilgjengelige biler",
+      "description": "Velg en bil for å starte leieforespørselen din.",
+      "empty": "Ingen biler er tilgjengelige akkurat nå. Prøv igjen senere.",
+      "status": {
+        "available": "Tilgjengelig",
+        "unavailable": "Ikke tilgjengelig"
+      },
+      "categories": {
+        "economy": "Økonomi",
+        "suv": "SUV",
+        "van": "Varebil"
+      },
+      "transmission": {
+        "manual": "Manuell",
+        "automatic": "Automat"
+      },
+      "specs": {
+        "seats": "Seter",
+        "transmission": "Girkasse",
+        "price": "Per dag"
+      },
+      "select": "Forespør denne bilen",
+      "selectLabel": "Forespør denne bilen – {car}",
+      "provider": "Av {provider}",
+      "filter": {
+        "label": "Filtrer etter utleiefirma",
+        "all": "Alle firmaer"
+      }
+    },
+    "booking": {
+      "title": "Lei {car}",
+      "closeLabel": "Lukk leieskjema",
+      "rentalTitle": "Leiedetaljer",
+      "contactTitle": "Dine opplysninger",
+      "fields": {
+        "pickup": "Hentested",
+        "startDate": "Startdato",
+        "endDate": "Sluttdato",
+        "name": "Fullt navn",
+        "phone": "Telefonnummer",
+        "note": "Melding til eieren (valgfritt)"
+      },
+      "errors": {
+        "pickup": "Skriv inn hentestedet.",
+        "startDate": "Velg i dag eller en fremtidig dato.",
+        "endDate": "Velg en sluttdato på eller etter startdatoen.",
+        "name": "Skriv inn fullt navn.",
+        "phone": "Skriv inn et gyldig telefonnummer.",
+        "note": "Hold meldingen under 300 tegn."
+      },
+      "submit": "Forespør på WhatsApp",
+      "direct": "Forespørselen åpnes i WhatsApp. Eieren bekrefter tilgjengelighet og pris direkte."
+    },
+    "message": {
+      "greeting": "Hei! Jeg vil gjerne leie {car}.",
+      "customer": "Navn: {name} · Telefon: {phone}",
+      "pickup": "Henting: {pickup}",
+      "period": "Fra: {start} · Til: {end}",
+      "note": "Melding: {note}"
+    }
+  }
+}

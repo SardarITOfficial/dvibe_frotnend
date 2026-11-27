@@ -1,0 +1,68 @@
+{
+  "CarRental": {
+    "eyebrow": "Mietwagen",
+    "title": "Mietwagen in Mindelo",
+    "description": "Wähle ein Auto, lege deine Daten fest und sende deine Anfrage direkt per WhatsApp an den Besitzer.",
+    "cars": {
+      "title": "Verfügbare Autos",
+      "description": "Wähle ein Auto, um deine Mietanfrage zu starten.",
+      "empty": "Derzeit sind keine Autos verfügbar. Bitte versuche es später erneut.",
+      "status": {
+        "available": "Verfügbar",
+        "unavailable": "Nicht verfügbar"
+      },
+      "categories": {
+        "economy": "Kleinwagen",
+        "suv": "SUV",
+        "van": "Van"
+      },
+      "transmission": {
+        "manual": "Schaltgetriebe",
+        "automatic": "Automatik"
+      },
+      "specs": {
+        "seats": "Sitze",
+        "transmission": "Getriebe",
+        "price": "Pro Tag"
+      },
+      "select": "Dieses Auto anfragen",
+      "selectLabel": "Dieses Auto anfragen – {car}",
+      "provider": "Von {provider}",
+      "filter": {
+        "label": "Nach Vermieter filtern",
+        "all": "Alle Vermieter"
+      }
+    },
+    "booking": {
+      "title": "Miete den {car}",
+      "closeLabel": "Mietformular schließen",
+      "rentalTitle": "Mietdetails",
+      "contactTitle": "Deine Angaben",
+      "fields": {
+        "pickup": "Abholort",
+        "startDate": "Startdatum",
+        "endDate": "Enddatum",
+        "name": "Vollständiger Name",
+        "phone": "Telefonnummer",
+        "note": "Hinweis an den Besitzer (optional)"
+      },
+      "errors": {
+        "pickup": "Gib deinen Abholort ein.",
+        "startDate": "Wähle heute oder ein zukünftiges Datum.",
+        "endDate": "Wähle ein Enddatum am oder nach dem Startdatum.",
+        "name": "Gib deinen vollständigen Namen ein.",
+        "phone": "Gib eine gültige Telefonnummer ein.",
+        "note": "Halte deinen Hinweis unter 300 Zeichen."
+      },
+      "submit": "Per WhatsApp anfragen",
+      "direct": "Deine Anfrage öffnet sich in WhatsApp. Der Besitzer bestätigt Verfügbarkeit und Preis direkt."
+    },
+    "message": {
+      "greeting": "Hallo! Ich möchte gerne den {car} mieten.",
+      "customer": "Name: {name} · Telefon: {phone}",
+      "pickup": "Abholung: {pickup}",
+      "period": "Von: {start} · Bis: {end}",
+      "note": "Hinweis: {note}"
+    }
+  }
+}

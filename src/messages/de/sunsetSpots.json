@@ -1,0 +1,19 @@
+{
+  "SunsetSpots": {
+    "eyebrow": "Goldene Stunde",
+    "title": "Sonnenuntergangs-Spots auf São Vicente",
+    "description": "Die besten Orte der Insel, um die Sonne über dem Atlantik untergehen zu sehen.",
+    "listTitle": "Wo du den Sonnenuntergang erlebst",
+    "card": {
+      "takeMeThere": "Bring mich hin",
+      "bestTime": "Am schönsten um {time}",
+      "opensInNewTab": "öffnet Google Maps in einem neuen Tab"
+    },
+    "descriptions": {
+      "laginha-beach": "Ein breiter Sandstrand mit ruhiger Bucht, perfekt für einen entspannten Spaziergang, wenn sich der Himmel orange färbt.",
+      "baia-das-gatas": "Eine ruhige Bucht an der Küste, ideal, um den Sonnenuntergang beim Rauschen der Wellen zu erleben.",
+      "fortim-del-rei": "Ein historisches Fort oberhalb von Mindelo mit freiem Blick über die Bucht und den Hafen.",
+      "monte-verde": "Der höchste Punkt der Insel mit weitem Blick auf São Vicente und die Nachbarinseln."
+    }
+  }
+}

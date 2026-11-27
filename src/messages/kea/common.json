@@ -1,0 +1,67 @@
+{
+  "Header": {
+    "nav": {
+      "explore": "Diskubri",
+      "vibe": "Vibe",
+      "restaurants": "Restorantis",
+      "sunsetSpots": "Pô di sol",
+      "taxi": "Taksi",
+      "carRental": "Alugel di karu"
+    },
+    "servicesMenu": {
+      "webDesign": "Web design",
+      "photography": "Fotografia",
+      "transport": "Transporti",
+      "events": "Eventus"
+    },
+    "cta": "Entra",
+    "languageLabel": "Skodje lingua",
+    "openMenu": "Abri menu di navegason",
+    "closeMenu": "Fecha menu di navegason"
+  },
+  "Metadata": {
+    "title": "DVIBE | Kume, diskubri i senti vibe na Kabu Verdi",
+    "description": "Diskubri restorantis, eventus, vida di noti, lugar di pô di sol, taksis i alugel di karu na Mindelu, Sã Visenti i tudu Kabu Verdi.",
+    "ogImageAlt": "DVIBE – Mindelu, Sã Visenti, Kabu Verdi"
+  },
+  "Footer": {
+    "logoAlt": "DVIBE",
+    "tagline": "Diskubri sabor verdadeiru, kultura vivu i spiriénsia ki ka ta skese na Kabu Verdi.",
+    "copyright": "© {year} DVIBE · Mindelo, Kabu Verdi",
+    "madeWith": "Fetu ku amor na Mindelu, Kabu Verdi",
+    "columns": {
+      "explore": {
+        "title": "Diskubri",
+        "links": {
+          "restaurants": "Restorantis",
+          "flavours": "Sabor",
+          "vibe": "Vibe",
+          "mindelo": "Mindelu"
+        }
+      },
+      "partners": {
+        "title": "Pa parseiru",
+        "links": {
+          "partner-portal": "Portal di parseiru",
+          "register-place": "Rejista un lugar"
+        }
+      },
+      "support": {
+        "title": "Apoiu",
+        "links": {
+          "help-center": "Sentru di ajuda",
+          "privacy-policy": "Politika di privasidadi",
+          "terms": "Termus i kondisons",
+          "contact": "Kontakta-nu"
+        }
+      }
+    },
+    "social": {
+      "title": "Sigi-nu na rédis sosial",
+      "links": {
+        "instagram": "DVIBE na Instagram",
+        "facebook": "DVIBE na Facebook"
+      }
+    }
+  }
+}

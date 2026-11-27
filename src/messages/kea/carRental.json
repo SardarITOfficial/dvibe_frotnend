@@ -1,0 +1,68 @@
+{
+  "CarRental": {
+    "eyebrow": "Alugel di karu",
+    "title": "Aluga un karu na Mindelu",
+    "description": "Skodje un karu, skodje bu data i manda bu pedidu diretu pa donu na WhatsApp.",
+    "cars": {
+      "title": "Karus disponível",
+      "description": "Skodje un karu pa kumesa bu pedidu di alugel.",
+      "empty": "Ka tem nhun karu disponível agora. Tenta di novu más tardi.",
+      "status": {
+        "available": "Disponível",
+        "unavailable": "Indisponível"
+      },
+      "categories": {
+        "economy": "Ekonómiku",
+        "suv": "SUV",
+        "van": "Furgoneta"
+      },
+      "transmission": {
+        "manual": "Manual",
+        "automatic": "Automátiku"
+      },
+      "specs": {
+        "seats": "Lugar",
+        "transmission": "Transmison",
+        "price": "Pur dia"
+      },
+      "select": "Pidi es karu",
+      "selectLabel": "Pidi es karu – {car}",
+      "provider": "Di {provider}",
+      "filter": {
+        "label": "Filtra pur empreza di alugel",
+        "all": "Tudu empreza"
+      }
+    },
+    "booking": {
+      "title": "Aluga {car}",
+      "closeLabel": "Fecha formuláriu di alugel",
+      "rentalTitle": "Detalhi di alugel",
+      "contactTitle": "Bu dadus",
+      "fields": {
+        "pickup": "Lugar di rekolha",
+        "startDate": "Data di inísiu",
+        "endDate": "Data di fin",
+        "name": "Nómi kompletu",
+        "phone": "Númeru di telefoni",
+        "note": "Nota pa donu (opsional)"
+      },
+      "errors": {
+        "pickup": "Skrebe bu lugar di rekolha.",
+        "startDate": "Skodje oji o un data futuru.",
+        "endDate": "Skodje un data di fin igual o dipus di data di inísiu.",
+        "name": "Skrebe bu nómi kompletu.",
+        "phone": "Skrebe un númeru di telefoni válidu.",
+        "note": "Mantem bu nota abaixu di 300 karátere."
+      },
+      "submit": "Pidi na WhatsApp",
+      "direct": "Bu pedidu ta abri na WhatsApp. Donu ta konfirma disponibilidadi i presu diretamenti."
+    },
+    "message": {
+      "greeting": "Olá! N kre aluga {car}.",
+      "customer": "Nómi: {name} · Telefoni: {phone}",
+      "pickup": "Rekolha: {pickup}",
+      "period": "Di: {start} · Té: {end}",
+      "note": "Nota: {note}"
+    }
+  }
+}

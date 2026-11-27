@@ -1,0 +1,55 @@
+{
+  "Taxi": {
+    "eyebrow": "Taksi i transferénsia",
+    "title": "Pidi un taksi na Mindelu",
+    "description": "Skodje un motorista di terra, djunta detalhi di bu viaji i manda bu pedidu diretu na WhatsApp.",
+    "drivers": {
+      "title": "Taksis pertu di bu",
+      "description": "Skodje un motorista disponível pa kumesa bu pedidu.",
+      "empty": "Ka tem nhun taksi disponível agora. Tenta di novu más tardi.",
+      "status": {
+        "available": "Disponível agora",
+        "unavailable": "Indisponível"
+      },
+      "rating": "{rating} · {count, plural, =1 {# avaliason} other {# avaliasons}}",
+      "select": "Pidi agora",
+      "selectLabel": "Pidi agora – {driver}",
+      "eta": "{minutes} min di distánsia"
+    },
+    "booking": {
+      "title": "Pidi un taksi ku {driver}",
+      "closeLabel": "Fecha formuláriu di pedidu",
+      "tripTitle": "Detalhi di viaji",
+      "contactTitle": "Bu dadus",
+      "fields": {
+        "pickup": "Lugar di rekolha",
+        "dropoff": "Lugar di distinu",
+        "date": "Data",
+        "time": "Ora",
+        "passengers": "Pasajeru",
+        "name": "Nómi kompletu",
+        "phone": "Númeru di telefoni",
+        "note": "Nota pa motorista (opsional)"
+      },
+      "errors": {
+        "pickup": "Skrebe bu lugar di rekolha.",
+        "dropoff": "Skrebe bu lugar di distinu.",
+        "date": "Skodje oji o un data futuru.",
+        "time": "Skodje un ora di rekolha.",
+        "passengers": "Skrebe un númeru válidu di pasajeru.",
+        "name": "Skrebe bu nómi kompletu.",
+        "phone": "Skrebe un númeru di telefoni válidu.",
+        "note": "Mantem bu nota abaixu di 300 karátere."
+      },
+      "submit": "Pidi na WhatsApp",
+      "direct": "Bu pedidu ta abri na WhatsApp. Motorista ta konfirma disponibilidadi i presu diretamenti."
+    },
+    "message": {
+      "greeting": "Olá {driver}! N kre pidi un taksi.",
+      "customer": "Nómi: {name} · Telefoni: {phone}",
+      "route": "Di: {pickup} · Pa: {dropoff}",
+      "schedule": "Data: {date} · Ora: {time} · Pasajerus: {passengers}",
+      "note": "Nota: {note}"
+    }
+  }
+}

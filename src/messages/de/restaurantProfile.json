@@ -1,0 +1,38 @@
+{
+  "RestaurantProfile": {
+    "rating": "{rating} ({count, plural, one {# Bewertung} other {# Bewertungen}})",
+    "status": {
+      "open": "Jetzt geöffnet",
+      "closed": "Geschlossen"
+    },
+    "reserve": {
+      "cta": "Tisch reservieren",
+      "label": "Tisch bei {restaurant} per WhatsApp reservieren",
+      "message": "Hallo, ich möchte gerne einen Tisch bei {restaurant} reservieren."
+    },
+    "services": {
+      "takeaway": "Takeaway",
+      "reservation": "Tischreservierung"
+    },
+    "map": {
+      "cta": "Bring mich hin",
+      "label": "{name} in Google Maps öffnen"
+    },
+    "menuTitle": "Speisekarte",
+    "emptyMenu": "Die Speisekarte ist noch nicht verfügbar.",
+    "categoriesLabel": "Menükategorien",
+    "price": "{amount} CVE",
+    "cart": {
+      "add": "In den Warenkorb",
+      "unavailable": "Nicht verfügbar",
+      "addLabel": "{dish} in den Warenkorb legen",
+      "increaseLabel": "Menge von {dish} erhöhen",
+      "decreaseLabel": "Menge von {dish} verringern",
+      "summaryLabel": "Warenkorb-Übersicht",
+      "items": "{count, plural, one {# Artikel} other {# Artikel}}",
+      "viewCart": "Warenkorb ansehen",
+      "otherRestaurant": "Dein Warenkorb enthält Artikel eines anderen Restaurants. Leere ihn, um hier zu bestellen.",
+      "clearAndStart": "Warenkorb leeren"
+    }
+  }
+}

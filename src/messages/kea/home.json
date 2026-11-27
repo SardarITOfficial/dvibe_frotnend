@@ -1,0 +1,300 @@
+{
+  "Hero": {
+    "imageAlt": "Praia i baía di Mindelu na Sã Visenti, Kabu Verdi",
+    "badge": "Bem-vindu pa Mindelu · Sã Visenti",
+    "heading": "Bu porta di entrada pa spiriénsia di Mindelu.",
+    "description": {
+      "highlight": "Kume, diskubri i senti vibe.",
+      "text": "Sabor di terra, músika ao vivu i vista di mar, tudu na un so lugar."
+    },
+    "search": {
+      "locationLabel": "Skodje bu lugar",
+      "locationPlaceholder": "Skodje bu lugar",
+      "inputLabel": "Piskiza restorantis, pratus o eventus",
+      "inputPlaceholder": "Piskiza restorantis, pratus o eventus...",
+      "submitLabel": "Piskiza",
+      "error": "Skodje un lugar o skrebe un palavra pa piskiza."
+    },
+    "locations": {
+      "mindelo": "Mindelu",
+      "laginha": "Laginha",
+      "calhau": "Calhau",
+      "baia-das-gatas": "Baía das Gatas",
+      "salamansa": "Salamansa"
+    },
+    "categories": {
+      "restaurants": "Restorantis",
+      "events": "Eventus",
+      "sunset-spots": "Pô di sol",
+      "taxi": "Taksi",
+      "car-rental": "Alugel di karu"
+    }
+  },
+  "Categories": {
+    "eyebrow": "Diskubri pur kategoria",
+    "title": "Diskubri Mindelu na bu manera",
+    "slider": {
+      "prevLabel": "Kategorias anterior",
+      "nextLabel": "Kategorias siginti"
+    },
+    "items": {
+      "food": "Kumida",
+      "vibe": "Vibe",
+      "sunset": "Pô di sol",
+      "tours": "Pasius",
+      "taxi": "Taksi"
+    }
+  },
+  "Weather": {
+    "title": "Oji na Mindelu",
+    "description": "Un pikinoti di kuza ki sta pasa na ilha oji.",
+    "metrics": {
+      "temperature": "Parsialmenti nublado",
+      "sunset": "Pô di sol",
+      "wind": "Bentu",
+      "sea": "Mar"
+    }
+  },
+  "Flavours": {
+    "eyebrow": "Sabor di Kabu Verdi",
+    "title": "Mió di kuzinha kabuverdianu",
+    "cta": "Diskubri tudu sabor",
+    "items": {
+      "cachupa": "Katxupa",
+      "friedMoray": "Moreia frita",
+      "octopus": "Polvu",
+      "fish": "Pexe",
+      "shrimp": "Kamaron",
+      "chicken": "Galinha"
+    }
+  },
+  "Restaurants": {
+    "eyebrow": "Restorantis distakadu",
+    "title": "Diskubri bu próksimu lugar favoritu.",
+    "cta": "Diskubri tudu restorante",
+    "openingHours": "Orariu di abertura",
+    "days": "Seg-Dom",
+    "viewMenu": "Odja menu",
+    "viewMenuLabel": "Odja menu – {name}",
+    "listing": {
+      "eyebrow": "Proba Mindelu",
+      "title": "Restorantis na Mindelu",
+      "description": "Odja restorantis di terra, konsulta menus i pidi takeaway diretu na WhatsApp.",
+      "searchLabel": "Piskiza restorantis o pratus",
+      "searchPlaceholder": "Piskiza restorantis o pratus...",
+      "areaLabel": "Skodje un área",
+      "allAreas": "Tudu área",
+      "submit": "Piskiza",
+      "cuisinesLabel": "Filtra pur kuzinha",
+      "allCuisines": "Tudu",
+      "featured": "Restorantis distakadu",
+      "popular": "Restorantis popular",
+      "all": "Tudu restorantis",
+      "results": "{count, plural, =1 {# restorante atxadu} other {# restorantis atxadu}}",
+      "empty": "Nhun restorante ka koresponde ku bu piskiza. Tenta otu área, kuzinha o palavra.",
+      "clear": "Limpa filtru",
+      "pagination": {
+        "navigation": "Paginason di restorantis",
+        "previous": "Pájina anterior",
+        "next": "Pájina siginti",
+        "page": "Pájina {page}"
+      }
+    },
+    "cuisines": {
+      "cape-verdean": "Kabuverdianu",
+      "pizza": "Pizza",
+      "breakfast": "Pikenu-almosu"
+    },
+    "descriptions": {
+      "pizzar": "Pizzas artezanal fetu ku ingredienti frexku, abertu te tardi pa janta i pa fomi di noti.",
+      "monte-cara": "Un pizzaria rilaxadu ki ta sirbi pizzas i pratus tradisional kabuverdianu, ideal pa kumida ku familia i grupus.",
+      "casa-tchicau": "Un kantu akolhedor pa pikenu-almosu kabuverdianu tradisional, di kuskus kenti te pastéis fritu na ora.",
+      "cantinho-do-mar": "Marisku kabuverdianu di kasa i pratus di dia, sirbidu nun anbiente akolhedor pertu di baía.",
+      "pao-quente": "Pon frexku, dosis i kafé di manhã sedu, perfetu pa un pikenu-almosu pa leba.",
+      "forno-da-praca": "Pizzas na forno di lenha i favoritus di terra na korason di Mindelu, abertu di almosu te meia-noti."
+    },
+    "items": {
+      "pizzar": "Pizzas artezanal",
+      "monte-cara": "Pratus di terra",
+      "casa-tchicau": "Kabuverdianu · Tradisional",
+      "cantinho-do-mar": "Marisku frexku",
+      "pao-quente": "Pon frexku i dosis",
+      "forno-da-praca": "Pizzas na forno di lenha"
+    },
+    "RestaurantProfile": {
+      "menuTitle": "Menu",
+      "categoriesLabel": "Kategorias di menu",
+      "emptyMenu": "Es menu inda ka sta disponível.",
+      "price": "{amount} CVE",
+      "rating": "{rating} · {count, plural, =1 {# avaliason} other {# avaliasons}}",
+      "status": {
+        "open": "Abertu agora",
+        "closed": "Fexadu"
+      },
+      "services": {
+        "takeaway": "Takeaway",
+        "reservation": "Rizerva di mesa"
+      },
+      "reserve": {
+        "cta": "Rizerva un mesa",
+        "label": "Rizerva un mesa na {restaurant} pa WhatsApp",
+        "message": "Olá {restaurant}! N kre rizerva un mesa. Data: … Ora: … Númeru di pesoas: …"
+      },
+      "cart": {
+        "add": "Djunta na karinhu",
+        "unavailable": "Indisponível",
+        "addLabel": "Djunta {dish} na karinhu",
+        "increaseLabel": "Aumenta kuantidadi di {dish}",
+        "decreaseLabel": "Diminui kuantidadi di {dish}",
+        "summaryLabel": "Rezumu di karinhu",
+        "items": "{count, plural, =1 {# item} other {# itens}}",
+        "viewCart": "Odja karinhu",
+        "otherRestaurant": "Bu karinhu tem itens di otu restorante. Diskarega-l pa pidi di li.",
+        "clearAndStart": "Diskarega karinhu"
+      }
+    }
+  },
+  "Vibe": {
+    "eyebrow": "Senti vibe",
+    "title": "Senti ritmu di Mindelu",
+    "cta": "Diskubri tudu vibe",
+    "page": {
+      "title": "Eventus, músika i vida di noti na Mindelu",
+      "description": "Di morna ao vivu te festa na teradu, odja kuzé ki sta pasa na ilha.",
+      "filtersLabel": "Filtra pur vibe",
+      "all": "Tudu",
+      "eventsTitle": "Kuzé ki sta pasa",
+      "empty": "Inda ka tem nada planeadu pa es seleson. Tenta otu data o kategoria.",
+      "time": {
+        "label": "Filtra pur data",
+        "today": "Oji",
+        "tomorrow": "Manhã",
+        "weekend": "Fin di simana",
+        "week": "Es simana",
+        "upcoming": "Pa ben",
+        "fromToday": "Di oji pa frenti"
+      }
+    },
+    "card": {
+      "takeMeThere": "Leba-m la"
+    },
+    "details": {
+      "back": "Volta pa tudu vibe",
+      "about": "Sobri es evento",
+      "whatToExpect": "Kuzé pa spera",
+      "location": "Lugar",
+      "date": "Data",
+      "time": "Ora",
+      "share": {
+        "label": "Partilha",
+        "copied": "Link kopiadu"
+      },
+      "countdown": {
+        "label": "Evento ta kumesa en",
+        "days": "Dias",
+        "hours": "Oras",
+        "minutes": "Min",
+        "seconds": "Seg"
+      },
+      "venue": {
+        "title": "Lugar di evento",
+        "openMap": "Abri na Google Maps"
+      },
+      "policy": {
+        "title": "Regras di evento"
+      },
+      "booking": {
+        "title": "Bilhetis i rizerva",
+        "description": "Kontakta organizador diretu na WhatsApp pa rizerva.",
+        "ticketsLabel": "Tipu di bilheti",
+        "cta": "Rizerva na WhatsApp",
+        "message": "Olá! N kre rizerva pa {title} na {date} as {time}."
+      }
+    },
+    "items": {
+      "live-music": {
+        "title": "Músika ao vivu",
+        "description": "Diskubri son di terra"
+      },
+      "events": {
+        "title": "Eventus",
+        "description": "Kuzé ki sta pasa oji"
+      },
+      "nightlife": {
+        "title": "Vida di noti",
+        "description": "Vive noti"
+      }
+    }
+  },
+  "Island": {
+    "eyebrow": "Pa lá di sidadi",
+    "title": "Diskubri beleza di Sã Visenti",
+    "cta": "Diskubri tudu",
+    "items": {
+      "beaches": {
+        "title": "Praias",
+        "description": "Sol, aréia i mar"
+      },
+      "sunset-spots": {
+        "title": "Pô di sol",
+        "description": "Diskubri vistas bonitu"
+      },
+      "tours": {
+        "title": "Pasius i kaminhadas",
+        "description": "Diskubri ilha"
+      }
+    }
+  },
+  "Transport": {
+    "eyebrow": "Transporti i mobilidadi",
+    "title": "Anda na Mindelu sen difikuldadi",
+    "items": {
+      "taxi": {
+        "title": "Taksi i transferénsia",
+        "description": "Kontakta motoristas di terra i kombina bu viaji diretamenti.",
+        "cta": "Buska un taksi"
+      },
+      "car-rental": {
+        "title": "Alugel di karu",
+        "description": "Diskubri opson di alugel di karu i diskubri Sã Visenti na bu ritmu.",
+        "cta": "Odja karus"
+      }
+    }
+  },
+  "Ferry": {
+    "eyebrow": "Spiriénsia di barku",
+    "title": "Bu viaji di barku ku DVIBE",
+    "before": {
+      "title": "Antis di barku",
+      "description": "Kumida, kafé i transporti antis di bu partida.",
+      "cta": "Buska kumida pertu",
+      "items": {
+        "restaurants": "Restorantis",
+        "coffee-snacks": "Kafé i lanxi",
+        "taxi-to-port": "Taksi pa porto"
+      }
+    },
+    "schedules": {
+      "title": "Orariu di barku",
+      "description": "Orariu di barku di Sã Visenti, atualizadu.",
+      "cta": "Odja orariu kompletu",
+      "departure": "Partida"
+    },
+    "after": {
+      "title": "Dipus di barku",
+      "description": "Diskubri restorantis, transporti i spiriénsias na ilha.",
+      "cta": "Diskubri dipus di txegada",
+      "items": {
+        "restaurants": "Restorantis",
+        "transport-car-rental": "Transporti i alugel di karu",
+        "local-experiences": "Spiriénsias di terra"
+      }
+    }
+  },
+  "Cta": {
+    "title": "Faze kada momentu na Mindelu kontá",
+    "description": "Diskubri sabor, músika, djenti i lugar ki ta faze Kabu Verdi inskesível.",
+    "primaryCta": "Diskubri Mindelu",
+    "secondaryCta": "Diskubri vibe"
+  }
+}

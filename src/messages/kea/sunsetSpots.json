@@ -1,0 +1,19 @@
+{
+  "SunsetSpots": {
+    "eyebrow": "Ora dourada",
+    "title": "Lugar di pô di sol na Sã Visenti",
+    "description": "Mió lugar na ilha pa odja sol bai dentu di Atlántiku.",
+    "listTitle": "Undi odja pô di sol",
+    "card": {
+      "takeMeThere": "Leba-m la",
+      "bestTime": "Mió as {time}",
+      "opensInNewTab": "ta abri na Google Maps nun aba nobu"
+    },
+    "descriptions": {
+      "laginha-beach": "Un praia largu di aréia ku baía kalmu, perfetu pa un kaminhada rilaxadu kuando séu ta fika laranja.",
+      "baia-das-gatas": "Un baía trankilu na kosta, ideal pa odja pô di sol ku son di onda.",
+      "fortim-del-rei": "Un forti istóriku riba di Mindelu ku vista abertu pa baía i porto.",
+      "monte-verde": "Pontu más altu di ilha, ku vista largu di Sã Visenti i ilhas vizinhu."
+    }
+  }
+}

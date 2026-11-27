@@ -1,0 +1,26 @@
+{
+  "Beaches": {
+    "eyebrow": "Sol og hav",
+    "title": "Strender på São Vicente",
+    "description": "Gyllen sand, rolige viker og vindfulle kyster: finn den rette stranden for dagen din på øya.",
+    "listTitle": "Hvor du kan tilbringe dagen ved sjøen",
+    "card": {
+      "takeMeThere": "Ta meg dit",
+      "opensInNewTab": "åpnes i Google Maps i en ny fane"
+    },
+    "highlights": {
+      "calm-water": "Rolig vann",
+      "family": "Familievennlig",
+      "lively": "Livlig stemning",
+      "windsurf": "Windsurfing og kitesurfing"
+    },
+    "descriptions": {
+      "laginha-beach": "Mindelos mest populære strand, med myk sand, kaféer i nærheten og et avslappet lokalt publikum.",
+      "praia-grande": "En lang sandstrand nær sentrum, lett å nå for en rask svømmetur.",
+      "baia-das-gatas": "En skjermet vik med strandbarer og hjemsted for øyas kjente musikkfestival.",
+      "salamansa": "En vill og vindfull kyst med svart sand og noen av de beste forholdene for vindsport.",
+      "calhau": "En stille kystlandsby med en fredelig strand, langt unna de travlere stedene.",
+      "sao-pedro": "En bred strand nær flyplassen med god plass og fri utsikt over havet."
+    }
+  }
+}

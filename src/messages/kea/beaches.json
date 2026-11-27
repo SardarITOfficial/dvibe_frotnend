@@ -1,0 +1,26 @@
+{
+  "Beaches": {
+    "eyebrow": "Sol i mar",
+    "title": "Praias di Sã Visenti",
+    "description": "Aréia dourada, baías kalmu i kosta ku bentu: diskubri praia ideal pa bu dia na ilha.",
+    "listTitle": "Undi pasa dia na mar",
+    "card": {
+      "takeMeThere": "Leba-m la",
+      "opensInNewTab": "ta abri na Google Maps nun aba nobu"
+    },
+    "highlights": {
+      "calm-water": "Água kalmu",
+      "family": "Bom pa familia",
+      "lively": "Anbiente animadu",
+      "windsurf": "Windsurf i kitesurf"
+    },
+    "descriptions": {
+      "laginha-beach": "Praia más konhesidu di Mindelu, ku aréia mansu, kafé pertu i djenti di terra rilaxadu.",
+      "praia-grande": "Un grandi faixa di aréia pertu di sentru di sidadi, fásil di txiga pa un banhu ligeru.",
+      "baia-das-gatas": "Un baía protejidu ku bar di praia i kasa di famozu festival di músika di ilha.",
+      "salamansa": "Un kosta bravu ku bentu, ku aréia pretu i algun di mió kondison pa spórt di bentu.",
+      "calhau": "Un vila di kosta trankilu ku un praia di pas, lonji di lugar más movimentadu.",
+      "sao-pedro": "Un praia largu pertu di aeroportu, ku spasu pa spanda i vista limpu pa mar."
+    }
+  }
+}

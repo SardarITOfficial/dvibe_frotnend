@@ -1,0 +1,41 @@
+{
+  "Cart": {
+    "title": "Dein Warenkorb",
+    "subtitle": "{count, plural, one {# Artikel} other {# Artikel}} von {restaurant}",
+    "backToMenu": "Zurück zur Speisekarte",
+    "loading": "Dein Warenkorb wird geladen...",
+    "price": "{amount} CVE",
+    "total": "Gesamt",
+    "removeLabel": "{dish} aus dem Warenkorb entfernen",
+    "decreaseLabel": "Menge von {dish} verringern",
+    "increaseLabel": "Menge von {dish} erhöhen",
+    "summary": {
+      "title": "Bestellübersicht",
+      "clear": "Warenkorb leeren",
+      "items": "Artikel"
+    },
+    "empty": {
+      "title": "Dein Warenkorb ist leer",
+      "description": "Stöbere in Restaurants und füge deine Lieblingsgerichte hinzu.",
+      "cta": "Restaurants ansehen"
+    },
+    "form": {
+      "title": "Abholdetails",
+      "nameLabel": "Dein Name",
+      "phoneLabel": "Telefonnummer",
+      "noteLabel": "Hinweis an das Restaurant (optional)",
+      "nameError": "Gib deinen Namen ein.",
+      "phoneError": "Gib eine gültige Telefonnummer ein.",
+      "noteError": "Der Hinweis ist zu lang (maximal 300 Zeichen).",
+      "submit": "Per WhatsApp bestellen",
+      "direct": "Deine Bestellung geht direkt per WhatsApp an {restaurant}.",
+      "orderError": "Wir konnten deine Bestellung nicht aufgeben. Bitte versuche es erneut."
+    },
+    "message": {
+      "header": "Hallo! Neue Takeaway-Bestellung {orderNumber} von {name} ({phone}):",
+      "line": "{quantity} x {name} - {amount} CVE",
+      "total": "Gesamt: {amount} CVE",
+      "note": "Hinweis: {note}"
+    }
+  }
+}

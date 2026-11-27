@@ -1,0 +1,300 @@
+{
+  "Hero": {
+    "imageAlt": "Playa y bahía de Mindelo en São Vicente, Cabo Verde",
+    "badge": "Bienvenido a Mindelo · São Vicente",
+    "heading": "Tu puerta de entrada a la experiencia Mindelo.",
+    "description": {
+      "highlight": "Come, explora y siente el vibe.",
+      "text": "Sabores locales, música en vivo y vistas al océano, todo en un solo lugar."
+    },
+    "search": {
+      "locationLabel": "Elige tu ubicación",
+      "locationPlaceholder": "Elige tu ubicación",
+      "inputLabel": "Busca restaurantes, platos o eventos",
+      "inputPlaceholder": "Busca restaurantes, platos o eventos...",
+      "submitLabel": "Buscar",
+      "error": "Elige una ubicación o introduce un término de búsqueda."
+    },
+    "locations": {
+      "mindelo": "Mindelo",
+      "laginha": "Laginha",
+      "calhau": "Calhau",
+      "baia-das-gatas": "Baía das Gatas",
+      "salamansa": "Salamansa"
+    },
+    "categories": {
+      "restaurants": "Restaurantes",
+      "events": "Eventos",
+      "sunset-spots": "Puestas de sol",
+      "taxi": "Taxi",
+      "car-rental": "Alquiler de coches"
+    }
+  },
+  "Categories": {
+    "eyebrow": "Explora por categorías",
+    "title": "Descubre Mindelo a tu manera",
+    "slider": {
+      "prevLabel": "Categorías anteriores",
+      "nextLabel": "Categorías siguientes"
+    },
+    "items": {
+      "food": "Comida",
+      "vibe": "Vibe",
+      "sunset": "Atardecer",
+      "tours": "Tours",
+      "taxi": "Taxi"
+    }
+  },
+  "Weather": {
+    "title": "Hoy en Mindelo",
+    "description": "Un pequeño vistazo a lo que ocurre hoy por la isla.",
+    "metrics": {
+      "temperature": "Parcialmente nublado",
+      "sunset": "Puesta de sol",
+      "wind": "Viento",
+      "sea": "Mar"
+    }
+  },
+  "Flavours": {
+    "eyebrow": "Sabores de Cabo Verde",
+    "title": "Lo mejor de la cocina caboverdiana",
+    "cta": "Explorar todos los sabores",
+    "items": {
+      "cachupa": "Cachupa",
+      "friedMoray": "Morena frita",
+      "octopus": "Pulpo",
+      "fish": "Pescado",
+      "shrimp": "Gambas",
+      "chicken": "Pollo"
+    }
+  },
+  "Restaurants": {
+    "eyebrow": "Restaurantes destacados",
+    "title": "Encuentra tu próximo lugar favorito.",
+    "cta": "Explorar todos los restaurantes",
+    "openingHours": "Horario de apertura",
+    "days": "Lun-Dom",
+    "viewMenu": "Ver menú",
+    "viewMenuLabel": "Ver menú – {name}",
+    "listing": {
+      "eyebrow": "Saborea Mindelo",
+      "title": "Restaurantes en Mindelo",
+      "description": "Explora restaurantes locales, consulta sus menús y pide comida para llevar directamente por WhatsApp.",
+      "searchLabel": "Buscar restaurantes o platos",
+      "searchPlaceholder": "Buscar restaurantes o platos...",
+      "areaLabel": "Elige una zona",
+      "allAreas": "Todas las zonas",
+      "submit": "Buscar",
+      "cuisinesLabel": "Filtrar por cocina",
+      "allCuisines": "Todas",
+      "featured": "Restaurantes destacados",
+      "popular": "Restaurantes populares",
+      "all": "Todos los restaurantes",
+      "results": "{count, plural, one {# restaurante encontrado} other {# restaurantes encontrados}}",
+      "empty": "Ningún restaurante coincide con tu búsqueda. Prueba otra zona, cocina o palabra clave.",
+      "clear": "Borrar filtros",
+      "pagination": {
+        "navigation": "Paginación de restaurantes",
+        "previous": "Página anterior",
+        "next": "Página siguiente",
+        "page": "Página {page}"
+      }
+    },
+    "cuisines": {
+      "cape-verdean": "Caboverdiana",
+      "pizza": "Pizza",
+      "breakfast": "Desayuno"
+    },
+    "descriptions": {
+      "pizzar": "Pizzas artesanales hechas con ingredientes frescos, abierto hasta tarde para cenas y antojos nocturnos.",
+      "monte-cara": "Una pizzería relajada que sirve pizzas y platos tradicionales caboverdianos, ideal para comidas en familia y en grupo.",
+      "casa-tchicau": "Un lugar acogedor para un desayuno tradicional caboverdiano, desde cuscús caliente hasta pastéis recién fritos.",
+      "cantinho-do-mar": "Mariscos caseros caboverdianos y platos del día, servidos en un ambiente acogedor cerca de la bahía.",
+      "pao-quente": "Pan fresco, pasteles y café desde primera hora de la mañana, perfecto para un desayuno rápido para llevar.",
+      "forno-da-praca": "Pizzas al horno de leña y favoritos locales en el corazón de Mindelo, abierto desde el almuerzo hasta la medianoche."
+    },
+    "items": {
+      "pizzar": "Pizzas artesanales",
+      "monte-cara": "Platos locales",
+      "casa-tchicau": "Caboverdiana · Tradicional",
+      "cantinho-do-mar": "Mariscos frescos",
+      "pao-quente": "Pan fresco y pasteles",
+      "forno-da-praca": "Pizzas al horno de leña"
+    },
+    "RestaurantProfile": {
+      "menuTitle": "Menú",
+      "categoriesLabel": "Categorías del menú",
+      "emptyMenu": "Este menú aún no está disponible.",
+      "price": "{amount} CVE",
+      "rating": "{rating} · {count, plural, one {# reseña} other {# reseñas}}",
+      "status": {
+        "open": "Abierto ahora",
+        "closed": "Cerrado"
+      },
+      "services": {
+        "takeaway": "Para llevar",
+        "reservation": "Reserva de mesa"
+      },
+      "reserve": {
+        "cta": "Reservar una mesa",
+        "label": "Reservar una mesa en {restaurant} por WhatsApp",
+        "message": "¡Hola {restaurant}! Me gustaría reservar una mesa. Fecha: … Hora: … Número de personas: …"
+      },
+      "cart": {
+        "add": "Añadir al carrito",
+        "unavailable": "No disponible",
+        "addLabel": "Añadir {dish} al carrito",
+        "increaseLabel": "Aumentar la cantidad de {dish}",
+        "decreaseLabel": "Reducir la cantidad de {dish}",
+        "summaryLabel": "Resumen del carrito",
+        "items": "{count, plural, one {# artículo} other {# artículos}}",
+        "viewCart": "Ver carrito",
+        "otherRestaurant": "Tu carrito tiene artículos de otro restaurante. Vacíalo para pedir aquí.",
+        "clearAndStart": "Vaciar carrito"
+      }
+    }
+  },
+  "Vibe": {
+    "eyebrow": "Siente el vibe",
+    "title": "Siente el ritmo de Mindelo",
+    "cta": "Explorar todos los vibes",
+    "page": {
+      "title": "Eventos, música y vida nocturna en Mindelo",
+      "description": "Desde morna en vivo hasta fiestas en azoteas, descubre lo que pasa por la isla.",
+      "filtersLabel": "Filtrar por vibe",
+      "all": "Todos",
+      "eventsTitle": "Qué hay",
+      "empty": "Aún no hay nada planeado para esta selección. Prueba con otra fecha o categoría.",
+      "time": {
+        "label": "Filtrar por fecha",
+        "today": "Hoy",
+        "tomorrow": "Mañana",
+        "weekend": "Fin de semana",
+        "week": "Esta semana",
+        "upcoming": "Próximamente",
+        "fromToday": "Desde hoy"
+      }
+    },
+    "card": {
+      "takeMeThere": "Llévame allí"
+    },
+    "details": {
+      "back": "Volver a todos los vibes",
+      "about": "Sobre este evento",
+      "whatToExpect": "Qué esperar",
+      "location": "Ubicación",
+      "date": "Fecha",
+      "time": "Hora",
+      "share": {
+        "label": "Compartir",
+        "copied": "Enlace copiado"
+      },
+      "countdown": {
+        "label": "El evento empieza en",
+        "days": "Días",
+        "hours": "Horas",
+        "minutes": "Min",
+        "seconds": "Seg"
+      },
+      "venue": {
+        "title": "Lugar del evento",
+        "openMap": "Abrir en Google Maps"
+      },
+      "policy": {
+        "title": "Normas del evento"
+      },
+      "booking": {
+        "title": "Entradas y reservas",
+        "description": "Contacta directamente con el organizador por WhatsApp para reservar.",
+        "ticketsLabel": "Tipos de entrada",
+        "cta": "Reservar por WhatsApp",
+        "message": "¡Hola! Me gustaría reservar para {title} el {date} a las {time}."
+      }
+    },
+    "items": {
+      "live-music": {
+        "title": "Música en vivo",
+        "description": "Descubre los sonidos locales"
+      },
+      "events": {
+        "title": "Eventos",
+        "description": "Lo que pasa hoy"
+      },
+      "nightlife": {
+        "title": "Vida nocturna",
+        "description": "Vive la noche"
+      }
+    }
+  },
+  "Island": {
+    "eyebrow": "Más allá de la ciudad",
+    "title": "Descubre la belleza de São Vicente",
+    "cta": "Explorar todo",
+    "items": {
+      "beaches": {
+        "title": "Playas",
+        "description": "Sol, arena y mar"
+      },
+      "sunset-spots": {
+        "title": "Puestas de sol",
+        "description": "Descubre vistas preciosas"
+      },
+      "tours": {
+        "title": "Tours y paseos",
+        "description": "Explora la isla"
+      }
+    }
+  },
+  "Transport": {
+    "eyebrow": "Transporte y movilidad",
+    "title": "Moverse por Mindelo, fácil",
+    "items": {
+      "taxi": {
+        "title": "Taxi y traslados",
+        "description": "Conecta con conductores locales y organiza tu viaje directamente.",
+        "cta": "Buscar un taxi"
+      },
+      "car-rental": {
+        "title": "Alquiler de coches",
+        "description": "Descubre opciones de alquiler de coches y explora São Vicente a tu propio ritmo.",
+        "cta": "Ver coches"
+      }
+    }
+  },
+  "Ferry": {
+    "eyebrow": "La experiencia del ferry",
+    "title": "Tu viaje en ferry con DVIBE",
+    "before": {
+      "title": "Antes del ferry",
+      "description": "Comida, café y transporte antes de tu salida.",
+      "cta": "Buscar comida cerca",
+      "items": {
+        "restaurants": "Restaurantes",
+        "coffee-snacks": "Café y snacks",
+        "taxi-to-port": "Taxi al puerto"
+      }
+    },
+    "schedules": {
+      "title": "Horarios del ferry",
+      "description": "Horarios del ferry de São Vicente actualizados en directo.",
+      "cta": "Ver horario completo",
+      "departure": "Salida"
+    },
+    "after": {
+      "title": "Después del ferry",
+      "description": "Descubre restaurantes, transporte y experiencias en la isla.",
+      "cta": "Explorar tras la llegada",
+      "items": {
+        "restaurants": "Restaurantes",
+        "transport-car-rental": "Transporte y alquiler de coches",
+        "local-experiences": "Experiencias locales"
+      }
+    }
+  },
+  "Cta": {
+    "title": "Haz que cada momento en Mindelo cuente",
+    "description": "Descubre los sabores, la música, la gente y los lugares que hacen inolvidable a Cabo Verde.",
+    "primaryCta": "Explorar Mindelo",
+    "secondaryCta": "Descubrir el vibe"
+  }
+}

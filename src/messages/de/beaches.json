@@ -1,0 +1,26 @@
+{
+  "Beaches": {
+    "eyebrow": "Sonne & Meer",
+    "title": "Strände auf São Vicente",
+    "description": "Goldener Sand, ruhige Buchten und windige Küsten: Finde den passenden Strand für deinen Tag auf der Insel.",
+    "listTitle": "Wo du den Tag am Meer verbringst",
+    "card": {
+      "takeMeThere": "Bring mich hin",
+      "opensInNewTab": "öffnet Google Maps in einem neuen Tab"
+    },
+    "highlights": {
+      "calm-water": "Ruhiges Wasser",
+      "family": "Familienfreundlich",
+      "lively": "Lebendige Atmosphäre",
+      "windsurf": "Windsurfen & Kitesurfen"
+    },
+    "descriptions": {
+      "laginha-beach": "Mindelos beliebtester Strand mit feinem Sand, Cafés in der Nähe und entspanntem einheimischem Publikum.",
+      "praia-grande": "Ein langer Sandstrand nahe dem Stadtzentrum, leicht erreichbar für ein kurzes Bad.",
+      "baia-das-gatas": "Eine geschützte Bucht mit Strandbars und Heimat des berühmten Musikfestivals der Insel.",
+      "salamansa": "Eine wilde, windige Küste mit schwarzem Sand und einigen der besten Bedingungen für Windsport.",
+      "calhau": "Ein ruhiges Küstendorf mit einem friedlichen Strand, abseits der belebteren Orte.",
+      "sao-pedro": "Ein breiter Strand in der Nähe des Flughafens mit viel Platz und klarem Blick aufs Meer."
+    }
+  }
+}

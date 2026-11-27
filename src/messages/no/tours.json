@@ -1,0 +1,175 @@
+{
+  "Tours": {
+    "eyebrow": "Utforsk øya",
+    "title": "Turer og vandringer på São Vicente",
+    "description": "Guidede fotturer, dagsturer og byvandringer med lokale arrangører.",
+    "listTitle": "Velg tur",
+    "price": "{amount} CVE",
+    "perPerson": "per person",
+    "duration": "{hours, plural, one {# time} other {# timer}}",
+    "card": {
+      "viewDetails": "Se detaljer"
+    },
+    "details": {
+      "back": "Tilbake til alle turer",
+      "about": "Om denne turen",
+      "highlights": "Høydepunkter",
+      "included": "Hva som er inkludert",
+      "meetingPoint": "Møtested",
+      "openMap": "Åpne i Google Maps",
+      "location": "Sted",
+      "duration": "Varighet",
+      "price": "Pris",
+      "booking": {
+        "title": "Book denne turen",
+        "description": "Kontakt arrangøren direkte på WhatsApp for å sikre plassen din.",
+        "cta": "Book på WhatsApp",
+        "message": "Hei! Jeg vil gjerne booke turen {tour}. Dato: … Antall personer: …"
+      },
+      "gallery": {
+        "title": "Bildegalleri",
+        "imageAlt": "{tour}, bilde {index}",
+        "showLabel": "Vis bilde {index} av {total}",
+        "previousLabel": "Forrige bilde",
+        "nextLabel": "Neste bilde",
+        "counter": "{current} / {total}"
+      }
+    },
+    "sections": {
+      "notIncluded": "Ikke inkludert",
+      "bring": "Hva du bør ta med",
+      "knowBeforeYouGo": "Greit å vite før du drar",
+      "itinerary": "Program",
+      "ratings": "Vurderinger",
+      "faq": "Ofte stilte spørsmål"
+    },
+    "facts": {
+      "languages": "Språk",
+      "pickup": "Henting inkludert",
+      "accessible": "Rullestoltilgjengelig",
+      "freeCancellation": "Gratis avbestilling inntil {hours} t før"
+    },
+    "rating": {
+      "basedOn": "Basert på {count} anmeldelser",
+      "guide": "Guide",
+      "transportation": "Transport",
+      "valueForMoney": "Valuta for pengene"
+    },
+    "included": {
+      "guide": "Lokal guide",
+      "transport": "Transport",
+      "water": "Drikkevann",
+      "lunch": "Lunsj",
+      "ferry": "Returbillett for ferja",
+      "briefing": "Kort informasjon om turen",
+      "safety": "Sikkerhetsinstruksjoner",
+      "gear": "Snorkelmaske og vest",
+      "photos": "Bilder og videoer"
+    },
+    "notIncluded": {
+      "food": "Mat og drikke",
+      "tips": "Driks"
+    },
+    "bring": {
+      "swimwear": "Badetøy",
+      "towel": "Håndkle",
+      "sunscreen": "Revvennlig solkrem",
+      "phoneCase": "Vanntett mobildeksel"
+    },
+    "knowBeforeYouGo": {
+      "comfortableInWater": "Deltakere bør føle seg trygge i vann",
+      "respectMarineLife": "Respekt for livet i havet og miljøet er obligatorisk",
+      "noTouching": "Ikke rør skilpaddene"
+    },
+    "items": {
+      "monte-verde-hike": {
+        "name": "Soloppgangstur til Monte Verde",
+        "description": "Gå opp på São Vicentes høyeste topp med en lokal guide og nyt vid utsikt over øya og kysten i nærheten.",
+        "highlights": {
+          "views": {
+            "title": "Utsikt fra toppen",
+            "description": "Se ut over Mindelo, bukten og naboøyene."
+          },
+          "guide": {
+            "title": "Lokal guide",
+            "description": "Lær om øyas planter, historie og fortellinger underveis."
+          }
+        }
+      },
+      "santo-antao-day-trip": {
+        "name": "Dagstur til Santo Antão",
+        "description": "Ta ferja til Santo Antão for en hel dag med grønne daler, fjellveier og lokal mat.",
+        "highlights": {
+          "ferry": {
+            "title": "Ferjeoverfart",
+            "description": "En naturskjønn overfart mellom de to øyene."
+          },
+          "valleys": {
+            "title": "Grønne daler",
+            "description": "Kjør gjennom dramatiske fjellandskap og jordbrukslandsbyer."
+          }
+        }
+      },
+      "mindelo-city-walk": {
+        "name": "Byvandring i Mindelo",
+        "description": "En rolig vandring gjennom Mindelos koloniale sentrum, markeder, torg og musikalske landemerker.",
+        "highlights": {
+          "history": {
+            "title": "Det koloniale sentrum",
+            "description": "Oppdag de gamle gatene, markedet og havnepromenaden."
+          },
+          "music": {
+            "title": "Musikkhistorier",
+            "description": "Besøk steder knyttet til morna og øyas berømte musikere."
+          }
+        }
+      },
+      "sea-turtles-sao-pedro": {
+        "name": "Svøm med havskilpadder i São Pedro",
+        "description": "Snorkle med havskilpadder i fiskerlandsbyen São Pedro. Et lokalt team gir en kort innføring og tar deg med til klart vann der skilpaddene svømmer fritt, slik at opplevelsen er trygg og respektfull overfor dyrene.",
+        "highlights": {
+          "snorkel": {
+            "title": "Snorkle med skilpadder",
+            "description": "Svøm ved siden av skilpadder i klart, rolig vann."
+          },
+          "marineLife": {
+            "title": "Havlivet på nært hold",
+            "description": "Se fisk og havbunnen i sine naturlige omgivelser."
+          }
+        },
+        "itinerary": {
+          "pickup": {
+            "title": "Henting i Mindelo",
+            "text": "Møt sjåføren på avtalt hentested."
+          },
+          "snorkel": {
+            "title": "Snorkling med skilpadder",
+            "text": "Innføring, båttur og guidet snorkling."
+          },
+          "return": {
+            "title": "Retur til Mindelo",
+            "text": "Tilbake på hentestedet ditt."
+          }
+        },
+        "faq": {
+          "swimmer": {
+            "question": "Må jeg være en god svømmer?",
+            "answer": "Nei, men du bør føle deg trygg i vann. Masker og vester følger med."
+          },
+          "children": {
+            "question": "Passer det for barn?",
+            "answer": "Spør arrangøren på WhatsApp om aldersgrenser."
+          },
+          "weather": {
+            "question": "Hva hvis det er dårlig vær?",
+            "answer": "Arrangøren tar kontakt for å finne en ny dato."
+          },
+          "videos": {
+            "question": "Får jeg bilder eller videoer?",
+            "answer": "Ja, teamet tar dem og deler dem med deg."
+          }
+        }
+      }
+    }
+  }
+}

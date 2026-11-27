@@ -1,0 +1,55 @@
+{
+  "Taxi": {
+    "eyebrow": "Drosje og transfer",
+    "title": "Bestill drosje i Mindelo",
+    "description": "Velg en lokal sjåfør, legg til turdetaljene og send forespørselen din direkte på WhatsApp.",
+    "drivers": {
+      "title": "Drosjer i nærheten",
+      "description": "Velg en ledig sjåfør for å starte forespørselen din.",
+      "empty": "Ingen drosjer er tilgjengelige akkurat nå. Prøv igjen senere.",
+      "status": {
+        "available": "Ledig nå",
+        "unavailable": "Ikke tilgjengelig"
+      },
+      "rating": "{rating} · {count, plural, one {# anmeldelse} other {# anmeldelser}}",
+      "select": "Bestill nå",
+      "selectLabel": "Bestill nå – {driver}",
+      "eta": "{minutes} min unna"
+    },
+    "booking": {
+      "title": "Bestill drosje hos {driver}",
+      "closeLabel": "Lukk bestillingsskjema",
+      "tripTitle": "Turdetaljer",
+      "contactTitle": "Dine opplysninger",
+      "fields": {
+        "pickup": "Hentested",
+        "dropoff": "Avleveringssted",
+        "date": "Dato",
+        "time": "Tid",
+        "passengers": "Passasjerer",
+        "name": "Fullt navn",
+        "phone": "Telefonnummer",
+        "note": "Melding til sjåføren (valgfritt)"
+      },
+      "errors": {
+        "pickup": "Skriv inn hentestedet.",
+        "dropoff": "Skriv inn avleveringsstedet.",
+        "date": "Velg i dag eller en fremtidig dato.",
+        "time": "Velg et hentetidspunkt.",
+        "passengers": "Skriv inn et gyldig antall passasjerer.",
+        "name": "Skriv inn fullt navn.",
+        "phone": "Skriv inn et gyldig telefonnummer.",
+        "note": "Hold meldingen under 300 tegn."
+      },
+      "submit": "Forespør på WhatsApp",
+      "direct": "Forespørselen åpnes i WhatsApp. Sjåføren bekrefter tilgjengelighet og pris direkte."
+    },
+    "message": {
+      "greeting": "Hei {driver}! Jeg vil gjerne bestille en drosje.",
+      "customer": "Navn: {name} · Telefon: {phone}",
+      "route": "Fra: {pickup} · Til: {dropoff}",
+      "schedule": "Dato: {date} · Tid: {time} · Passasjerer: {passengers}",
+      "note": "Melding: {note}"
+    }
+  }
+}

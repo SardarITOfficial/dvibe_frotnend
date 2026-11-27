@@ -1,0 +1,67 @@
+{
+  "Header": {
+    "nav": {
+      "explore": "Utforsk",
+      "vibe": "Vibe",
+      "restaurants": "Restauranter",
+      "sunsetSpots": "Solnedgangssteder",
+      "taxi": "Drosje",
+      "carRental": "Bilutleie"
+    },
+    "servicesMenu": {
+      "webDesign": "Webdesign",
+      "photography": "Fotografi",
+      "transport": "Transport",
+      "events": "Arrangementer"
+    },
+    "cta": "Logg inn",
+    "languageLabel": "Velg språk",
+    "openMenu": "Åpne navigasjonsmenyen",
+    "closeMenu": "Lukk navigasjonsmenyen"
+  },
+  "Metadata": {
+    "title": "DVIBE | Spis, utforsk og kjenn vibben på Kapp Verde",
+    "description": "Oppdag restauranter, arrangementer, uteliv, solnedgangssteder, drosjer og bilutleie i Mindelo, São Vicente og over hele Kapp Verde.",
+    "ogImageAlt": "DVIBE – Mindelo, São Vicente, Kapp Verde"
+  },
+  "Footer": {
+    "logoAlt": "DVIBE",
+    "tagline": "Oppdag ekte smaker, levende kultur og uforglemmelige opplevelser på Kapp Verde.",
+    "copyright": "© {year} DVIBE · Mindelo, Kabu Verdi",
+    "madeWith": "Laget med kjærlighet i Mindelo, Kapp Verde",
+    "columns": {
+      "explore": {
+        "title": "Utforsk",
+        "links": {
+          "restaurants": "Restauranter",
+          "flavours": "Smaker",
+          "vibe": "Vibe",
+          "mindelo": "Mindelo"
+        }
+      },
+      "partners": {
+        "title": "For partnere",
+        "links": {
+          "partner-portal": "Partnerportal",
+          "register-place": "Registrer et sted"
+        }
+      },
+      "support": {
+        "title": "Støtte",
+        "links": {
+          "help-center": "Hjelpesenter",
+          "privacy-policy": "Personvernerklæring",
+          "terms": "Vilkår og betingelser",
+          "contact": "Kontakt oss"
+        }
+      }
+    },
+    "social": {
+      "title": "Følg oss i sosiale medier",
+      "links": {
+        "instagram": "DVIBE på Instagram",
+        "facebook": "DVIBE på Facebook"
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "Taxi": {
+    "eyebrow": "Taxi & Transfers",
+    "title": "Taxi in Mindelo buchen",
+    "description": "Wähle einen lokalen Fahrer, ergänze deine Fahrtdetails und sende deine Anfrage direkt per WhatsApp.",
+    "drivers": {
+      "title": "Taxis in deiner Nähe",
+      "description": "Wähle einen verfügbaren Fahrer, um deine Anfrage zu starten.",
+      "empty": "Derzeit sind keine Taxis verfügbar. Bitte versuche es später erneut.",
+      "status": {
+        "available": "Jetzt verfügbar",
+        "unavailable": "Nicht verfügbar"
+      },
+      "rating": "{rating} · {count, plural, one {# Bewertung} other {# Bewertungen}}",
+      "select": "Jetzt buchen",
+      "selectLabel": "Jetzt buchen – {driver}",
+      "eta": "{minutes} Min. entfernt"
+    },
+    "booking": {
+      "title": "Taxi bei {driver} buchen",
+      "closeLabel": "Buchungsformular schließen",
+      "tripTitle": "Fahrtdetails",
+      "contactTitle": "Deine Angaben",
+      "fields": {
+        "pickup": "Abholort",
+        "dropoff": "Zielort",
+        "date": "Datum",
+        "time": "Uhrzeit",
+        "passengers": "Fahrgäste",
+        "name": "Vollständiger Name",
+        "phone": "Telefonnummer",
+        "note": "Hinweis an den Fahrer (optional)"
+      },
+      "errors": {
+        "pickup": "Gib deinen Abholort ein.",
+        "dropoff": "Gib deinen Zielort ein.",
+        "date": "Wähle heute oder ein zukünftiges Datum.",
+        "time": "Wähle eine Abholzeit.",
+        "passengers": "Gib eine gültige Anzahl an Fahrgästen ein.",
+        "name": "Gib deinen vollständigen Namen ein.",
+        "phone": "Gib eine gültige Telefonnummer ein.",
+        "note": "Halte deinen Hinweis unter 300 Zeichen."
+      },
+      "submit": "Per WhatsApp anfragen",
+      "direct": "Deine Anfrage öffnet sich in WhatsApp. Der Fahrer bestätigt Verfügbarkeit und Preis direkt."
+    },
+    "message": {
+      "greeting": "Hallo {driver}! Ich möchte gerne ein Taxi buchen.",
+      "customer": "Name: {name} · Telefon: {phone}",
+      "route": "Von: {pickup} · Nach: {dropoff}",
+      "schedule": "Datum: {date} · Uhrzeit: {time} · Fahrgäste: {passengers}",
+      "note": "Hinweis: {note}"
+    }
+  }
+}

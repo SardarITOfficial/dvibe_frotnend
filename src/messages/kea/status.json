@@ -1,0 +1,15 @@
+{
+  "Status": {
+    "home": "Volta pa pájina inisial",
+    "retry": "Tenta di novu",
+    "reference": "Referénsia di erru: {id}",
+    "notFound": {
+      "title": "Pájina ka atxadu",
+      "description": "Pájina ki bu sta buska ka ten o mudadu di lugar."
+    },
+    "error": {
+      "title": "Algu ka bai dretu",
+      "description": "No ka konsegi karega es pájina. Tenta di novu daki a un pikinoti."
+    }
+  }
+}

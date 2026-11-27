@@ -1,0 +1,41 @@
+{
+  "Cart": {
+    "title": "Tu carrito",
+    "subtitle": "{count, plural, one {# artículo} other {# artículos}} de {restaurant}",
+    "backToMenu": "Volver al menú",
+    "loading": "Cargando tu carrito...",
+    "price": "{amount} CVE",
+    "total": "Total",
+    "removeLabel": "Quitar {dish} del carrito",
+    "decreaseLabel": "Reducir la cantidad de {dish}",
+    "increaseLabel": "Aumentar la cantidad de {dish}",
+    "summary": {
+      "title": "Resumen del pedido",
+      "clear": "Vaciar carrito",
+      "items": "Artículos"
+    },
+    "empty": {
+      "title": "Tu carrito está vacío",
+      "description": "Explora restaurantes y añade tus platos favoritos.",
+      "cta": "Ver restaurantes"
+    },
+    "form": {
+      "title": "Datos de recogida",
+      "nameLabel": "Tu nombre",
+      "phoneLabel": "Número de teléfono",
+      "noteLabel": "Nota para el restaurante (opcional)",
+      "nameError": "Introduce tu nombre.",
+      "phoneError": "Introduce un número de teléfono válido.",
+      "noteError": "La nota es demasiado larga (máximo 300 caracteres).",
+      "submit": "Pedir por WhatsApp",
+      "direct": "Tu pedido va directamente a {restaurant} por WhatsApp.",
+      "orderError": "No pudimos realizar tu pedido. Inténtalo de nuevo."
+    },
+    "message": {
+      "header": "¡Hola! Nuevo pedido para llevar {orderNumber} de {name} ({phone}):",
+      "line": "{quantity} x {name} - {amount} CVE",
+      "total": "Total: {amount} CVE",
+      "note": "Nota: {note}"
+    }
+  }
+}

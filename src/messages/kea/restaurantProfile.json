@@ -1,0 +1,38 @@
+{
+  "RestaurantProfile": {
+    "rating": "{rating} ({count, plural, =1 {# avaliason} other {# avaliasons}})",
+    "status": {
+      "open": "Abertu agora",
+      "closed": "Fexadu"
+    },
+    "reserve": {
+      "cta": "Rizerva un mesa",
+      "label": "Rizerva un mesa na {restaurant} pa WhatsApp",
+      "message": "Olá, n kre rizerva un mesa na {restaurant}."
+    },
+    "services": {
+      "takeaway": "Takeaway",
+      "reservation": "Rizerva di mesa"
+    },
+    "map": {
+      "cta": "Leba-m la",
+      "label": "Abri {name} na Google Maps"
+    },
+    "menuTitle": "Menu",
+    "emptyMenu": "Menu inda ka sta disponível.",
+    "categoriesLabel": "Kategorias di menu",
+    "price": "{amount} CVE",
+    "cart": {
+      "add": "Djunta na karinhu",
+      "unavailable": "Indisponível",
+      "addLabel": "Djunta {dish} na karinhu",
+      "increaseLabel": "Aumenta kuantidadi di {dish}",
+      "decreaseLabel": "Diminui kuantidadi di {dish}",
+      "summaryLabel": "Rezumu di karinhu",
+      "items": "{count, plural, =1 {# item} other {# itens}}",
+      "viewCart": "Odja karinhu",
+      "otherRestaurant": "Bu karinhu tem itens di otu restorante. Diskarega-l pa pidi di li.",
+      "clearAndStart": "Diskarega karinhu"
+    }
+  }
+}

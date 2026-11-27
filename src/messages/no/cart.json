@@ -1,0 +1,41 @@
+{
+  "Cart": {
+    "title": "Handlekurven din",
+    "subtitle": "{count, plural, one {# vare} other {# varer}} fra {restaurant}",
+    "backToMenu": "Tilbake til menyen",
+    "loading": "Laster handlekurven din...",
+    "price": "{amount} CVE",
+    "total": "Totalt",
+    "removeLabel": "Fjern {dish} fra handlekurven",
+    "decreaseLabel": "Reduser antall {dish}",
+    "increaseLabel": "Øk antall {dish}",
+    "summary": {
+      "title": "Bestillingsoversikt",
+      "clear": "Tøm handlekurven",
+      "items": "Varer"
+    },
+    "empty": {
+      "title": "Handlekurven din er tom",
+      "description": "Utforsk restauranter og legg til favorittrettene dine.",
+      "cta": "Se restauranter"
+    },
+    "form": {
+      "title": "Hentedetaljer",
+      "nameLabel": "Navnet ditt",
+      "phoneLabel": "Telefonnummer",
+      "noteLabel": "Melding til restauranten (valgfritt)",
+      "nameError": "Skriv inn navnet ditt.",
+      "phoneError": "Skriv inn et gyldig telefonnummer.",
+      "noteError": "Meldingen er for lang (maks 300 tegn).",
+      "submit": "Bestill på WhatsApp",
+      "direct": "Bestillingen din går direkte til {restaurant} på WhatsApp.",
+      "orderError": "Vi kunne ikke legge inn bestillingen din. Prøv igjen."
+    },
+    "message": {
+      "header": "Hei! Ny take away-bestilling {orderNumber} fra {name} ({phone}):",
+      "line": "{quantity} x {name} - {amount} CVE",
+      "total": "Totalt: {amount} CVE",
+      "note": "Melding: {note}"
+    }
+  }
+}

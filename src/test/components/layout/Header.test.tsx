@@ -29,9 +29,9 @@ describe("Header", () => {
   it("should render the CTA link", () => {
     renderWithIntl(<Header />);
 
-    expect(
-      screen.getAllByRole("link", { name: t.cta }).length,
-    ).toBeGreaterThan(0);
+    expect(screen.getAllByRole("link", { name: t.cta }).length).toBeGreaterThan(
+      0,
+    );
   });
 
   it("should render the language button with the current locale", () => {
@@ -82,7 +82,7 @@ describe("Header", () => {
       screen.getByRole("button", { name: t.openMenu }),
     ).toBeInTheDocument();
   });
-    it("should switch language from the mobile menu and close it", async () => {
+  it("should switch language from the mobile menu and close it", async () => {
     const user = userEvent.setup();
     const { replace } = useRouter();
 
@@ -92,11 +92,12 @@ describe("Header", () => {
 
     const mobileMenu = document.getElementById("mobile-navigation");
 
-    await user.click(
-      within(mobileMenu!).getByRole("button", { name: "Português" }),
-    );
+    await user.click(within(mobileMenu!).getByRole("combobox"));
+    await user.click(screen.getByRole("option", { name: "Português" }));
 
     expect(replace).toHaveBeenCalledWith("/", { locale: "pt" });
-    expect(document.getElementById("mobile-navigation")).not.toBeInTheDocument();
+    expect(
+      document.getElementById("mobile-navigation"),
+    ).not.toBeInTheDocument();
   });
 });

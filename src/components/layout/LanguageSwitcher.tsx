@@ -9,17 +9,13 @@ import { useClickOutside } from "@/hooks/useClickOutside";
 import { usePathname, useRouter } from "@/lib/i18n/navigation";
 import { routing } from "@/lib/i18n/routing";
 import { Select } from "@/components/ui/Select";
+import { getLocaleButtonLabel, getLocaleName } from "@/lib/i18n/locales";
 interface LanguageSwitcherProps {
   variant?: "dropdown" | "inline";
   onSelect?: () => void;
 }
 
-function getLanguageName(code: string) {
-  const name =
-    new Intl.DisplayNames([code], { type: "language" }).of(code) ?? code;
 
-  return name.charAt(0).toLocaleUpperCase(code) + name.slice(1);
-}
 
 export default function LanguageSwitcher({
   variant = "dropdown",
@@ -52,7 +48,7 @@ export default function LanguageSwitcher({
         aria-label={t("languageLabel")}
         options={routing.locales.map((code) => ({
           value: code,
-          label: getLanguageName(code),
+          label: getLocaleName(code),
         }))}
         value={locale}
         onChange={handleSelect}
@@ -74,7 +70,7 @@ export default function LanguageSwitcher({
         onClick={() => setIsOpen((previous) => !previous)}
       >
         <FiGlobe size={20} />
-        {locale.toUpperCase()}
+        {getLocaleButtonLabel(locale)}
         <FiChevronDown
           size={20}
           className={`transition-transform ${isOpen ? "rotate-180" : ""}`}
@@ -91,7 +87,7 @@ export default function LanguageSwitcher({
                 className="flex w-full cursor-pointer items-center justify-between gap-3 rounded-xl px-4 py-2 text-base font-semibold text-ink transition-opacity hover:opacity-70"
                 onClick={() => handleSelect(code)}
               >
-                {getLanguageName(code)}
+                {getLocaleName(code)}
                 {code === locale && <FiCheck size={16} />}
               </Button>
             </li>

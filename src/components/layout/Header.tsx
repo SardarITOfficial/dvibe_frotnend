@@ -24,6 +24,13 @@ export default function Header() {
 
   return (
     <header className="fixed inset-x-0 top-2 z-50 sm:top-4 lg:top-7.5">
+      {isOpen && (
+        <div
+          aria-hidden
+          className="fixed inset-0 -z-10 bg-black/30 lg:hidden"
+          onClick={closeMenu}
+        />
+      )}
       <div ref={containerRef} className="container mx-auto px-4">
         <div className="flex h-14 items-center justify-between rounded-full bg-background py-1.5 pl-5 pr-3 shadow-md sm:h-16 sm:py-2 lg:py-3 lg:pl-6">
           <Link href={brand.href} className="flex shrink-0 items-center">
@@ -86,20 +93,9 @@ export default function Header() {
             id="mobile-navigation"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mt-2 max-h-[calc(100svh-5rem)] overflow-y-auto rounded-3xl bg-background p-5 shadow-md sm:p-6 lg:hidden"
+            className="mt-2 rounded-3xl bg-background p-5 shadow-md sm:p-6 lg:hidden"
           >
-            <nav className="flex flex-col gap-3 sm:gap-4">
-              {NAV_LINKS.map((link) => (
-                <Link
-                  key={link.path}
-                  href={link.path}
-                  className="text-base font-semibold text-ink transition-opacity hover:opacity-70"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {t(`nav.${link.key}`)}
-                </Link>
-              ))}
-
+            <nav className="flex flex-col gap-4">
               <div className="flex flex-col gap-2">
                 <p className="text-xs font-medium uppercase tracking-wider text-subtle">
                   {t("languageLabel")}
@@ -110,10 +106,23 @@ export default function Header() {
                 />
               </div>
 
+              <div className="flex flex-col gap-4 border-t border-border pt-4">
+                {NAV_LINKS.map((link) => (
+                  <Link
+                    key={link.path}
+                    href={link.path}
+                    className="text-lg font-semibold text-ink transition-opacity hover:opacity-70"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {t(`nav.${link.key}`)}
+                  </Link>
+                ))}
+              </div>
+
               <Button
                 href={cta.href}
                 variant="accent"
-                className="mt-4"
+                className="mt-2"
                 onClick={() => setIsOpen(false)}
               >
                 {t("cta")}

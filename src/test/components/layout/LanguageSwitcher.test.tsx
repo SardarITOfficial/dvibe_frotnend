@@ -52,14 +52,10 @@ describe("LanguageSwitcher", () => {
     expect(screen.queryByRole("list")).not.toBeInTheDocument();
   });
 
-  it("should render every locale as a button in the inline variant", () => {
+  it("should render a language select in the inline variant", () => {
     renderWithIntl(<LanguageSwitcher variant="inline" />);
 
-    expect(screen.getAllByRole("button")).toHaveLength(routing.locales.length);
-    expect(screen.getByRole("button", { name: "English" })).toHaveAttribute(
-      "aria-pressed",
-      "true",
-    );
+    expect(screen.getByRole("combobox", trigger)).toHaveTextContent("English");
   });
 
   it("should switch language and call onSelect in the inline variant", async () => {
@@ -71,7 +67,8 @@ describe("LanguageSwitcher", () => {
       <LanguageSwitcher variant="inline" onSelect={handleSelect} />,
     );
 
-    await user.click(screen.getByRole("button", { name: "Português" }));
+    await user.click(screen.getByRole("combobox", trigger));
+    await user.click(screen.getByRole("option", { name: "Português" }));
 
     expect(replace).toHaveBeenCalledWith("/", { locale: "pt" });
     expect(handleSelect).toHaveBeenCalledTimes(1);

@@ -7,6 +7,7 @@ import {
   FiMapPin,
   FiShoppingBag,
   FiStar,
+  FiNavigation
 } from "react-icons/fi";
 
 import RestaurantLogo from "@/components/sections/RestaurantLogo";
@@ -14,7 +15,7 @@ import RestaurantOpenStatus from "@/components/sections/RestaurantOpenStatus";
 import { Button } from "@/components/ui/Button";
 import type { RestaurantItem, RestaurantService } from "@/mocks/restaurants";
 import { buildWhatsAppHref } from "@/utils/whatsapp";
-
+import { buildMapsHref } from "@/utils/restaurant";
 type RestaurantProfileHeaderProps = {
   restaurant: RestaurantItem;
   whatsapp: string;
@@ -37,6 +38,7 @@ export default function RestaurantProfileHeader({
     rating,
     reviewCount,
     services,
+    mapUrl
   },
   whatsapp,
 }: RestaurantProfileHeaderProps) {
@@ -156,6 +158,17 @@ export default function RestaurantProfileHeader({
                 );
               })}
             </ul>
+            <Button
+              variant="accent"
+              href={buildMapsHref({ name, location, mapUrl })}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={t("map.label", { name })}
+              className="w-full sm:w-auto sm:self-start"
+            >
+              <FiNavigation size={16} aria-hidden />
+              {t("map.cta")}
+            </Button>
           </div>
         </div>
       </section>

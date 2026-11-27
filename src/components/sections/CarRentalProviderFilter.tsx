@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 
+import { Select } from "@/components/ui/Select";
 import type { CarProvider } from "@/types";
 import { ALL_PROVIDERS } from "@/utils/carRental";
 
@@ -24,26 +25,43 @@ export default function CarRentalProviderFilter({
   ];
 
   return (
-    <div role="group" aria-label={t("label")} className="flex flex-wrap gap-2">
-      {options.map(({ id, label }) => {
-        const isSelected = id === selectedId;
+    <>
+      <div className="sm:hidden">
+        <Select
+          name="provider"
+          variant="field"
+          aria-label={t("label")}
+          options={options.map(({ id, label }) => ({ value: id, label }))}
+          value={selectedId}
+          onChange={onChange}
+        />
+      </div>
 
-        return (
-          <button
-            key={id}
-            type="button"
-            aria-pressed={isSelected}
-            onClick={() => onChange(id)}
-            className={`rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
-              isSelected
-                ? "border-charcoal bg-charcoal text-background"
-                : "border-stroke/40 bg-background text-charcoal hover:bg-section-bg"
-            }`}
-          >
-            {label}
-          </button>
-        );
-      })}
-    </div>
+      <div
+        role="group"
+        aria-label={t("label")}
+        className="hidden flex-wrap gap-2 sm:flex"
+      >
+        {options.map(({ id, label }) => {
+          const isSelected = id === selectedId;
+
+          return (
+            <button
+              key={id}
+              type="button"
+              aria-pressed={isSelected}
+              onClick={() => onChange(id)}
+              className={`rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
+                isSelected
+                  ? "border-charcoal bg-charcoal text-background"
+                  : "border-stroke/40 bg-background text-charcoal hover:bg-section-bg"
+              }`}
+            >
+              {label}
+            </button>
+          );
+        })}
+      </div>
+    </>
   );
 }

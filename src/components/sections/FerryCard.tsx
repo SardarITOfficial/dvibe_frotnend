@@ -14,13 +14,13 @@ export default function FerryCard({
   children,
 }: FerryCardProps) {
   return (
-    <article className="flex h-full flex-col gap-5 rounded-xl border border-border bg-cream p-5 sm:p-6">
+    <article className="flex h-full flex-col gap-4 rounded-xl border border-border bg-cream p-4 sm:gap-5 sm:p-6">
       <header className="flex flex-col gap-2">
         <div className="flex items-center gap-3">
           <span aria-hidden className="text-sun">
             {icon}
           </span>
-          <h3 className="text-2xl font-semibold text-charcoal">{title}</h3>
+          <h3 className="text-xl font-semibold sm:text-2xl text-charcoal">{title}</h3>
         </div>
         <p className="text-sm text-subtle">{description}</p>
       </header>

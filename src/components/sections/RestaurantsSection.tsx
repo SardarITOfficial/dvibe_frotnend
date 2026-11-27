@@ -11,7 +11,7 @@ export default function RestaurantsSection() {
   return (
     <section
       aria-labelledby="restaurants-heading"
-      className="bg-cream py-12 font-hero lg:py-15"
+      className="bg-cream py-8 font-hero sm:py-12 "
     >
       <div className="container mx-auto flex flex-col gap-8 px-4 lg:gap-12">
         <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-end sm:justify-between">
@@ -37,7 +37,7 @@ export default function RestaurantsSection() {
           </Button>
         </div>
 
-        <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {RESTAURANTS_CONFIG.restaurants.map((restaurant) => (
             <li key={restaurant.id}>
               <RestaurantCard restaurant={restaurant} />

@@ -6,7 +6,7 @@ import { FiCheck, FiChevronDown } from "react-icons/fi";
 
 import { useClickOutside } from "@/hooks/useClickOutside";
 
-type SelectVariant = "bare";
+type SelectVariant = "bare" | "field";
 
 type SelectOption = {
   label: string;
@@ -30,6 +30,11 @@ type SelectProps = {
 
 const VARIANT_CLASSES: Record<SelectVariant, string> = {
   bare: "h-full min-w-0 flex-1 pr-8 text-sm leading-4.5",
+  field: "h-full min-w-0 flex-1 pr-10 text-sm font-medium",
+};
+
+const VARIANT_WRAPPER_CLASSES: Partial<Record<SelectVariant, string>> = {
+  field: "h-12 w-full rounded-full border border-border bg-background pl-4",
 };
 
 export function Select({
@@ -53,7 +58,9 @@ export function Select({
   const listboxId = useId();
 
   const currentValue = value ?? internalValue;
-  const selectedOption = options.find((option) => option.value === currentValue);
+  const selectedOption = options.find(
+    (option) => option.value === currentValue,
+  );
 
   const close = useCallback(() => setIsOpen(false), []);
 
@@ -117,7 +124,11 @@ export function Select({
   return (
     <div
       ref={containerRef}
-      className={["relative flex items-center gap-3", wrapperClassName]
+      className={[
+        "relative flex items-center gap-3",
+        variant && VARIANT_WRAPPER_CLASSES[variant],
+        wrapperClassName,
+      ]
         .filter(Boolean)
         .join(" ")}
     >
@@ -141,9 +152,7 @@ export function Select({
         onClick={() => (isOpen ? close() : open())}
         onKeyDown={handleKeyDown}
       >
-        <span className="truncate">
-          {selectedOption?.label ?? placeholder}
-        </span>
+        <span className="truncate">{selectedOption?.label ?? placeholder}</span>
       </button>
 
       <FiChevronDown

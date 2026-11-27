@@ -10,7 +10,17 @@ export function getRestaurantById(
 ): RestaurantItem | undefined {
   return restaurants.find((restaurant) => restaurant.id === id);
 }
+export function buildMapsHref({
+  name,
+  location,
+  mapUrl,
+}: Pick<RestaurantItem, "name" | "location" | "mapUrl">): string {
+  if (mapUrl) return mapUrl;
 
+  const query = encodeURIComponent(`${name}, ${location}`);
+
+  return `https://www.google.com/maps/search/?api=1&query=${query}`;
+}
 export function getRestaurantMenu(
   menus: RestaurantMenu[],
   restaurantId: string,

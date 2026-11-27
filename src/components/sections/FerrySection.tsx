@@ -12,11 +12,11 @@ type PillListProps = {
 
 function PillList({ items }: PillListProps) {
   return (
-    <ul className="flex flex-col gap-3">
+    <ul className="flex flex-col gap-2 sm:gap-3">
       {items.map(({ id, label }) => (
         <li
           key={id}
-          className="flex items-center gap-3 rounded-full border border-border bg-background px-4 py-2.5 text-sm text-charcoal"
+          className="flex items-center gap-3 rounded-full border border-border bg-background px-4 py-2 text-sm sm:py-2.5 text-charcoal"
         >
           <span aria-hidden className="size-1.5 shrink-0 rounded-full bg-sun" />
           {label}
@@ -42,9 +42,9 @@ export default function FerrySection() {
   return (
     <section
       aria-labelledby="ferry-heading"
-      className="py-12 font-hero lg:py-15"
+      className="py-8 font-hero sm:py-12 lg:py-15"
     >
-      <div className="container mx-auto flex flex-col gap-8 px-4 lg:gap-12">
+      <div className="container mx-auto flex flex-col gap-6 px-4 sm:gap-8 lg:gap-12">
         <div className="flex flex-col gap-3 sm:gap-4">
           <p className="text-sm font-medium uppercase leading-4 tracking-[2.4px] text-accent sm:text-base">
             {t("eyebrow")}
@@ -57,7 +57,7 @@ export default function FerrySection() {
           </h2>
         </div>
 
-        <div className="grid gap-5 lg:grid-cols-3">
+        <div className="grid gap-4 sm:gap-5 lg:grid-cols-3">
           <FerryCard
             icon={<LuUtensils size={28} />}
             title={t("before.title")}
@@ -79,12 +79,12 @@ export default function FerrySection() {
             title={t("schedules.title")}
             description={t("schedules.description")}
           >
-            <ul className="flex flex-col gap-3">
+            <ul className="flex flex-col gap-2 sm:gap-3">
               {FERRY_CONFIG.schedules.routes.map(
                 ({ id, from, to, time, operator }) => (
                   <li
                     key={id}
-                    className="flex items-center gap-3 rounded-3xl border border-border bg-background px-4 py-3"
+                    className="flex items-center gap-3 rounded-3xl border border-border bg-background px-4 py-2.5 sm:py-3"
                   >
                     <LuShip
                       size={24}

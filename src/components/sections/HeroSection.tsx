@@ -15,7 +15,7 @@ export default function HeroSection() {
       <section
         id="hero"
         aria-labelledby="hero-heading"
-        className="relative flex min-h-[70svh] items-center overflow-hidden pb-16 pt-28 font-hero lg:pb-12 lg:pt-44.75"
+        className="relative flex min-h-[56svh] items-center overflow-hidden pb-10 pt-24 font-hero sm:min-h-[70svh] sm:pb-16 sm:pt-28 lg:pb-12 lg:pt-44.75"
       >
         <Image
           src={image.src}
@@ -55,7 +55,7 @@ export default function HeroSection() {
         </div>
       </section>
 
-      <div className="bg-section-bg pt-8 font-hero lg:pt-10">
+      <div className="bg-section-bg pt-6 font-hero sm:pt-8 lg:pt-10">
         <div className="container mx-auto px-4">
           <div className="mx-auto flex max-w-5xl flex-col gap-5">
             <HeroSearchForm />

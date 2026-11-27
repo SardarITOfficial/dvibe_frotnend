@@ -37,7 +37,7 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
     id: "explore",
     links: [
       { id: "restaurants", href: "/restaurants" },
-      { id: "flavours", href: "/restaurants" },
+      { id: "flavours", href: "/#flavours" },
       { id: "vibe", href: "/vibe" },
       { id: "mindelo", href: "/explore" },
     ],

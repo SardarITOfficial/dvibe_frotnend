@@ -14,6 +14,10 @@
       "takeaway": "Take-away",
       "reservation": "Reserva de mesa"
     },
+    "map": {
+      "cta": "Leve-me lá",
+      "label": "Abrir {name} no Google Maps"
+    },
     "menuTitle": "Menu",
     "emptyMenu": "O menu ainda não está disponível.",
     "categoriesLabel": "Categorias do menu",

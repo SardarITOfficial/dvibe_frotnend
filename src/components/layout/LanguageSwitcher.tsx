@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/Button";
 import { useClickOutside } from "@/hooks/useClickOutside";
 import { usePathname, useRouter } from "@/lib/i18n/navigation";
 import { routing } from "@/lib/i18n/routing";
-
+import { Select } from "@/components/ui/Select";
 interface LanguageSwitcherProps {
   variant?: "dropdown" | "inline";
   onSelect?: () => void;
@@ -45,25 +45,20 @@ export default function LanguageSwitcher({
 
   if (variant === "inline") {
     return (
-      <ul aria-label={t("languageLabel")} className="flex flex-wrap gap-2">
-        {routing.locales.map((code) => (
-          <li key={code}>
-            <Button
-              type="button"
-              variant={code === locale ? "accent" : "soft"}
-              size="md"
-              aria-pressed={code === locale}
-              className="py-2"
-              onClick={() => handleSelect(code)}
-            >
-              {getLanguageName(code)}
-            </Button>
-          </li>
-        ))}
-      </ul>
+      <Select
+        name="language"
+        variant="field"
+        icon={<FiGlobe size={16} strokeWidth={1.5} />}
+        aria-label={t("languageLabel")}
+        options={routing.locales.map((code) => ({
+          value: code,
+          label: getLanguageName(code),
+        }))}
+        value={locale}
+        onChange={handleSelect}
+      />
     );
   }
-
   return (
     <div
       ref={containerRef}

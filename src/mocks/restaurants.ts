@@ -16,6 +16,7 @@ export type RestaurantItem = {
   isPopular: boolean;
   logo?: string;
   cover?: string;
+  mapUrl?: string;
 };
 
 export const RESTAURANTS_CONFIG = {

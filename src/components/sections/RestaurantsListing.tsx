@@ -75,7 +75,7 @@ export default function RestaurantsListing({
             />
 
             <nav aria-label={t("listing.cuisinesLabel")}>
-              <ul className="flex gap-3 overflow-x-auto pb-1">
+              <ul className="flex flex-wrap gap-2 sm:flex-nowrap sm:gap-3 sm:overflow-x-auto sm:pb-1">
                 {cuisines.map((cuisine) => {
                   const isActive = filters.cuisine === cuisine;
 

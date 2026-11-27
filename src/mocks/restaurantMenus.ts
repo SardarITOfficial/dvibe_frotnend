@@ -3,7 +3,7 @@ export type MenuItem = {
   name: string;
   description: string;
   price: number;
-  image: string;
+  image?: string;
 };
 
 export type MenuCategory = {
@@ -90,7 +90,7 @@ export const RESTAURANT_MENUS = [
             name: "Cachupa Rica",
             description: "Slow-cooked corn and beans with meat and fish.",
             price: 800,
-            image: "/image/flavours/cachupa.jpg",
+            image: "/image/flavours/fried-moray.jpg",
           },
           {
             id: "grilled-fish",
@@ -137,7 +137,7 @@ export const RESTAURANT_MENUS = [
             name: "House Pizza",
             description: "Mozzarella, ham, mushrooms and olives.",
             price: 1000,
-            image: "/image/restaurants/monte-cara.jpg",
+            image: "/image/menu/Pizzas/Margherita.jpg",
           },
         ],
       },
@@ -156,7 +156,7 @@ export const RESTAURANT_MENUS = [
             name: "Cuscuz with Milk",
             description: "Traditional Cape Verdean corn couscous.",
             price: 400,
-            image: "/image/restaurants/casa-tchicau.jpg",
+            image: "/image/flavours/fried-moray.jpg",
           },
           {
             id: "pastel",
@@ -176,7 +176,7 @@ export const RESTAURANT_MENUS = [
             name: "Cachupa Frita",
             description: "Fried cachupa served with a fried egg.",
             price: 500,
-            image: "/image/flavours/cachupa.jpg",
+            image: "/image/flavours/fried-moray.jpg",
           },
           {
             id: "fried-moray",

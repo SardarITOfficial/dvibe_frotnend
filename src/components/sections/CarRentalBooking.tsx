@@ -14,7 +14,7 @@ import {
 import FormField from "@/components/common/FormField";
 import { Button } from "@/components/ui/Button";
 import { useFormErrors } from "@/hooks/useFormErrors";
-import type { CarRental } from "@/mocks/carRentals";
+import type { CarRental } from "@/types";
 import { getInvalidFields } from "@/utils/validation";
 import { buildWhatsAppHref } from "@/utils/whatsapp";
 import { carRentalSchema } from "@/validations";
@@ -114,7 +114,7 @@ export default function CarRentalBooking({ car }: CarRentalBookingProps) {
       .join("\n");
 
     window.open(
-      buildWhatsAppHref(car.whatsapp, message),
+      buildWhatsAppHref(car.provider.whatsapp, message),
       "_blank",
       "noopener,noreferrer",
     );

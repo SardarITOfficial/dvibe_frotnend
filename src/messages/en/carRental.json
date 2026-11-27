@@ -26,7 +26,12 @@
         "price": "Per day"
       },
       "select": "Request this car",
-      "selectLabel": "Request this car – {car}"
+      "selectLabel": "Request this car – {car}",
+      "provider": "By {provider}",
+      "filter": {
+        "label": "Filter by rental company",
+        "all": "All companies"
+      }
     },
     "booking": {
       "title": "Rent the {car}",

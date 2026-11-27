@@ -26,7 +26,12 @@
         "price": "Por dia"
       },
       "select": "Pedir este carro",
-      "selectLabel": "Pedir este carro – {car}"
+      "selectLabel": "Pedir este carro – {car}",
+      "provider": "Por {provider}",
+      "filter": {
+        "label": "Filtrar por empresa de aluguer",
+        "all": "Todas as empresas"
+      }
     },
     "booking": {
       "title": "Alugar o {car}",

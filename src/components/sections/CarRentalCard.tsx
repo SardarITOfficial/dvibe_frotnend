@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useFormatter, useTranslations } from "next-intl";
 
 import { Button } from "@/components/ui/Button";
-import type { CarRental } from "@/mocks/carRentals";
+import type { CarRental } from "@/types";
 
 type CarRentalCardProps = {
   car: CarRental;
@@ -13,8 +13,16 @@ export default function CarRentalCard({ car, onSelect }: CarRentalCardProps) {
   const t = useTranslations("CarRental.cars");
   const format = useFormatter();
 
-  const { name, category, seats, transmission, pricePerDay, image, isAvailable } =
-    car;
+  const {
+    name,
+    category,
+    seats,
+    transmission,
+    pricePerDay,
+    image,
+    isAvailable,
+    provider,
+  } = car;
 
   const specs = [
     { key: "seats", value: format.number(seats) },
@@ -70,7 +78,9 @@ export default function CarRentalCard({ car, onSelect }: CarRentalCardProps) {
           </div>
         ))}
       </dl>
-
+      <p className="mx-5 mt-4 truncate text-sm text-muted">
+        {t("provider", { provider: provider.name })}
+      </p>
       <div className="mt-auto p-5">
         <Button
           type="button"

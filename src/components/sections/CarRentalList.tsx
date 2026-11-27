@@ -1,12 +1,18 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 
 import CarRentalBooking from "@/components/sections/CarRentalBooking";
 import CarRentalCard from "@/components/sections/CarRentalCard";
+import CarRentalProviderFilter from "@/components/sections/CarRentalProviderFilter";
 import { Modal } from "@/components/ui/Modal";
-import type { CarRental } from "@/mocks/carRentals";
+import type { CarRental } from "@/types";
+import {
+  ALL_PROVIDERS,
+  filterCarsByProvider,
+  getCarProviders,
+} from "@/utils/carRental";
 
 type CarRentalListProps = {
   cars: CarRental[];
@@ -15,11 +21,18 @@ type CarRentalListProps = {
 export default function CarRentalList({ cars }: CarRentalListProps) {
   const t = useTranslations("CarRental");
   const [selected, setSelected] = useState<CarRental | null>(null);
+  const [providerId, setProviderId] = useState(ALL_PROVIDERS);
 
   const closeModal = useCallback(() => setSelected(null), []);
 
-  const sortedCars = [...cars].sort(
-    (a, b) => Number(b.isAvailable) - Number(a.isAvailable),
+  const providers = useMemo(() => getCarProviders(cars), [cars]);
+
+  const sortedCars = useMemo(
+    () =>
+      [...filterCarsByProvider(cars, providerId)].sort(
+        (a, b) => Number(b.isAvailable) - Number(a.isAvailable),
+      ),
+    [cars, providerId],
   );
 
   return (
@@ -37,6 +50,12 @@ export default function CarRentalList({ cars }: CarRentalListProps) {
           </h2>
           <p className="text-base text-muted">{t("cars.description")}</p>
         </div>
+
+        <CarRentalProviderFilter
+          providers={providers}
+          selectedId={providerId}
+          onChange={setProviderId}
+        />
 
         {sortedCars.length === 0 ? (
           <p role="status" className="text-base text-muted">

@@ -1,0 +1,19 @@
+{
+  "SunsetSpots": {
+    "eyebrow": "Heure dorée",
+    "title": "Spots de coucher de soleil à São Vicente",
+    "description": "Les meilleurs endroits de l'île pour regarder le soleil se coucher sur l'Atlantique.",
+    "listTitle": "Où admirer le coucher de soleil",
+    "card": {
+      "takeMeThere": "Emmenez-moi là-bas",
+      "bestTime": "Idéal à {time}",
+      "opensInNewTab": "s'ouvre dans Google Maps dans un nouvel onglet"
+    },
+    "descriptions": {
+      "laginha-beach": "Une large plage de sable avec une baie calme, parfaite pour une promenade tranquille quand le ciel devient orange.",
+      "baia-das-gatas": "Une baie paisible sur la côte, idéale pour voir le coucher de soleil au son des vagues.",
+      "fortim-del-rei": "Un fort historique au-dessus de Mindelo avec une vue dégagée sur la baie et le port.",
+      "monte-verde": "Le point culminant de l'île, avec une vue panoramique sur São Vicente et les îles voisines."
+    }
+  }
+}

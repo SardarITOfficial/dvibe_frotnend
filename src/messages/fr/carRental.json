@@ -1,0 +1,68 @@
+{
+  "CarRental": {
+    "eyebrow": "Location de voitures",
+    "title": "Louez une voiture à Mindelo",
+    "description": "Choisissez une voiture, indiquez vos dates et envoyez votre demande directement au propriétaire sur WhatsApp.",
+    "cars": {
+      "title": "Voitures disponibles",
+      "description": "Choisissez une voiture pour commencer votre demande de location.",
+      "empty": "Aucune voiture n'est disponible pour le moment. Veuillez réessayer plus tard.",
+      "status": {
+        "available": "Disponible",
+        "unavailable": "Indisponible"
+      },
+      "categories": {
+        "economy": "Économique",
+        "suv": "SUV",
+        "van": "Van"
+      },
+      "transmission": {
+        "manual": "Manuelle",
+        "automatic": "Automatique"
+      },
+      "specs": {
+        "seats": "Places",
+        "transmission": "Boîte",
+        "price": "Par jour"
+      },
+      "select": "Demander cette voiture",
+      "selectLabel": "Demander cette voiture – {car}",
+      "provider": "Par {provider}",
+      "filter": {
+        "label": "Filtrer par société de location",
+        "all": "Toutes les sociétés"
+      }
+    },
+    "booking": {
+      "title": "Louer la {car}",
+      "closeLabel": "Fermer le formulaire de location",
+      "rentalTitle": "Détails de la location",
+      "contactTitle": "Vos coordonnées",
+      "fields": {
+        "pickup": "Lieu de prise en charge",
+        "startDate": "Date de début",
+        "endDate": "Date de fin",
+        "name": "Nom complet",
+        "phone": "Numéro de téléphone",
+        "note": "Note pour le propriétaire (facultatif)"
+      },
+      "errors": {
+        "pickup": "Indiquez votre lieu de prise en charge.",
+        "startDate": "Choisissez aujourd'hui ou une date future.",
+        "endDate": "Choisissez une date de fin égale ou postérieure à la date de début.",
+        "name": "Indiquez votre nom complet.",
+        "phone": "Indiquez un numéro de téléphone valide.",
+        "note": "Votre note doit contenir moins de 300 caractères."
+      },
+      "submit": "Demander sur WhatsApp",
+      "direct": "Votre demande s'ouvre dans WhatsApp. Le propriétaire confirme directement la disponibilité et le prix."
+    },
+    "message": {
+      "greeting": "Bonjour ! Je souhaiterais louer la {car}.",
+      "customer": "Nom : {name} · Téléphone : {phone}",
+      "pickup": "Prise en charge : {pickup}",
+      "period": "Du : {start} · Au : {end}",
+      "note": "Note : {note}"
+    }
+  }
+}

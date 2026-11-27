@@ -1,0 +1,61 @@
+{
+  "Header": {
+    "nav": {
+      "explore": "Explorer",
+      "vibe": "Ambiance",
+      "restaurants": "Restaurants",
+      "sunsetSpots": "Couchers de soleil",
+      "taxi": "Taxi",
+      "carRental": "Location de voitures"
+    },
+    "cta": "Connexion",
+    "languageLabel": "Choisir la langue",
+    "openMenu": "Ouvrir le menu de navigation",
+    "closeMenu": "Fermer le menu de navigation"
+  },
+  "Metadata": {
+    "title": "DVIBE | Mangez, explorez et vibrez au Cap-Vert",
+    "description": "Découvrez restaurants, événements, vie nocturne, couchers de soleil, taxis et locations de voitures à Mindelo, São Vicente et dans tout le Cap-Vert.",
+    "ogImageAlt": "DVIBE – Mindelo, São Vicente, Cap-Vert"
+  },
+  "Footer": {
+    "logoAlt": "DVIBE",
+    "tagline": "Découvrez de vraies saveurs, une culture vibrante et des expériences inoubliables au Cap-Vert.",
+    "copyright": "© {year} DVIBE · Mindelo, Kabu Verdi",
+    "madeWith": "Fait avec amour à Mindelo, Cap-Vert",
+    "columns": {
+      "explore": {
+        "title": "Explorer",
+        "links": {
+          "restaurants": "Restaurants",
+          "flavours": "Saveurs",
+          "vibe": "Ambiance",
+          "mindelo": "Mindelo"
+        }
+      },
+      "partners": {
+        "title": "Pour les partenaires",
+        "links": {
+          "partner-portal": "Portail partenaire",
+          "register-place": "Inscrire un établissement"
+        }
+      },
+      "support": {
+        "title": "Assistance",
+        "links": {
+          "help-center": "Centre d'aide",
+          "privacy-policy": "Politique de confidentialité",
+          "terms": "Conditions générales",
+          "contact": "Nous contacter"
+        }
+      }
+    },
+    "social": {
+      "title": "Retrouvez-nous sur les réseaux sociaux",
+      "links": {
+        "instagram": "DVIBE sur Instagram",
+        "facebook": "DVIBE sur Facebook"
+      }
+    }
+  }
+}

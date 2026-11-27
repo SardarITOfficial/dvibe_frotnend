@@ -1,0 +1,55 @@
+{
+  "Taxi": {
+    "eyebrow": "Taxi et transferts",
+    "title": "Réservez un taxi à Mindelo",
+    "description": "Choisissez un chauffeur local, ajoutez les détails de votre trajet et envoyez votre demande directement sur WhatsApp.",
+    "drivers": {
+      "title": "Taxis près de vous",
+      "description": "Choisissez un chauffeur disponible pour commencer votre demande.",
+      "empty": "Aucun taxi n'est disponible pour le moment. Veuillez réessayer plus tard.",
+      "status": {
+        "available": "Disponible maintenant",
+        "unavailable": "Indisponible"
+      },
+      "rating": "{rating} · {count, plural, one {# avis} other {# avis}}",
+      "select": "Réserver",
+      "selectLabel": "Réserver – {driver}",
+      "eta": "à {minutes} min"
+    },
+    "booking": {
+      "title": "Réserver un taxi avec {driver}",
+      "closeLabel": "Fermer le formulaire de réservation",
+      "tripTitle": "Détails du trajet",
+      "contactTitle": "Vos coordonnées",
+      "fields": {
+        "pickup": "Lieu de prise en charge",
+        "dropoff": "Lieu de dépose",
+        "date": "Date",
+        "time": "Heure",
+        "passengers": "Passagers",
+        "name": "Nom complet",
+        "phone": "Numéro de téléphone",
+        "note": "Note pour le chauffeur (facultatif)"
+      },
+      "errors": {
+        "pickup": "Indiquez votre lieu de prise en charge.",
+        "dropoff": "Indiquez votre lieu de dépose.",
+        "date": "Choisissez aujourd'hui ou une date future.",
+        "time": "Choisissez une heure de prise en charge.",
+        "passengers": "Indiquez un nombre de passagers valide.",
+        "name": "Indiquez votre nom complet.",
+        "phone": "Indiquez un numéro de téléphone valide.",
+        "note": "Votre note doit contenir moins de 300 caractères."
+      },
+      "submit": "Demander sur WhatsApp",
+      "direct": "Votre demande s'ouvre dans WhatsApp. Le chauffeur confirme directement la disponibilité et le prix."
+    },
+    "message": {
+      "greeting": "Bonjour {driver} ! Je souhaiterais réserver un taxi.",
+      "customer": "Nom : {name} · Téléphone : {phone}",
+      "route": "De : {pickup} · À : {dropoff}",
+      "schedule": "Date : {date} · Heure : {time} · Passagers : {passengers}",
+      "note": "Note : {note}"
+    }
+  }
+}

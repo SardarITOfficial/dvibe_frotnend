@@ -1,0 +1,41 @@
+{
+  "Cart": {
+    "title": "Votre panier",
+    "subtitle": "{count, plural, one {# article} other {# articles}} de {restaurant}",
+    "backToMenu": "Retour au menu",
+    "loading": "Chargement de votre panier...",
+    "price": "{amount} CVE",
+    "total": "Total",
+    "removeLabel": "Retirer {dish} du panier",
+    "decreaseLabel": "Diminuer la quantité de {dish}",
+    "increaseLabel": "Augmenter la quantité de {dish}",
+    "summary": {
+      "title": "Récapitulatif de la commande",
+      "clear": "Vider le panier",
+      "items": "Articles"
+    },
+    "empty": {
+      "title": "Votre panier est vide",
+      "description": "Parcourez les restaurants et ajoutez vos plats préférés.",
+      "cta": "Voir les restaurants"
+    },
+    "form": {
+      "title": "Informations de retrait",
+      "nameLabel": "Votre nom",
+      "phoneLabel": "Numéro de téléphone",
+      "noteLabel": "Note pour le restaurant (facultatif)",
+      "nameError": "Saisissez votre nom.",
+      "phoneError": "Saisissez un numéro de téléphone valide.",
+      "noteError": "La note est trop longue (300 caractères maximum).",
+      "submit": "Commander sur WhatsApp",
+      "direct": "Votre commande est envoyée directement à {restaurant} sur WhatsApp.",
+      "orderError": "Nous n'avons pas pu passer votre commande. Veuillez réessayer."
+    },
+    "message": {
+      "header": "Bonjour ! Nouvelle commande à emporter {orderNumber} de {name} ({phone}) :",
+      "line": "{quantity} x {name} - {amount} CVE",
+      "total": "Total : {amount} CVE",
+      "note": "Note : {note}"
+    }
+  }
+}
